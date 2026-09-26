@@ -1,45 +1,39 @@
-# 风格参考 · 实时 AI 灵感画廊
+# 风格参考 · AI 视频灵感画廊
 
-一个**实时** AI 视频风格参考站：画廊内容由公开 AI 接口（Civitai）**实时拉取**，打开/刷新就有新图，不用手动维护。版式复刻 zeezhi.pages.dev 的精致画廊风格，点开作品看大图 + 可直接复制的提示词。
+做 AI 视频没灵感时来逛的风格参考站：精选大量画风参考图 + 可直接复制的提示词，版式参考 zeezhi.pages.dev 的精致画廊风格（焦点大图 + 网格浏览 + 详情弹窗）。
 
-## 它怎么做到"实时、不用你自己新增"
-- 前端 `js/app.js` 打开时请求 `/api/styles`；
-- `functions/api/styles.js` 是 Cloudflare Pages Function（路由即 `/api/styles`），**每次请求都服务端实时去拉 Civitai 最新作品**并规范化为统一格式返回，顺带解决浏览器跨域；
-- 所以你什么都不用做，画廊会自动随源站更新。若实时源临时不可用，前端会**自动回退**到本地 `sample.json`，不会开天窗。
+## 打开方式
+- **直接双击 `index.html`** 就能看（内置 36 张风格参考图，离线可用）。
+- 或本地起服务预览：`python -m http.server 8000` → 打开 http://127.0.0.1:8000
+
+## 已部署
+- **GitHub Pages**：https://qianqianlaifeng.github.io/style-gallery/
+  （GitHub Pages 只跑静态文件，`functions/` 不生效，所以线上走的是内置的 36 张离线图 + 全部交互。）
 
 ## 目录结构
 ```
 style-gallery/
-├── index.html              主页（zeezhi 风格画廊）
+├── index.html              主页（焦点风格 + 网格画廊 + 详情弹窗）
 ├── css/style.css           样式
-├── js/app.js              交互（实时拉取 + 离线兜底 + 详情/上下张/复制）
-├── functions/api/styles.js Cloudflare Pages Function：实时接口（代理 Civitai）
-├── sample.json            离线兜底数据（本地 12 张示例图，双击也能看）
-└── assets/styles/         示例图
+├── js/app.js               交互（搜索 / 焦点切换 / 详情 / 上下张 / 复制提示词）
+├── sample.json             36 条风格数据（离线兜底）
+├── sample-data.js          同一份数据的内嵌版，供双击 file:// 直接读取
+├── functions/api/styles.js Cloudflare Pages Function：多接口实时聚合（可选）
+└── assets/styles/          36 张风格参考图
 ```
 
-## 本地预览（无需部署）
-```
-cd style-gallery
-python -m http.server 8000
-```
-浏览器打开 http://127.0.0.1:8000 —— 此时没有 `/api/styles`，会自动走 `sample.json` 演示模式。
+## 交互
+- 顶部「焦点风格」大图：**← →** 方向键 / **鼠标滚轮** / 图上左右按钮切换，点大图或按钮进详情。
+- 下方「全部风格参考」网格：点任意卡片进详情，看完整提示词并可一键复制。
+- 搜索框：按风格名 / 提示词 / 标签实时筛选。
 
-## 部署到 Cloudflare Pages（变成 xxx.pages.dev）
-**方式 A：连 Git 仓库（最省事）**
-1. 把本文件夹推到 GitHub 仓库（可直接用仓库里的 `deploy.bat`，先改里面的 `REPO_URL`）。
-2. 打开 Cloudflare Pages → Create a project → 连接该 GitHub 仓库。
-3. 构建设置：**Build command 留空**，**Output directory 留空**（或填 `/`），Framework 选 `None`。
-4. 部署完成后访问 `https://你的项目.pages.dev`，`/api/styles` 会自动由 `functions/` 提供 → 画廊变实时流。
+## 可选：开通实时流（Cloudflare Pages）
+GitHub Pages 是纯静态的，跑不了 `functions/`。若想让画廊自动拉最新作品（无需手动维护），把本项目另外部署到 **Cloudflare Pages**：
+1. Cloudflare Pages → Create a project → 连接本 GitHub 仓库；
+2. 构建设置：Build command 留空、Output directory 留空、Framework 选 `None`；
+3. 部署后访问 `https://xxx.pages.dev`，`/api/styles` 会自动由 `functions/api/styles.js` 提供，前端检测到就会切到实时流。
 
-**方式 B：命令行（wrangler）**
-```
-npx wrangler pages deploy .
-```
-
-## 想换成你自己的接口 / 数据源
-只改 `functions/api/styles.js` 里的 `CIVITAI` 常量（换成任意返回图片列表的接口地址），并让函数返回 `{ id, image, title, prompt, tags, author, source }` 这几个字段即可。前端不强依赖 Civitai。
+`functions/api/styles.js` 目前已并行聚合 3 个公开接口（Civitai / Lexica / Reddit r/AIArt），任一失败不影响其他；实时源全部不可用时前端自动回退到内置 36 张图，不会白屏。
 
 ## 备注
-- Civitai 若在你的网络被墙/限流，画廊会自动回退到本地 `sample.json`；换源见上。
-- 示例图由 AI 生成仅作占位演示；实时模式下展示的是 Civitai 实时作品与提示词。
+- 风格图由 AI 生成，仅作风格参考占位。
