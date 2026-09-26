@@ -91,12 +91,23 @@
   function setStatus(t) { const el = $("#status"); el.textContent = t || ""; el.hidden = !t; }
 
   // ============ 实时流：Civitai models 接口 ============
-  function thumbUrl(u) { return u ? u.replace("original=true", "width=512") : u; }
+  const LIVE_WORDS = 6;      // 每轮拉取的风格词数
+  const LIVE_PER_WORD = 3;   // 每个词取几张图
+  const FETCH_TIMEOUT = 8000; // 接口 8 秒无响应直接放弃（避免卡住页面）
+
+  function thumbUrl(u) { return u ? u.replace("original=true", "width=420") : u; }
 
   async function fetchWord(w, imgsPerModel) {
     const api = "https://civitai.com/api/v1/models?limit=2&query=" + encodeURIComponent(w.en) +
       "&types=Checkpoint&types=LORA&sort=Highest+Rated&nsfw=false";
-    const res = await fetch(api, { cache: "no-store" });
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT);
+    let res;
+    try {
+      res = await fetch(api, { cache: "no-store", signal: ctrl.signal });
+    } catch (e) {
+      throw new Error("timeout/network");
+    } finally { clearTimeout(timer); }
     if (!res.ok) throw new Error("HTTP " + res.status);
     const d = await res.json();
     const items = (d && Array.isArray(d.items)) ? d.items : [];
@@ -144,31 +155,32 @@
     return [];
   }
 
+  // 首屏策略：本地 254 张同域静态图先渲染（秒开），
+  // 实时接口后台静默拉，拉到后自动插到最前面再刷新一次视图。
   async function loadStyles() {
-    // 1) 实时：随机抽 8 个词并行拉
-    try {
-      const shuffled = WORDS.slice().sort(() => Math.random() - 0.5);
-      const pick = shuffled.slice(0, 8);
-      const live = await fetchLiveWords(pick, 4);
-      if (live.length) {
-        pick.forEach(w => state.liveTried.add(w.zh));
-        state.all = dedupeById(live.concat(readLocalStyles()));
-        applyFilter();
-        return;
-      }
-    } catch (e) { /* 静默降级 */ }
-
-    // 2) 本地图库（内嵌 254 张）
     const lib = readLocalStyles();
-    if (lib.length) { state.all = dedupeById(lib); applyFilter(); return; }
-
-    // 3) 初始示例（36 张）
-    if (window.__SAMPLE__ && Array.isArray(window.__SAMPLE__.styles) && window.__SAMPLE__.styles.length) {
-      state.all = window.__SAMPLE__.styles;
+    if (lib.length) {
+      state.all = dedupeById(lib);
       applyFilter();
+    } else if (window.__SAMPLE__ && Array.isArray(window.__SAMPLE__.styles) && window.__SAMPLE__.styles.length) {
+      state.all = window.__SAMPLE__.styles.slice();
+      applyFilter();
+    } else {
+      setStatus("加载失败：请检查网络后点「刷新」重试。");
       return;
     }
-    setStatus("加载失败：请检查网络后点「刷新」重试。");
+    backgroundLive();
+  }
+
+  function backgroundLive() {
+    const shuffled = WORDS.slice().sort(() => Math.random() - 0.5);
+    const pick = shuffled.slice(0, LIVE_WORDS);
+    fetchLiveWords(pick, LIVE_PER_WORD).then(live => {
+      if (!live.length) return; // 接口不通就保持本地图，不打扰用户
+      pick.forEach(w => state.liveTried.add(w.zh));
+      state.all = dedupeById(live.concat(state.all));
+      applyFilter();
+    }).catch(() => { /* 静默降级 */ });
   }
 
   // ============ 筛选 / 分类 / 分页渲染 ============
@@ -294,16 +306,39 @@
     return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   }
 
+  // ============ 图片容错：失败自动重试一次，再失败换占位色块（不裂图） ============
+  function onImgError(e) {
+    const img = e.target;
+    if (!img || img.tagName !== "IMG" || !img.src) return;
+    if (!(img.closest(".card-img") || img.closest(".spotlight-img") || img.closest(".modal-img"))) return;
+    const step = parseInt(img.dataset.retry || "0", 10);
+    if (step === 0) {
+      img.dataset.retry = "1";
+      // 换个更小的尺寸参数重试（绕开 CDN 单次失败）
+      img.src = img.src.replace("width=420", "width=256");
+      return;
+    }
+    // 最终失败：画廊卡片换成占位色块；焦点/弹窗大图保留原位（避免破坏元素引用）
+    const box = img.closest(".card-img");
+    if (box) {
+      const ph = document.createElement("div");
+      ph.className = "img-ph";
+      ph.textContent = img.alt || "风格图";
+      img.replaceWith(ph);
+    }
+  }
+
   // ============ 事件绑定 ============
+  document.addEventListener("error", onImgError, true); // error 不冒泡，用捕获委托
   document.addEventListener("DOMContentLoaded", () => {
     $("#search").addEventListener("input", applyFilter);
     $("#refresh").addEventListener("click", async () => {
       const b = $("#refresh"); b.disabled = true; b.textContent = "↻ 更新中…";
       try {
         const untried = WORDS.filter(w => !state.liveTried.has(w.zh));
-        const pool = untried.length >= 8 ? untried : WORDS.slice();
-        const pick = pool.sort(() => Math.random() - 0.5).slice(0, 8);
-        const live = await fetchLiveWords(pick, 4);
+        const pool = untried.length >= LIVE_WORDS ? untried : WORDS.slice();
+        const pick = pool.sort(() => Math.random() - 0.5).slice(0, LIVE_WORDS);
+        const live = await fetchLiveWords(pick, LIVE_PER_WORD);
         if (live.length) {
           pick.forEach(w => state.liveTried.add(w.zh));
           state.all = dedupeById(live.concat(state.all));
