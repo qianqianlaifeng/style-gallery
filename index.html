@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>风格参考 · 实时 AI 灵感画廊</title>
+  <meta name="description" content="实时 AI 视频风格参考画廊，自动从公开接口拉取最新 AI 作品与提示词，照着 zeezhi.pages.dev 的精致版式呈现。" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">风格参考</span>
+      <span class="logo-sub">STYLE REFERENCE · 实时灵感画廊</span>
+    </div>
+    <div class="toolbar">
+      <input id="search" type="text" placeholder="搜索 提示词 / 标签" autocomplete="off" />
+      <button id="refresh" class="btn" title="重新拉取实时接口">↻ 刷新</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <h1>做 AI 视频没灵感？来逛风格参考</h1>
+    </section>
+
+    <div id="status" class="status" hidden></div>
+
+    <section class="spotlight" id="spotlight" hidden>
+      <div class="spotlight-img">
+        <img id="spotImg" src="" alt="" />
+        <div class="spotlight-nav">
+          <button class="spot-btn" id="spotPrev" aria-label="上一个">‹</button>
+          <button class="spot-btn" id="spotNext" aria-label="下一个">›</button>
+        </div>
+      </div>
+      <div class="spotlight-info">
+        <div class="spot-kicker">焦点风格 · SPOTLIGHT</div>
+        <h2 id="spotTitle"></h2>
+        <div class="chips static" id="spotTags"></div>
+        <p class="spot-prompt" id="spotPrompt"></p>
+        <button class="btn primary" id="spotEnter">查看提示词 / 进入详情 →</button>
+        <div class="spot-hint">← → 或鼠标滚轮切换焦点 · 点击大图进入详情</div>
+      </div>
+    </section>
+
+    <div class="grid-head">
+      <h2>全部风格参考</h2>
+      <span class="grid-sub">点开任意作品看大图与可直接复制的提示词</span>
+    </div>
+    <div id="gallery" class="gallery"></div>
+    <p id="empty" class="empty" hidden>没有匹配的内容，换个关键词试试。</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>风格参考 · 实时 AI 灵感画廊 ｜ 生产环境通过 Cloudflare Pages Function（<code>functions/api/styles.js</code>）实时拉取最新作品，自动更新。</p>
+    </div>
+  </footer>
+
+  <!-- 详情弹窗 -->
+  <div id="modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close aria-label="关闭">×</button>
+      <button class="nav nav-prev" id="navPrev" aria-label="上一张">‹</button>
+      <button class="nav nav-next" id="navNext" aria-label="下一张">›</button>
+      <div class="modal-body">
+        <div class="modal-img"><img id="modalImg" src="" alt="" /></div>
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <div class="info-block">
+            <div class="info-label">标签</div>
+            <div class="chips static" id="modalTags"></div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">提示词（直接复制用）</div>
+            <div class="prompt-box">
+              <div class="prompt-line">
+                <code id="modalPrompt"></code>
+                <button class="copy-btn" id="copyBtn">复制</button>
+              </div>
+            </div>
+          </div>
+          <a id="modalSource" class="source-link" href="#" target="_blank" rel="noopener" style="display:none">查看原图 / 出处 ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="sample-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
