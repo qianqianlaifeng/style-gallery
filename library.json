@@ -1,138 +1,3054 @@
 {
- "updated": 1790396173566,
- "count": 12,
+ "updated": 1790400694297,
+ "count": 254,
  "styles": [
   {
-   "id": "L0001",
-   "image": "assets/library/0001-ed99bf7df5.jpg",
+   "id": "C0001",
+   "image": "assets/library/0001-x.jpg",
    "title": "电影感 / 胶片大片",
-   "prompt": "File:1912 Relief of Lucknow film still 08m 04s-Highlanders played by 2nd Bn., The Queen's (Royal West Surrey) Regiment at Walsingham House, Bermuda.jpg",
+   "prompt": "cinematic film still, dramatic lighting, shallow depth of field, film grain, anamorphic lens, 35mm, photorealistic",
    "tags": [
     "电影感 / 胶片大片",
-    "艺术"
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Cinematic Dark Lighting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/599fd922-2749-4840-b33d-8326d452c4e9/original=true/137869108.jpeg"
   },
   {
-   "id": "L0002",
-   "image": "assets/library/0002-38c66799b5.jpg",
+   "id": "C0002",
+   "image": "assets/library/0002-x.jpg",
    "title": "电影感 / 胶片大片",
-   "prompt": "File:Asian Film Archive staff and volunteers - 2005.jpg",
+   "prompt": "cinematic film still, dramatic lighting, shallow depth of field, film grain, anamorphic lens, 35mm, photorealistic",
    "tags": [
     "电影感 / 胶片大片",
-    "艺术"
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Cinematic Dark Lighting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8d7dc39c-7cba-43c9-bd0d-f89f9ab94cbc/original=true/137869110.jpeg"
   },
   {
-   "id": "L0003",
-   "image": "assets/library/0003-9da0dd502d.jpg",
+   "id": "C0003",
+   "image": "assets/library/0003-x.jpg",
    "title": "电影感 / 胶片大片",
-   "prompt": "File:Hyatt Regency Embarcadero Atrium, San Francisco, US.jpg",
+   "prompt": "cinematic film still, dramatic lighting, shallow depth of field, film grain, anamorphic lens, 35mm, photorealistic",
    "tags": [
     "电影感 / 胶片大片",
-    "艺术"
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Cinematic Dark Lighting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a2b2cac1-f46f-481d-9a30-6ef3ecbcffe1/original=true/137869112.jpeg"
   },
   {
-   "id": "L0004",
-   "image": "assets/library/0004-d7626d177a.png",
-   "title": "电影感 / 胶片大片",
-   "prompt": "File:Marvel Cinematic Universe.png",
+   "id": "C0004",
+   "image": "assets/library/0004-x.jpg",
+   "title": "黑色电影 / 暗调",
+   "prompt": "film noir style, high contrast black and white, dramatic shadows, venetian blind lighting, moody atmosphere, 1940s",
    "tags": [
-    "电影感 / 胶片大片",
-    "艺术"
+    "黑色电影 / 暗调",
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Film Noir Style (Retro photo) by YeiyeiArt",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0199f500-8b47-40a8-bdf1-51defb7358a5/original=true/1953023.jpeg"
   },
   {
-   "id": "L0005",
-   "image": "assets/library/0005-7786b426c0.jpg",
-   "title": "电影感 / 胶片大片",
-   "prompt": "File:Philadelphia Arch Street N 12th Street junction 1978 lighter colorized with Palette FM - Cinematic Shades.jpg",
+   "id": "C0005",
+   "image": "assets/library/0005-x.jpg",
+   "title": "黑色电影 / 暗调",
+   "prompt": "film noir style, high contrast black and white, dramatic shadows, venetian blind lighting, moody atmosphere, 1940s",
    "tags": [
-    "电影感 / 胶片大片",
-    "艺术"
+    "黑色电影 / 暗调",
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Film Noir Style (Retro photo) by YeiyeiArt",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/51ee0b4e-0039-470b-895e-8521a306ab17/original=true/1952997.jpeg"
   },
   {
-   "id": "L0006",
-   "image": "assets/library/0006-28d2c81ab3.png",
-   "title": "电影感 / 胶片大片",
-   "prompt": "File:Spider-Man (Marvel Cinematic Universe) film logo.png",
+   "id": "C0006",
+   "image": "assets/library/0006-x.jpg",
+   "title": "黑色电影 / 暗调",
+   "prompt": "film noir style, high contrast black and white, dramatic shadows, venetian blind lighting, moody atmosphere, 1940s",
    "tags": [
-    "电影感 / 胶片大片",
-    "艺术"
+    "黑色电影 / 暗调",
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Film Noir Style (Retro photo) by YeiyeiArt",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3c40e9d6-92b7-42ef-9cf3-434a1feb88f2/original=true/1953021.jpeg"
   },
   {
-   "id": "L0007",
-   "image": "assets/library/0007-3e47fde534.jpg",
-   "title": "电影感 / 胶片大片",
-   "prompt": "photo",
+   "id": "C0007",
+   "image": "assets/library/0007-x.jpg",
+   "title": "黑色电影 / 暗调",
+   "prompt": "film noir style, high contrast black and white, dramatic shadows, venetian blind lighting, moody atmosphere, 1940s",
    "tags": [
-    "电影感 / 胶片大片",
-    "艺术"
+    "黑色电影 / 暗调",
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Film Noir Style (Retro photo) by YeiyeiArt",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b1cfb65a-dad2-4b8d-b3c2-86f86c37d9af/original=true/1953015.jpeg"
   },
   {
-   "id": "L0008",
-   "image": "assets/library/0008-072777bf49.jpg",
-   "title": "电影感 / 胶片大片",
-   "prompt": "photo",
+   "id": "C0008",
+   "image": "assets/library/0008-x.jpg",
+   "title": "黄金时刻光",
+   "prompt": "golden hour lighting, warm sunset glow, soft backlight, lens flare, warm color grade, cinematic",
    "tags": [
-    "电影感 / 胶片大片",
-    "艺术"
+    "黄金时刻光",
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Golden Hour Slider",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d965bcf5-3d87-49ff-b6d3-c448efbc1e5b/original=true/51925523.jpeg"
   },
   {
-   "id": "L0009",
-   "image": "assets/library/0009-e6e3a76db1.jpg",
-   "title": "电影感 / 胶片大片",
-   "prompt": "photo",
+   "id": "C0009",
+   "image": "assets/library/0009-x.jpg",
+   "title": "黄金时刻光",
+   "prompt": "golden hour lighting, warm sunset glow, soft backlight, lens flare, warm color grade, cinematic",
    "tags": [
-    "电影感 / 胶片大片",
-    "艺术"
+    "黄金时刻光",
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Golden Hour Slider",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/749dc094-bacb-4991-9bca-dd7baed102d9/original=true/51869299.jpeg"
   },
   {
-   "id": "L0010",
-   "image": "assets/library/0010-77d5be4267.jpg",
-   "title": "电影感 / 胶片大片",
-   "prompt": "photo",
+   "id": "C0010",
+   "image": "assets/library/0010-x.jpg",
+   "title": "黄金时刻光",
+   "prompt": "golden hour lighting, warm sunset glow, soft backlight, lens flare, warm color grade, cinematic",
    "tags": [
-    "电影感 / 胶片大片",
-    "艺术"
+    "黄金时刻光",
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Golden Hour",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9d242a6f-63f2-4811-8ff4-4a86f660884d/original=true/142047714.jpeg"
   },
   {
-   "id": "L0011",
-   "image": "assets/library/0011-c4d5383b93.jpg",
-   "title": "电影感 / 胶片大片",
-   "prompt": "photo",
+   "id": "C0011",
+   "image": "assets/library/0011-x.jpg",
+   "title": "黄金时刻光",
+   "prompt": "golden hour lighting, warm sunset glow, soft backlight, lens flare, warm color grade, cinematic",
    "tags": [
-    "电影感 / 胶片大片",
-    "艺术"
+    "黄金时刻光",
+    "影视感"
    ],
-   "author": "图库"
+   "author": "Golden Hour",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/cd406563-1da0-4f80-9117-a14ac2938a39/original=true/142047709.jpeg"
   },
   {
-   "id": "L0012",
-   "image": "assets/library/0012-1ee08c3b19.jpg",
-   "title": "电影感 / 胶片大片",
-   "prompt": "photo",
+   "id": "C0012",
+   "image": "assets/library/0012-x.jpg",
+   "title": "体积光 / 丁达尔",
+   "prompt": "volumetric lighting, god rays, light shafts through fog, atmospheric haze, cinematic lighting, ultra detailed",
    "tags": [
-    "电影感 / 胶片大片",
-    "艺术"
+    "体积光 / 丁达尔",
+    "影视感"
    ],
-   "author": "图库"
+   "author": "星汉西流 /Volumetric Lighting/背光 LORA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d398ecad-c4a9-48bb-8a3e-bcfe69fabf40/original=true/1022843.jpeg"
+  },
+  {
+   "id": "C0013",
+   "image": "assets/library/0013-x.jpg",
+   "title": "体积光 / 丁达尔",
+   "prompt": "volumetric lighting, god rays, light shafts through fog, atmospheric haze, cinematic lighting, ultra detailed",
+   "tags": [
+    "体积光 / 丁达尔",
+    "影视感"
+   ],
+   "author": "星汉西流 /Volumetric Lighting/背光 LORA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3a79d8f4-48ad-480d-b07e-2ec26ff3e959/original=true/1022834.jpeg"
+  },
+  {
+   "id": "C0014",
+   "image": "assets/library/0014-x.jpg",
+   "title": "体积光 / 丁达尔",
+   "prompt": "volumetric lighting, god rays, light shafts through fog, atmospheric haze, cinematic lighting, ultra detailed",
+   "tags": [
+    "体积光 / 丁达尔",
+    "影视感"
+   ],
+   "author": "星汉西流 /Volumetric Lighting/背光 LORA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/969a91e7-0d30-47a9-8959-ac5c256b4ab4/original=true/1022887.jpeg"
+  },
+  {
+   "id": "C0015",
+   "image": "assets/library/0015-x.jpg",
+   "title": "体积光 / 丁达尔",
+   "prompt": "volumetric lighting, god rays, light shafts through fog, atmospheric haze, cinematic lighting, ultra detailed",
+   "tags": [
+    "体积光 / 丁达尔",
+    "影视感"
+   ],
+   "author": "星汉西流 /Volumetric Lighting/背光 LORA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c0618330-29d3-49ab-bec0-58949db241fd/original=true/1022838.jpeg"
+  },
+  {
+   "id": "C0016",
+   "image": "assets/library/0016-x.jpg",
+   "title": "霓虹光效",
+   "prompt": "neon lighting, vibrant neon glow, colorful reflections, night scene, high contrast, cyberpunk aesthetic",
+   "tags": [
+    "霓虹光效",
+    "影视感"
+   ],
+   "author": "Neon Sky - Midjourney Style",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/75e097f3-b823-4fee-9ef3-993aa00a09ff/original=true/135675267.jpeg"
+  },
+  {
+   "id": "C0017",
+   "image": "assets/library/0017-x.jpg",
+   "title": "霓虹光效",
+   "prompt": "neon lighting, vibrant neon glow, colorful reflections, night scene, high contrast, cyberpunk aesthetic",
+   "tags": [
+    "霓虹光效",
+    "影视感"
+   ],
+   "author": "Neon Sky - Midjourney Style",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0e3d192b-30f6-458c-a28c-189c9eb25f24/original=true/135675263.jpeg"
+  },
+  {
+   "id": "C0018",
+   "image": "assets/library/0018-x.jpg",
+   "title": "霓虹光效",
+   "prompt": "neon lighting, vibrant neon glow, colorful reflections, night scene, high contrast, cyberpunk aesthetic",
+   "tags": [
+    "霓虹光效",
+    "影视感"
+   ],
+   "author": "Neon Sky - Midjourney Style",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d424d535-87d8-4afc-ab5e-126c3ad75680/original=true/135675265.jpeg"
+  },
+  {
+   "id": "C0019",
+   "image": "assets/library/0019-x.jpg",
+   "title": "霓虹光效",
+   "prompt": "neon lighting, vibrant neon glow, colorful reflections, night scene, high contrast, cyberpunk aesthetic",
+   "tags": [
+    "霓虹光效",
+    "影视感"
+   ],
+   "author": "Neon Sky - Midjourney Style",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9104fcc7-d604-48e0-ab08-e6128270966f/original=true/135675268.jpeg"
+  },
+  {
+   "id": "C0020",
+   "image": "assets/library/0020-x.jpg",
+   "title": "逆光剪影",
+   "prompt": "silhouette against bright backlight, rim light, dramatic contrast, minimalist composition, sunset background",
+   "tags": [
+    "逆光剪影",
+    "影视感"
+   ],
+   "author": "lighting silhouette",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2969b8fb-3de2-48ed-874c-72398ef6c073/original=true/5662034.jpeg"
+  },
+  {
+   "id": "C0021",
+   "image": "assets/library/0021-x.jpg",
+   "title": "逆光剪影",
+   "prompt": "silhouette against bright backlight, rim light, dramatic contrast, minimalist composition, sunset background",
+   "tags": [
+    "逆光剪影",
+    "影视感"
+   ],
+   "author": "lighting silhouette",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1dd55e13-cd96-4075-99f3-a10d0c369377/original=true/5662035.jpeg"
+  },
+  {
+   "id": "C0022",
+   "image": "assets/library/0022-x.jpg",
+   "title": "逆光剪影",
+   "prompt": "silhouette against bright backlight, rim light, dramatic contrast, minimalist composition, sunset background",
+   "tags": [
+    "逆光剪影",
+    "影视感"
+   ],
+   "author": "lighting silhouette",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0a86ebd8-e651-411a-8881-e27e1d0204d5/original=true/5662045.jpeg"
+  },
+  {
+   "id": "C0023",
+   "image": "assets/library/0023-x.jpg",
+   "title": "逆光剪影",
+   "prompt": "silhouette against bright backlight, rim light, dramatic contrast, minimalist composition, sunset background",
+   "tags": [
+    "逆光剪影",
+    "影视感"
+   ],
+   "author": "lighting silhouette",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/edb06c3c-caab-4404-b37c-16d4c10698cd/original=true/5662053.jpeg"
+  },
+  {
+   "id": "C0024",
+   "image": "assets/library/0024-x.jpg",
+   "title": "赛博朋克",
+   "prompt": "cyberpunk city at night, neon signs, rain reflections, holographic ads, futuristic dystopia, cinematic, ultra detailed",
+   "tags": [
+    "赛博朋克",
+    "科幻"
+   ],
+   "author": "Cyberpunk Anime Style",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d7af248b-2469-405f-af79-0e53efdb6068/original=true/130704959.jpeg"
+  },
+  {
+   "id": "C0025",
+   "image": "assets/library/0025-x.jpg",
+   "title": "赛博朋克",
+   "prompt": "cyberpunk city at night, neon signs, rain reflections, holographic ads, futuristic dystopia, cinematic, ultra detailed",
+   "tags": [
+    "赛博朋克",
+    "科幻"
+   ],
+   "author": "Cyberpunk Anime Style",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c24d119c-d44e-488c-97f1-049f8e9e459a/original=true/130704935.jpeg"
+  },
+  {
+   "id": "C0026",
+   "image": "assets/library/0026-x.jpg",
+   "title": "赛博朋克",
+   "prompt": "cyberpunk city at night, neon signs, rain reflections, holographic ads, futuristic dystopia, cinematic, ultra detailed",
+   "tags": [
+    "赛博朋克",
+    "科幻"
+   ],
+   "author": "Cyberpunk Anime Style",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ff2c68cc-8a86-411d-9bc4-7d9ad1cda6a8/original=true/130704932.jpeg"
+  },
+  {
+   "id": "C0027",
+   "image": "assets/library/0027-x.jpg",
+   "title": "赛博朋克",
+   "prompt": "cyberpunk city at night, neon signs, rain reflections, holographic ads, futuristic dystopia, cinematic, ultra detailed",
+   "tags": [
+    "赛博朋克",
+    "科幻"
+   ],
+   "author": "Cyberpunk Anime Style",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/04dde689-c0a6-42db-a27a-bd441f6ad138/original=true/130704909.jpeg"
+  },
+  {
+   "id": "C0028",
+   "image": "assets/library/0028-x.jpg",
+   "title": "科幻都市",
+   "prompt": "futuristic sci-fi megacity, flying vehicles, skyscrapers, holographic interface, clean design, concept art",
+   "tags": [
+    "科幻都市",
+    "科幻"
+   ],
+   "author": "sci-fi cityscape illu",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/68da2765-a6d3-4018-8561-2e2aa8ad036b/original=true/117140974.jpeg"
+  },
+  {
+   "id": "C0029",
+   "image": "assets/library/0029-x.jpg",
+   "title": "科幻都市",
+   "prompt": "futuristic sci-fi megacity, flying vehicles, skyscrapers, holographic interface, clean design, concept art",
+   "tags": [
+    "科幻都市",
+    "科幻"
+   ],
+   "author": "sci-fi cityscape illu",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/425921c7-1e3c-4aff-8ba8-6feb075b0a2c/original=true/117140983.jpeg"
+  },
+  {
+   "id": "C0030",
+   "image": "assets/library/0030-x.jpg",
+   "title": "科幻都市",
+   "prompt": "futuristic sci-fi megacity, flying vehicles, skyscrapers, holographic interface, clean design, concept art",
+   "tags": [
+    "科幻都市",
+    "科幻"
+   ],
+   "author": "sci-fi cityscape illu",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b4afa26e-0cce-405f-a965-1ae8fa175844/original=true/117140982.jpeg"
+  },
+  {
+   "id": "C0031",
+   "image": "assets/library/0031-x.jpg",
+   "title": "科幻都市",
+   "prompt": "futuristic sci-fi megacity, flying vehicles, skyscrapers, holographic interface, clean design, concept art",
+   "tags": [
+    "科幻都市",
+    "科幻"
+   ],
+   "author": "sci-fi cityscape illu",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/130f0231-408f-47c4-9055-37737537bf26/original=true/117140990.jpeg"
+  },
+  {
+   "id": "C0032",
+   "image": "assets/library/0032-x.jpg",
+   "title": "机甲",
+   "prompt": "giant mecha robot, detailed mechanical design, battle damage, epic scale, industrial design, anime style",
+   "tags": [
+    "机甲",
+    "科幻"
+   ],
+   "author": "Gundam/Robot/Mecha",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7cb34738-f665-4a45-a15a-53a7dcd480af/original=true/14954436.jpeg"
+  },
+  {
+   "id": "C0033",
+   "image": "assets/library/0033-x.jpg",
+   "title": "机甲",
+   "prompt": "giant mecha robot, detailed mechanical design, battle damage, epic scale, industrial design, anime style",
+   "tags": [
+    "机甲",
+    "科幻"
+   ],
+   "author": "Gundam/Robot/Mecha",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5e872995-5c7e-4092-87ec-171bbb685c96/original=true/14960976.jpeg"
+  },
+  {
+   "id": "C0034",
+   "image": "assets/library/0034-x.jpg",
+   "title": "机甲",
+   "prompt": "giant mecha robot, detailed mechanical design, battle damage, epic scale, industrial design, anime style",
+   "tags": [
+    "机甲",
+    "科幻"
+   ],
+   "author": "Gundam/Robot/Mecha",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/585607f1-d358-43f6-aae5-1d4f62f849ed/original=true/14962235.jpeg"
+  },
+  {
+   "id": "C0035",
+   "image": "assets/library/0035-x.jpg",
+   "title": "机甲",
+   "prompt": "giant mecha robot, detailed mechanical design, battle damage, epic scale, industrial design, anime style",
+   "tags": [
+    "机甲",
+    "科幻"
+   ],
+   "author": "Gundam/Robot/Mecha",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2b05c7c1-6cc4-43aa-9e07-898aeb2ed398/original=true/14961709.jpeg"
+  },
+  {
+   "id": "C0036",
+   "image": "assets/library/0036-x.jpg",
+   "title": "星际星云",
+   "prompt": "deep space nebula, vibrant cosmic colors, stars, galaxy, epic scale, astrophotography style, ultra detailed",
+   "tags": [
+    "星际星云",
+    "科幻"
+   ],
+   "author": "Space Nebula [FL/XL/IL/PD]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/46e1d108-cebc-42a0-a47e-54a096a0fe6a/original=true/59453913.jpeg"
+  },
+  {
+   "id": "C0037",
+   "image": "assets/library/0037-x.jpg",
+   "title": "星际星云",
+   "prompt": "deep space nebula, vibrant cosmic colors, stars, galaxy, epic scale, astrophotography style, ultra detailed",
+   "tags": [
+    "星际星云",
+    "科幻"
+   ],
+   "author": "Space Nebula [FL/XL/IL/PD]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/79fe5bf1-5785-4ecd-b83d-a2145333c833/original=true/59453919.jpeg"
+  },
+  {
+   "id": "C0038",
+   "image": "assets/library/0038-x.jpg",
+   "title": "星际星云",
+   "prompt": "deep space nebula, vibrant cosmic colors, stars, galaxy, epic scale, astrophotography style, ultra detailed",
+   "tags": [
+    "星际星云",
+    "科幻"
+   ],
+   "author": "Space Nebula [FL/XL/IL/PD]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e6876ca3-c4da-4ffe-ae44-0ca88fa3ddca/original=true/59453921.jpeg"
+  },
+  {
+   "id": "C0039",
+   "image": "assets/library/0039-x.jpg",
+   "title": "星际星云",
+   "prompt": "deep space nebula, vibrant cosmic colors, stars, galaxy, epic scale, astrophotography style, ultra detailed",
+   "tags": [
+    "星际星云",
+    "科幻"
+   ],
+   "author": "Space Nebula [FL/XL/IL/PD]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/40ce1c68-381b-42b1-8a03-cd1e3688c36e/original=true/59453918.jpeg"
+  },
+  {
+   "id": "C0040",
+   "image": "assets/library/0040-x.jpg",
+   "title": "蒸汽朋克",
+   "prompt": "steampunk machinery, brass gears, victorian aesthetic, steam pipes, retro-futuristic, intricate details",
+   "tags": [
+    "蒸汽朋克",
+    "科幻"
+   ],
+   "author": "SteampunkAI [10MB] LoRA extraction",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/86fc0dcf-5458-4812-ec37-25d2cdad0800/original=true/270965.jpeg"
+  },
+  {
+   "id": "C0041",
+   "image": "assets/library/0041-x.jpg",
+   "title": "蒸汽朋克",
+   "prompt": "steampunk machinery, brass gears, victorian aesthetic, steam pipes, retro-futuristic, intricate details",
+   "tags": [
+    "蒸汽朋克",
+    "科幻"
+   ],
+   "author": "SteampunkAI [10MB] LoRA extraction",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a48ac892-2c52-4c79-738f-6d5d818fa700/original=true/273594.jpeg"
+  },
+  {
+   "id": "C0042",
+   "image": "assets/library/0042-x.jpg",
+   "title": "蒸汽朋克",
+   "prompt": "steampunk machinery, brass gears, victorian aesthetic, steam pipes, retro-futuristic, intricate details",
+   "tags": [
+    "蒸汽朋克",
+    "科幻"
+   ],
+   "author": "SteampunkAI [10MB] LoRA extraction",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3f536efc-ccb0-4164-8ee1-c572cdd75200/original=true/274910.jpeg"
+  },
+  {
+   "id": "C0043",
+   "image": "assets/library/0043-x.jpg",
+   "title": "蒸汽朋克",
+   "prompt": "steampunk machinery, brass gears, victorian aesthetic, steam pipes, retro-futuristic, intricate details",
+   "tags": [
+    "蒸汽朋克",
+    "科幻"
+   ],
+   "author": "SteampunkAI [10MB] LoRA extraction",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9e340192-a39c-4c70-1078-67c25f11ed00/original=true/274909.jpeg"
+  },
+  {
+   "id": "C0044",
+   "image": "assets/library/0044-x.jpg",
+   "title": "末世废土",
+   "prompt": "post apocalyptic wasteland, ruined city, overgrown vegetation, abandoned vehicles, dusty atmosphere, desaturated",
+   "tags": [
+    "末世废土",
+    "科幻"
+   ],
+   "author": "Post-Apocalyptic Fashion",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b6422103-46d2-45c6-8a2d-2efaf887616a/original=true/1762834.jpeg"
+  },
+  {
+   "id": "C0045",
+   "image": "assets/library/0045-x.jpg",
+   "title": "末世废土",
+   "prompt": "post apocalyptic wasteland, ruined city, overgrown vegetation, abandoned vehicles, dusty atmosphere, desaturated",
+   "tags": [
+    "末世废土",
+    "科幻"
+   ],
+   "author": "Post-Apocalyptic Fashion",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/87de3b57-b1b4-4d71-a563-5604db553988/original=true/1762828.jpeg"
+  },
+  {
+   "id": "C0046",
+   "image": "assets/library/0046-x.jpg",
+   "title": "末世废土",
+   "prompt": "post apocalyptic wasteland, ruined city, overgrown vegetation, abandoned vehicles, dusty atmosphere, desaturated",
+   "tags": [
+    "末世废土",
+    "科幻"
+   ],
+   "author": "Post-Apocalyptic Fashion",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/bd582480-a95b-42df-89e8-66bea685d201/original=true/1762832.jpeg"
+  },
+  {
+   "id": "C0047",
+   "image": "assets/library/0047-x.jpg",
+   "title": "末世废土",
+   "prompt": "post apocalyptic wasteland, ruined city, overgrown vegetation, abandoned vehicles, dusty atmosphere, desaturated",
+   "tags": [
+    "末世废土",
+    "科幻"
+   ],
+   "author": "Post-Apocalyptic Fashion",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3d4104c0-2440-4c44-a1ea-ce92c9cc8df8/original=true/1762835.jpeg"
+  },
+  {
+   "id": "C0048",
+   "image": "assets/library/0048-x.jpg",
+   "title": "动画风景",
+   "prompt": "anime scenery, beautiful landscape, makoto shinkai style, vivid sky, detailed clouds, anime background art",
+   "tags": [
+    "动画风景",
+    "动漫"
+   ],
+   "author": "Cinematic Anime Scenery (enhance your scenes) - Pony XL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b24fd6cb-a1cf-4cbf-81df-627e0a4356f7/original=true/8740781.jpeg"
+  },
+  {
+   "id": "C0049",
+   "image": "assets/library/0049-x.jpg",
+   "title": "动画风景",
+   "prompt": "anime scenery, beautiful landscape, makoto shinkai style, vivid sky, detailed clouds, anime background art",
+   "tags": [
+    "动画风景",
+    "动漫"
+   ],
+   "author": "Cinematic Anime Scenery (enhance your scenes) - Pony XL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7d40cc40-c188-484b-8bb0-dd0701c24911/original=true/8740690.jpeg"
+  },
+  {
+   "id": "C0050",
+   "image": "assets/library/0050-x.jpg",
+   "title": "动画风景",
+   "prompt": "anime scenery, beautiful landscape, makoto shinkai style, vivid sky, detailed clouds, anime background art",
+   "tags": [
+    "动画风景",
+    "动漫"
+   ],
+   "author": "Cinematic Anime Scenery (enhance your scenes) - Pony XL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/27a2e01d-6cbd-4f07-a828-037b11e7b670/original=true/8740709.jpeg"
+  },
+  {
+   "id": "C0051",
+   "image": "assets/library/0051-x.jpg",
+   "title": "动画风景",
+   "prompt": "anime scenery, beautiful landscape, makoto shinkai style, vivid sky, detailed clouds, anime background art",
+   "tags": [
+    "动画风景",
+    "动漫"
+   ],
+   "author": "Cinematic Anime Scenery (enhance your scenes) - Pony XL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7f785b94-dee4-43d3-9608-64f2678e330e/original=true/8740711.jpeg"
+  },
+  {
+   "id": "C0052",
+   "image": "assets/library/0052-x.jpg",
+   "title": "吉卜力风",
+   "prompt": "studio ghibli style, pastoral countryside, soft watercolor palette, whimsical, hand drawn animation aesthetic",
+   "tags": [
+    "吉卜力风",
+    "动漫"
+   ],
+   "author": "Studio Ghibli Style LoRA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/56eb9234-3106-48b2-14b2-ee622841b500/original=true/71811.jpeg"
+  },
+  {
+   "id": "C0053",
+   "image": "assets/library/0053-x.jpg",
+   "title": "吉卜力风",
+   "prompt": "studio ghibli style, pastoral countryside, soft watercolor palette, whimsical, hand drawn animation aesthetic",
+   "tags": [
+    "吉卜力风",
+    "动漫"
+   ],
+   "author": "Studio Ghibli Style LoRA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6fd51fbd-2bee-4eed-014a-75497496f300/original=true/71820.jpeg"
+  },
+  {
+   "id": "C0054",
+   "image": "assets/library/0054-x.jpg",
+   "title": "吉卜力风",
+   "prompt": "studio ghibli style, pastoral countryside, soft watercolor palette, whimsical, hand drawn animation aesthetic",
+   "tags": [
+    "吉卜力风",
+    "动漫"
+   ],
+   "author": "Studio Ghibli Style LoRA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/dc09fe58-9049-4f17-c3fe-75e618f6a600/original=true/71819.jpeg"
+  },
+  {
+   "id": "C0055",
+   "image": "assets/library/0055-x.jpg",
+   "title": "吉卜力风",
+   "prompt": "studio ghibli style, pastoral countryside, soft watercolor palette, whimsical, hand drawn animation aesthetic",
+   "tags": [
+    "吉卜力风",
+    "动漫"
+   ],
+   "author": "Studio Ghibli Style LoRA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/cbcb61f6-938e-40a8-55cb-5519b0e62700/original=true/71818.jpeg"
+  },
+  {
+   "id": "C0056",
+   "image": "assets/library/0056-x.jpg",
+   "title": "动漫人像",
+   "prompt": "anime portrait, detailed eyes, cel shading, beautiful lighting, high quality anime illustration",
+   "tags": [
+    "动漫人像",
+    "动漫"
+   ],
+   "author": "Anime Portrait Wallpaper",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1434a74b-3ad1-4c12-9335-1c47b146bd68/original=true/94710080.jpeg"
+  },
+  {
+   "id": "C0057",
+   "image": "assets/library/0057-x.jpg",
+   "title": "动漫人像",
+   "prompt": "anime portrait, detailed eyes, cel shading, beautiful lighting, high quality anime illustration",
+   "tags": [
+    "动漫人像",
+    "动漫"
+   ],
+   "author": "Anime Portrait Wallpaper",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/dc5fe311-f2c6-455c-b66c-a568280127f4/original=true/94710026.jpeg"
+  },
+  {
+   "id": "C0058",
+   "image": "assets/library/0058-x.jpg",
+   "title": "动漫人像",
+   "prompt": "anime portrait, detailed eyes, cel shading, beautiful lighting, high quality anime illustration",
+   "tags": [
+    "动漫人像",
+    "动漫"
+   ],
+   "author": "Anime Portrait Wallpaper",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/da6a438d-8473-4eb5-b44c-4d11a0497f45/original=true/94710060.jpeg"
+  },
+  {
+   "id": "C0059",
+   "image": "assets/library/0059-x.jpg",
+   "title": "动漫人像",
+   "prompt": "anime portrait, detailed eyes, cel shading, beautiful lighting, high quality anime illustration",
+   "tags": [
+    "动漫人像",
+    "动漫"
+   ],
+   "author": "Anime Portrait Wallpaper",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/46f8020b-6899-49c1-8410-a8ae6a2be441/original=true/94709623.jpeg"
+  },
+  {
+   "id": "C0060",
+   "image": "assets/library/0060-x.jpg",
+   "title": "Q版可爱",
+   "prompt": "chibi character, cute, big eyes, pastel colors, kawaii style, simple background, adorable",
+   "tags": [
+    "Q版可爱",
+    "动漫"
+   ],
+   "author": "Chibi Cute — Art Style (SDXL LoRA)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/cdcac07d-9411-430a-a407-8f6454cd6522/original=true/140092826.jpeg"
+  },
+  {
+   "id": "C0061",
+   "image": "assets/library/0061-x.jpg",
+   "title": "Q版可爱",
+   "prompt": "chibi character, cute, big eyes, pastel colors, kawaii style, simple background, adorable",
+   "tags": [
+    "Q版可爱",
+    "动漫"
+   ],
+   "author": "Chibi Cute — Art Style (SDXL LoRA)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/72f124b4-5dd0-4f11-8eea-3870fdf7a351/original=true/140092827.jpeg"
+  },
+  {
+   "id": "C0062",
+   "image": "assets/library/0062-x.jpg",
+   "title": "Q版可爱",
+   "prompt": "chibi character, cute, big eyes, pastel colors, kawaii style, simple background, adorable",
+   "tags": [
+    "Q版可爱",
+    "动漫"
+   ],
+   "author": "Chibi Cute — Art Style (SDXL LoRA)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/86c8d09d-2e1c-49f5-a645-553b0df27c63/original=true/140092830.jpeg"
+  },
+  {
+   "id": "C0063",
+   "image": "assets/library/0063-x.jpg",
+   "title": "Q版可爱",
+   "prompt": "chibi character, cute, big eyes, pastel colors, kawaii style, simple background, adorable",
+   "tags": [
+    "Q版可爱",
+    "动漫"
+   ],
+   "author": "Cute Chibi Style",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8ae70d60-6cf6-485c-8627-92c0e5232f62/original=true/88239844.jpeg"
+  },
+  {
+   "id": "C0064",
+   "image": "assets/library/0064-x.jpg",
+   "title": "漫画黑白",
+   "prompt": "manga style, black and white ink, screentone, dynamic linework, dramatic panel composition",
+   "tags": [
+    "漫画黑白",
+    "动漫"
+   ],
+   "author": "Train Heartnet from BLACK CAT (Kentaro Yabuki manga style)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/275d1dea-da64-44eb-87db-c1441855ae19/original=true/114736971.jpeg"
+  },
+  {
+   "id": "C0065",
+   "image": "assets/library/0065-x.jpg",
+   "title": "漫画黑白",
+   "prompt": "manga style, black and white ink, screentone, dynamic linework, dramatic panel composition",
+   "tags": [
+    "漫画黑白",
+    "动漫"
+   ],
+   "author": "Train Heartnet from BLACK CAT (Kentaro Yabuki manga style)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2e8330bd-cc8a-427f-9688-71b6b1e0d9cd/original=true/114742225.jpeg"
+  },
+  {
+   "id": "C0066",
+   "image": "assets/library/0066-x.jpg",
+   "title": "漫画黑白",
+   "prompt": "manga style, black and white ink, screentone, dynamic linework, dramatic panel composition",
+   "tags": [
+    "漫画黑白",
+    "动漫"
+   ],
+   "author": "Train Heartnet from BLACK CAT (Kentaro Yabuki manga style)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5a88469d-2763-422f-b21c-1b05d4af3b7b/original=true/114742229.jpeg"
+  },
+  {
+   "id": "C0067",
+   "image": "assets/library/0067-x.jpg",
+   "title": "漫画黑白",
+   "prompt": "manga style, black and white ink, screentone, dynamic linework, dramatic panel composition",
+   "tags": [
+    "漫画黑白",
+    "动漫"
+   ],
+   "author": "Train Heartnet from BLACK CAT (Kentaro Yabuki manga style)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/39cebb32-298a-41ce-a367-97e7e4912475/original=true/114743066.jpeg"
+  },
+  {
+   "id": "C0068",
+   "image": "assets/library/0068-x.jpg",
+   "title": "水彩",
+   "prompt": "watercolor painting, soft washes, paper texture, delicate brush strokes, airy composition, artistic",
+   "tags": [
+    "水彩",
+    "绘画"
+   ],
+   "author": "Watercolor painting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5fdb160c-f311-4bdc-a6f9-de464ebaa5ed/original=true/125103835.jpeg"
+  },
+  {
+   "id": "C0069",
+   "image": "assets/library/0069-x.jpg",
+   "title": "水彩",
+   "prompt": "watercolor painting, soft washes, paper texture, delicate brush strokes, airy composition, artistic",
+   "tags": [
+    "水彩",
+    "绘画"
+   ],
+   "author": "Watercolor painting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/12231ba5-1b1e-48f5-a186-553f97eb9fef/original=true/125103825.jpeg"
+  },
+  {
+   "id": "C0070",
+   "image": "assets/library/0070-x.jpg",
+   "title": "水彩",
+   "prompt": "watercolor painting, soft washes, paper texture, delicate brush strokes, airy composition, artistic",
+   "tags": [
+    "水彩",
+    "绘画"
+   ],
+   "author": "Watercolor painting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/565cc225-2070-429e-98d5-c9b3726370e4/original=true/125103848.jpeg"
+  },
+  {
+   "id": "C0071",
+   "image": "assets/library/0071-x.jpg",
+   "title": "水彩",
+   "prompt": "watercolor painting, soft washes, paper texture, delicate brush strokes, airy composition, artistic",
+   "tags": [
+    "水彩",
+    "绘画"
+   ],
+   "author": "Watercolor painting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/364ff16f-f714-48a7-9646-98964db5b9d4/original=true/125103851.jpeg"
+  },
+  {
+   "id": "C0072",
+   "image": "assets/library/0072-x.jpg",
+   "title": "油画",
+   "prompt": "oil painting, thick impasto brush strokes, classical composition, rich colors, canvas texture, masterpiece",
+   "tags": [
+    "油画",
+    "绘画"
+   ],
+   "author": "Oil painting(oil brush stroke) - 油画笔触",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9915af88-4648-4c18-916d-174957e06ecb/original=true/1116687.jpeg"
+  },
+  {
+   "id": "C0073",
+   "image": "assets/library/0073-x.jpg",
+   "title": "油画",
+   "prompt": "oil painting, thick impasto brush strokes, classical composition, rich colors, canvas texture, masterpiece",
+   "tags": [
+    "油画",
+    "绘画"
+   ],
+   "author": "Oil painting(oil brush stroke) - 油画笔触",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a4f71cbf-dd5b-4904-8889-ec1ad29ae066/original=true/1116690.jpeg"
+  },
+  {
+   "id": "C0074",
+   "image": "assets/library/0074-x.jpg",
+   "title": "油画",
+   "prompt": "oil painting, thick impasto brush strokes, classical composition, rich colors, canvas texture, masterpiece",
+   "tags": [
+    "油画",
+    "绘画"
+   ],
+   "author": "Oil painting(oil brush stroke) - 油画笔触",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/625534d1-a6b4-4df9-9c8c-7d43aaa81210/original=true/1116691.jpeg"
+  },
+  {
+   "id": "C0075",
+   "image": "assets/library/0075-x.jpg",
+   "title": "油画",
+   "prompt": "oil painting, thick impasto brush strokes, classical composition, rich colors, canvas texture, masterpiece",
+   "tags": [
+    "油画",
+    "绘画"
+   ],
+   "author": "Oil painting(oil brush stroke) - 油画笔触",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/fe83fce4-452e-4979-9e6e-51acf73c12e4/original=true/1116689.jpeg"
+  },
+  {
+   "id": "C0076",
+   "image": "assets/library/0076-x.jpg",
+   "title": "水墨 / 国画",
+   "prompt": "chinese ink wash painting, sumi-e, minimalist, flowing brush strokes, negative space, misty mountains",
+   "tags": [
+    "水墨 / 国画",
+    "绘画"
+   ],
+   "author": "水墨风格_ink wash painting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c414130f-e7a1-420f-81d6-8c3b47624853/original=true/4565484.jpeg"
+  },
+  {
+   "id": "C0077",
+   "image": "assets/library/0077-x.jpg",
+   "title": "水墨 / 国画",
+   "prompt": "chinese ink wash painting, sumi-e, minimalist, flowing brush strokes, negative space, misty mountains",
+   "tags": [
+    "水墨 / 国画",
+    "绘画"
+   ],
+   "author": "水墨风格_ink wash painting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d7468b81-e857-4b5f-956a-74a510eac0fe/original=true/4565483.jpeg"
+  },
+  {
+   "id": "C0078",
+   "image": "assets/library/0078-x.jpg",
+   "title": "水墨 / 国画",
+   "prompt": "chinese ink wash painting, sumi-e, minimalist, flowing brush strokes, negative space, misty mountains",
+   "tags": [
+    "水墨 / 国画",
+    "绘画"
+   ],
+   "author": "水墨风格_ink wash painting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/28231c1a-2335-446e-a287-63cc85828dd4/original=true/4565489.jpeg"
+  },
+  {
+   "id": "C0079",
+   "image": "assets/library/0079-x.jpg",
+   "title": "水墨 / 国画",
+   "prompt": "chinese ink wash painting, sumi-e, minimalist, flowing brush strokes, negative space, misty mountains",
+   "tags": [
+    "水墨 / 国画",
+    "绘画"
+   ],
+   "author": "水墨风格_ink wash painting",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8d793d59-295b-4180-966f-9180fbe27c36/original=true/4565485.jpeg"
+  },
+  {
+   "id": "C0080",
+   "image": "assets/library/0080-x.jpg",
+   "title": "国风古韵",
+   "prompt": "chinese traditional art, guofeng, elegant, ancient architecture, hanfu, delicate details, oriental aesthetic",
+   "tags": [
+    "国风古韵",
+    "绘画"
+   ],
+   "author": "chinese style illustration - 国风插画",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c29129ca-104a-473e-a13f-dc7a775c7978/original=true/1098575.jpeg"
+  },
+  {
+   "id": "C0081",
+   "image": "assets/library/0081-x.jpg",
+   "title": "国风古韵",
+   "prompt": "chinese traditional art, guofeng, elegant, ancient architecture, hanfu, delicate details, oriental aesthetic",
+   "tags": [
+    "国风古韵",
+    "绘画"
+   ],
+   "author": "chinese style illustration - 国风插画",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/38238f96-b296-48c3-b8ee-010ff95ff708/original=true/1098576.jpeg"
+  },
+  {
+   "id": "C0082",
+   "image": "assets/library/0082-x.jpg",
+   "title": "国风古韵",
+   "prompt": "chinese traditional art, guofeng, elegant, ancient architecture, hanfu, delicate details, oriental aesthetic",
+   "tags": [
+    "国风古韵",
+    "绘画"
+   ],
+   "author": "chinese style illustration - 国风插画",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/14ac74f3-bc30-4978-bd34-df075819dc32/original=true/1098572.jpeg"
+  },
+  {
+   "id": "C0083",
+   "image": "assets/library/0083-x.jpg",
+   "title": "国风古韵",
+   "prompt": "chinese traditional art, guofeng, elegant, ancient architecture, hanfu, delicate details, oriental aesthetic",
+   "tags": [
+    "国风古韵",
+    "绘画"
+   ],
+   "author": "chinese style illustration - 国风插画",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/66f52922-a69c-4773-b9d9-6e9553f974e5/original=true/1098574.jpeg"
+  },
+  {
+   "id": "C0084",
+   "image": "assets/library/0084-x.jpg",
+   "title": "浮世绘",
+   "prompt": "ukiyo-e woodblock print, edo period, flat colors, wave patterns, traditional japanese art, hokusai style",
+   "tags": [
+    "浮世绘",
+    "绘画"
+   ],
+   "author": "LEOSAM's [浮世絵/Ukiyo-e] 川瀬巴水 画风 Kawase Hasui Painting Style L",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1ab2ce1e-9630-40ba-af40-4084abf408d4/original=true/1231023.jpeg"
+  },
+  {
+   "id": "C0085",
+   "image": "assets/library/0085-x.jpg",
+   "title": "浮世绘",
+   "prompt": "ukiyo-e woodblock print, edo period, flat colors, wave patterns, traditional japanese art, hokusai style",
+   "tags": [
+    "浮世绘",
+    "绘画"
+   ],
+   "author": "LEOSAM's [浮世絵/Ukiyo-e] 川瀬巴水 画风 Kawase Hasui Painting Style L",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/cea0ba08-1dbe-4280-85e3-ea36e12ea2c0/original=true/1231037.jpeg"
+  },
+  {
+   "id": "C0086",
+   "image": "assets/library/0086-x.jpg",
+   "title": "浮世绘",
+   "prompt": "ukiyo-e woodblock print, edo period, flat colors, wave patterns, traditional japanese art, hokusai style",
+   "tags": [
+    "浮世绘",
+    "绘画"
+   ],
+   "author": "LEOSAM's [浮世絵/Ukiyo-e] 川瀬巴水 画风 Kawase Hasui Painting Style L",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/675db5dc-bef8-4211-896c-f8ee7f6f9112/original=true/1231054.jpeg"
+  },
+  {
+   "id": "C0087",
+   "image": "assets/library/0087-x.jpg",
+   "title": "浮世绘",
+   "prompt": "ukiyo-e woodblock print, edo period, flat colors, wave patterns, traditional japanese art, hokusai style",
+   "tags": [
+    "浮世绘",
+    "绘画"
+   ],
+   "author": "LEOSAM's [浮世絵/Ukiyo-e] 川瀬巴水 画风 Kawase Hasui Painting Style L",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/aa5832c3-9fb4-46c1-85d4-2d3723a8c62d/original=true/1231055.jpeg"
+  },
+  {
+   "id": "C0088",
+   "image": "assets/library/0088-x.jpg",
+   "title": "新艺术运动",
+   "prompt": "art nouveau poster, mucha style, ornate floral borders, elegant curves, muted gold palette, decorative",
+   "tags": [
+    "新艺术运动",
+    "绘画"
+   ],
+   "author": "Art Nouveau",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/93e081a2-70a7-4bb7-a07c-7d3d45f5293b/original=true/140594670.jpeg"
+  },
+  {
+   "id": "C0089",
+   "image": "assets/library/0089-x.jpg",
+   "title": "新艺术运动",
+   "prompt": "art nouveau poster, mucha style, ornate floral borders, elegant curves, muted gold palette, decorative",
+   "tags": [
+    "新艺术运动",
+    "绘画"
+   ],
+   "author": "Art Nouveau",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ac412c92-7675-42ee-819b-a37140fccdd3/original=true/140594671.jpeg"
+  },
+  {
+   "id": "C0090",
+   "image": "assets/library/0090-x.jpg",
+   "title": "新艺术运动",
+   "prompt": "art nouveau poster, mucha style, ornate floral borders, elegant curves, muted gold palette, decorative",
+   "tags": [
+    "新艺术运动",
+    "绘画"
+   ],
+   "author": "Art Nouveau",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/763c795d-7e92-46f3-8dcb-e6e328814935/original=true/140594675.jpeg"
+  },
+  {
+   "id": "C0091",
+   "image": "assets/library/0091-x.jpg",
+   "title": "新艺术运动",
+   "prompt": "art nouveau poster, mucha style, ornate floral borders, elegant curves, muted gold palette, decorative",
+   "tags": [
+    "新艺术运动",
+    "绘画"
+   ],
+   "author": "Art Nouveau",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/14051e96-a082-45e0-afce-5f9d72400173/original=true/140594674.jpeg"
+  },
+  {
+   "id": "C0092",
+   "image": "assets/library/0092-x.jpg",
+   "title": "装饰艺术",
+   "prompt": "art deco design, geometric patterns, gold and black, symmetrical, 1920s gatsby luxury, elegant",
+   "tags": [
+    "装饰艺术",
+    "绘画"
+   ],
+   "author": "Art Deco Posters SDXL (Concept)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0246aa43-9bbd-441a-86f0-226e9db13020/original=true/9416308.jpeg"
+  },
+  {
+   "id": "C0093",
+   "image": "assets/library/0093-x.jpg",
+   "title": "装饰艺术",
+   "prompt": "art deco design, geometric patterns, gold and black, symmetrical, 1920s gatsby luxury, elegant",
+   "tags": [
+    "装饰艺术",
+    "绘画"
+   ],
+   "author": "Art Deco Posters SDXL (Concept)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9f662493-9369-478a-8671-99a73a2c2495/original=true/9416320.jpeg"
+  },
+  {
+   "id": "C0094",
+   "image": "assets/library/0094-x.jpg",
+   "title": "装饰艺术",
+   "prompt": "art deco design, geometric patterns, gold and black, symmetrical, 1920s gatsby luxury, elegant",
+   "tags": [
+    "装饰艺术",
+    "绘画"
+   ],
+   "author": "Art Deco Posters SDXL (Concept)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9ba264d8-941b-428f-9a0f-f51957d0319c/original=true/9416310.jpeg"
+  },
+  {
+   "id": "C0095",
+   "image": "assets/library/0095-x.jpg",
+   "title": "装饰艺术",
+   "prompt": "art deco design, geometric patterns, gold and black, symmetrical, 1920s gatsby luxury, elegant",
+   "tags": [
+    "装饰艺术",
+    "绘画"
+   ],
+   "author": "Art Deco Posters SDXL (Concept)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/164560c8-caf0-4886-ac29-09cdfb7cf753/original=true/9416313.jpeg"
+  },
+  {
+   "id": "C0096",
+   "image": "assets/library/0096-x.jpg",
+   "title": "印象派",
+   "prompt": "impressionist painting, monet style, loose brushwork, dappled light, plein air, soft pastel colors",
+   "tags": [
+    "印象派",
+    "绘画"
+   ],
+   "author": "Impressionism (Oil painting)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c3c649ad-e77c-47ad-98c4-c31965764233/original=true/836396.jpeg"
+  },
+  {
+   "id": "C0097",
+   "image": "assets/library/0097-x.jpg",
+   "title": "印象派",
+   "prompt": "impressionist painting, monet style, loose brushwork, dappled light, plein air, soft pastel colors",
+   "tags": [
+    "印象派",
+    "绘画"
+   ],
+   "author": "Impressionism (Oil painting)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f45da5ec-a7e7-4e4b-b6b6-e4a3b67d5953/original=true/836738.jpeg"
+  },
+  {
+   "id": "C0098",
+   "image": "assets/library/0098-x.jpg",
+   "title": "印象派",
+   "prompt": "impressionist painting, monet style, loose brushwork, dappled light, plein air, soft pastel colors",
+   "tags": [
+    "印象派",
+    "绘画"
+   ],
+   "author": "Impressionism (Oil painting)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/48c04fbd-c73e-450d-9ddc-dc56cd236fb1/original=true/836301.jpeg"
+  },
+  {
+   "id": "C0099",
+   "image": "assets/library/0099-x.jpg",
+   "title": "印象派",
+   "prompt": "impressionist painting, monet style, loose brushwork, dappled light, plein air, soft pastel colors",
+   "tags": [
+    "印象派",
+    "绘画"
+   ],
+   "author": "Impressionism (Oil painting)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c904d23d-72b0-483d-a21f-132421b3d7c4/original=true/835926.jpeg"
+  },
+  {
+   "id": "C0100",
+   "image": "assets/library/0100-x.jpg",
+   "title": "超现实",
+   "prompt": "surrealism, dali inspired, dreamlike scene, impossible geometry, melting objects, imaginative, fine art",
+   "tags": [
+    "超现实",
+    "绘画"
+   ],
+   "author": "SurrealismAI LoRA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0e6879e0-95cd-4c32-8bc5-f95d2b9efe00/original=true/601407.jpeg"
+  },
+  {
+   "id": "C0101",
+   "image": "assets/library/0101-x.jpg",
+   "title": "超现实",
+   "prompt": "surrealism, dali inspired, dreamlike scene, impossible geometry, melting objects, imaginative, fine art",
+   "tags": [
+    "超现实",
+    "绘画"
+   ],
+   "author": "SurrealismAI LoRA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a2b534c6-4414-4c58-0e8c-b77d088f8900/original=true/601408.jpeg"
+  },
+  {
+   "id": "C0102",
+   "image": "assets/library/0102-x.jpg",
+   "title": "超现实",
+   "prompt": "surrealism, dali inspired, dreamlike scene, impossible geometry, melting objects, imaginative, fine art",
+   "tags": [
+    "超现实",
+    "绘画"
+   ],
+   "author": "SurrealismAI LoRA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ca362745-92a0-4706-11f0-19a286023e00/original=true/601406.jpeg"
+  },
+  {
+   "id": "C0103",
+   "image": "assets/library/0103-x.jpg",
+   "title": "超现实",
+   "prompt": "surrealism, dali inspired, dreamlike scene, impossible geometry, melting objects, imaginative, fine art",
+   "tags": [
+    "超现实",
+    "绘画"
+   ],
+   "author": "Surrealism + Juxtapose style XL + F1D + Illu + Pony + zib",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/63eb96ef-988d-4dc8-b73e-2776eb10b2c9/original=true/131002916.jpeg"
+  },
+  {
+   "id": "C0104",
+   "image": "assets/library/0104-x.jpg",
+   "title": "波普艺术",
+   "prompt": "pop art style, andy warhol, bold primary colors, halftone dots, comic style, high contrast",
+   "tags": [
+    "波普艺术",
+    "绘画"
+   ],
+   "author": "pop art",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a70ea8c0-3ee5-4e1b-9353-60a2cbd4e8fa/original=true/3020300.jpeg"
+  },
+  {
+   "id": "C0105",
+   "image": "assets/library/0105-x.jpg",
+   "title": "波普艺术",
+   "prompt": "pop art style, andy warhol, bold primary colors, halftone dots, comic style, high contrast",
+   "tags": [
+    "波普艺术",
+    "绘画"
+   ],
+   "author": "pop art",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e9c008c5-33b7-4553-949f-f71504b38e51/original=true/3020311.jpeg"
+  },
+  {
+   "id": "C0106",
+   "image": "assets/library/0106-x.jpg",
+   "title": "波普艺术",
+   "prompt": "pop art style, andy warhol, bold primary colors, halftone dots, comic style, high contrast",
+   "tags": [
+    "波普艺术",
+    "绘画"
+   ],
+   "author": "pop art",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3056858d-03df-4cef-8bd2-3eecef9edb00/original=true/3020305.jpeg"
+  },
+  {
+   "id": "C0107",
+   "image": "assets/library/0107-x.jpg",
+   "title": "波普艺术",
+   "prompt": "pop art style, andy warhol, bold primary colors, halftone dots, comic style, high contrast",
+   "tags": [
+    "波普艺术",
+    "绘画"
+   ],
+   "author": "pop art",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9c8df7f0-7a1e-4360-96f1-7eaa0b5f3b64/original=true/3020310.jpeg"
+  },
+  {
+   "id": "C0108",
+   "image": "assets/library/0108-x.jpg",
+   "title": "像素风",
+   "prompt": "pixel art, 16-bit retro game style, crisp pixels, limited palette, isometric sprite, nostalgic",
+   "tags": [
+    "像素风",
+    "设计感"
+   ],
+   "author": "Pixel Art XL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0770e5fc-4260-4e3c-a0ee-bf2253028e9f/original=true/1918193.jpeg"
+  },
+  {
+   "id": "C0109",
+   "image": "assets/library/0109-x.jpg",
+   "title": "像素风",
+   "prompt": "pixel art, 16-bit retro game style, crisp pixels, limited palette, isometric sprite, nostalgic",
+   "tags": [
+    "像素风",
+    "设计感"
+   ],
+   "author": "Pixel Art XL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/684efffb-c290-4e5b-b0be-90b3e7234a89/original=true/1918242.jpeg"
+  },
+  {
+   "id": "C0110",
+   "image": "assets/library/0110-x.jpg",
+   "title": "像素风",
+   "prompt": "pixel art, 16-bit retro game style, crisp pixels, limited palette, isometric sprite, nostalgic",
+   "tags": [
+    "像素风",
+    "设计感"
+   ],
+   "author": "Pixel Art XL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6c54e73b-ee6f-4ca4-b683-f6aa619894c1/original=true/1918331.jpeg"
+  },
+  {
+   "id": "C0111",
+   "image": "assets/library/0111-x.jpg",
+   "title": "像素风",
+   "prompt": "pixel art, 16-bit retro game style, crisp pixels, limited palette, isometric sprite, nostalgic",
+   "tags": [
+    "像素风",
+    "设计感"
+   ],
+   "author": "Pixel Art XL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/21af48d8-0538-4065-bba2-385e4b189d90/original=true/1918359.jpeg"
+  },
+  {
+   "id": "C0112",
+   "image": "assets/library/0112-x.jpg",
+   "title": "低多边形",
+   "prompt": "low poly 3d render, geometric shapes, flat shading, minimalist color palette, clean design",
+   "tags": [
+    "低多边形",
+    "设计感"
+   ],
+   "author": "Low Poly PS1 / PSX Render - Style IllustriousXL - Noob LORA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7ae14ff3-8012-49af-a583-51b36ad7c7c4/original=true/77338464.jpeg"
+  },
+  {
+   "id": "C0113",
+   "image": "assets/library/0113-x.jpg",
+   "title": "低多边形",
+   "prompt": "low poly 3d render, geometric shapes, flat shading, minimalist color palette, clean design",
+   "tags": [
+    "低多边形",
+    "设计感"
+   ],
+   "author": "Low Poly PS1 / PSX Render - Style IllustriousXL - Noob LORA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/de8b6a88-b029-4d3d-a91a-74575a997fe2/original=true/77338460.jpeg"
+  },
+  {
+   "id": "C0114",
+   "image": "assets/library/0114-x.jpg",
+   "title": "低多边形",
+   "prompt": "low poly 3d render, geometric shapes, flat shading, minimalist color palette, clean design",
+   "tags": [
+    "低多边形",
+    "设计感"
+   ],
+   "author": "Low Poly PS1 / PSX Render - Style IllustriousXL - Noob LORA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0f0da584-c3e1-4a85-a199-7d9810cf3ece/original=true/77338462.jpeg"
+  },
+  {
+   "id": "C0115",
+   "image": "assets/library/0115-x.jpg",
+   "title": "低多边形",
+   "prompt": "low poly 3d render, geometric shapes, flat shading, minimalist color palette, clean design",
+   "tags": [
+    "低多边形",
+    "设计感"
+   ],
+   "author": "Low Poly PS1 / PSX Render - Style IllustriousXL - Noob LORA",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f7c22a56-4b3b-4c38-afcd-ab18627f5fea/original=true/77338465.jpeg"
+  },
+  {
+   "id": "C0116",
+   "image": "assets/library/0116-x.jpg",
+   "title": "等距视角",
+   "prompt": "isometric illustration, 45 degree view, diorama, cute miniature world, clean vector style, detailed",
+   "tags": [
+    "等距视角",
+    "设计感"
+   ],
+   "author": "Stylized Setting (Isometric) SDXL & SD1.5",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b11a37d1-4cb1-47da-8b34-64633e428de5/original=true/5179048.jpeg"
+  },
+  {
+   "id": "C0117",
+   "image": "assets/library/0117-x.jpg",
+   "title": "等距视角",
+   "prompt": "isometric illustration, 45 degree view, diorama, cute miniature world, clean vector style, detailed",
+   "tags": [
+    "等距视角",
+    "设计感"
+   ],
+   "author": "Stylized Setting (Isometric) SDXL & SD1.5",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/69ce0a7e-6cbc-4a1e-8df3-d3043005029d/original=true/5179052.jpeg"
+  },
+  {
+   "id": "C0118",
+   "image": "assets/library/0118-x.jpg",
+   "title": "等距视角",
+   "prompt": "isometric illustration, 45 degree view, diorama, cute miniature world, clean vector style, detailed",
+   "tags": [
+    "等距视角",
+    "设计感"
+   ],
+   "author": "Stylized Setting (Isometric) SDXL & SD1.5",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ab320ee0-2457-426e-b806-bb43a12e194e/original=true/5179053.jpeg"
+  },
+  {
+   "id": "C0119",
+   "image": "assets/library/0119-x.jpg",
+   "title": "等距视角",
+   "prompt": "isometric illustration, 45 degree view, diorama, cute miniature world, clean vector style, detailed",
+   "tags": [
+    "等距视角",
+    "设计感"
+   ],
+   "author": "Stylized Setting (Isometric) SDXL & SD1.5",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/36374b96-8d62-4e65-9bfd-748da435e3b4/original=true/5179054.jpeg"
+  },
+  {
+   "id": "C0120",
+   "image": "assets/library/0120-x.jpg",
+   "title": "黏土定格",
+   "prompt": "claymation style, clay render, stop motion aesthetic, handmade texture, soft studio lighting, charming",
+   "tags": [
+    "黏土定格",
+    "设计感"
+   ],
+   "author": "CLAYMATE - Claymation Style for SDXL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9d87f5fe-a355-4dd0-b3a2-96c281c635f2/original=true/3857714.jpeg"
+  },
+  {
+   "id": "C0121",
+   "image": "assets/library/0121-x.jpg",
+   "title": "黏土定格",
+   "prompt": "claymation style, clay render, stop motion aesthetic, handmade texture, soft studio lighting, charming",
+   "tags": [
+    "黏土定格",
+    "设计感"
+   ],
+   "author": "CLAYMATE - Claymation Style for SDXL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/16bc2b66-0e0f-4ad3-aad4-8846720aad32/original=true/3857712.jpeg"
+  },
+  {
+   "id": "C0122",
+   "image": "assets/library/0122-x.jpg",
+   "title": "黏土定格",
+   "prompt": "claymation style, clay render, stop motion aesthetic, handmade texture, soft studio lighting, charming",
+   "tags": [
+    "黏土定格",
+    "设计感"
+   ],
+   "author": "CLAYMATE - Claymation Style for SDXL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c84a138f-2ef5-4e39-8f81-f9bb9f5bbcb4/original=true/3857711.jpeg"
+  },
+  {
+   "id": "C0123",
+   "image": "assets/library/0123-x.jpg",
+   "title": "黏土定格",
+   "prompt": "claymation style, clay render, stop motion aesthetic, handmade texture, soft studio lighting, charming",
+   "tags": [
+    "黏土定格",
+    "设计感"
+   ],
+   "author": "CLAYMATE - Claymation Style for SDXL",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a77b447d-1b7a-4d1d-971c-2f43edf9e316/original=true/3857685.jpeg"
+  },
+  {
+   "id": "C0124",
+   "image": "assets/library/0124-x.jpg",
+   "title": "剪纸层叠",
+   "prompt": "layered paper cut art, papercraft diorama, depth of layers, soft shadows, craft aesthetic",
+   "tags": [
+    "剪纸层叠",
+    "设计感"
+   ],
+   "author": "Layered Paper Cut",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/55601d9d-ae45-431e-85f0-228a7c8d82ce/original=true/11728295.jpeg"
+  },
+  {
+   "id": "C0125",
+   "image": "assets/library/0125-x.jpg",
+   "title": "剪纸层叠",
+   "prompt": "layered paper cut art, papercraft diorama, depth of layers, soft shadows, craft aesthetic",
+   "tags": [
+    "剪纸层叠",
+    "设计感"
+   ],
+   "author": "Layered Paper Cut",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6a4b5a81-c556-484b-a3e2-5ef085f65297/original=true/11728320.jpeg"
+  },
+  {
+   "id": "C0126",
+   "image": "assets/library/0126-x.jpg",
+   "title": "剪纸层叠",
+   "prompt": "layered paper cut art, papercraft diorama, depth of layers, soft shadows, craft aesthetic",
+   "tags": [
+    "剪纸层叠",
+    "设计感"
+   ],
+   "author": "Layered Paper Cut",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/59d1b90f-b6e6-4d26-9723-ed2e43d4b271/original=true/11728340.jpeg"
+  },
+  {
+   "id": "C0127",
+   "image": "assets/library/0127-x.jpg",
+   "title": "剪纸层叠",
+   "prompt": "layered paper cut art, papercraft diorama, depth of layers, soft shadows, craft aesthetic",
+   "tags": [
+    "剪纸层叠",
+    "设计感"
+   ],
+   "author": "Layered Paper Cut",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7848ced3-10c4-4ba9-8eb3-ca2d5f961d8f/original=true/11728368.jpeg"
+  },
+  {
+   "id": "C0128",
+   "image": "assets/library/0128-x.jpg",
+   "title": "彩绘玻璃",
+   "prompt": "stained glass window, leaded glass, vibrant translucent colors, gothic pattern, light shining through",
+   "tags": [
+    "彩绘玻璃",
+    "设计感"
+   ],
+   "author": "Stained Glass Portrait",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/893b7f6b-3ef4-4ae5-b819-9e54506758b9/original=true/2332287.jpeg"
+  },
+  {
+   "id": "C0129",
+   "image": "assets/library/0129-x.jpg",
+   "title": "彩绘玻璃",
+   "prompt": "stained glass window, leaded glass, vibrant translucent colors, gothic pattern, light shining through",
+   "tags": [
+    "彩绘玻璃",
+    "设计感"
+   ],
+   "author": "Stained Glass Portrait",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c9c6bd57-828f-45f6-8dd7-f564e08636b3/original=true/2332284.jpeg"
+  },
+  {
+   "id": "C0130",
+   "image": "assets/library/0130-x.jpg",
+   "title": "彩绘玻璃",
+   "prompt": "stained glass window, leaded glass, vibrant translucent colors, gothic pattern, light shining through",
+   "tags": [
+    "彩绘玻璃",
+    "设计感"
+   ],
+   "author": "Stained Glass Portrait",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/58252609-8cda-4c19-bbb7-82244f56b9b0/original=true/2332245.jpeg"
+  },
+  {
+   "id": "C0131",
+   "image": "assets/library/0131-x.jpg",
+   "title": "彩绘玻璃",
+   "prompt": "stained glass window, leaded glass, vibrant translucent colors, gothic pattern, light shining through",
+   "tags": [
+    "彩绘玻璃",
+    "设计感"
+   ],
+   "author": "Stained Glass Portrait",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8ecec4fe-7642-40b7-b642-ada17fab8e92/original=true/2332220.jpeg"
+  },
+  {
+   "id": "C0132",
+   "image": "assets/library/0132-x.jpg",
+   "title": "线稿",
+   "prompt": "clean line art, minimal linework, single weight lines, elegant simplicity, white background, illustration",
+   "tags": [
+    "线稿",
+    "设计感"
+   ],
+   "author": "Line Art + Flat Colors",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3a0be6f9-1466-4106-b3cc-f1092858c809/original=true/2195293.jpeg"
+  },
+  {
+   "id": "C0133",
+   "image": "assets/library/0133-x.jpg",
+   "title": "线稿",
+   "prompt": "clean line art, minimal linework, single weight lines, elegant simplicity, white background, illustration",
+   "tags": [
+    "线稿",
+    "设计感"
+   ],
+   "author": "Line Art + Flat Colors",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/94bf69c5-219c-4b96-9767-0fa87df827fd/original=true/2195286.jpeg"
+  },
+  {
+   "id": "C0134",
+   "image": "assets/library/0134-x.jpg",
+   "title": "线稿",
+   "prompt": "clean line art, minimal linework, single weight lines, elegant simplicity, white background, illustration",
+   "tags": [
+    "线稿",
+    "设计感"
+   ],
+   "author": "Line Art + Flat Colors",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f601ecf1-1cdc-4ac3-814d-b156d6ded5a2/original=true/2195282.jpeg"
+  },
+  {
+   "id": "C0135",
+   "image": "assets/library/0135-x.jpg",
+   "title": "线稿",
+   "prompt": "clean line art, minimal linework, single weight lines, elegant simplicity, white background, illustration",
+   "tags": [
+    "线稿",
+    "设计感"
+   ],
+   "author": "Line Art + Flat Colors",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3da43149-4155-497e-9468-5674d9843d41/original=true/2195273.jpeg"
+  },
+  {
+   "id": "C0136",
+   "image": "assets/library/0136-x.jpg",
+   "title": "扁平插画",
+   "prompt": "flat design illustration, simple shapes, limited color palette, modern vector art, minimal shading",
+   "tags": [
+    "扁平插画",
+    "设计感"
+   ],
+   "author": "flat illustration",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f579bf21-2d02-4872-6023-83842062e300/original=true/249378.jpeg"
+  },
+  {
+   "id": "C0137",
+   "image": "assets/library/0137-x.jpg",
+   "title": "扁平插画",
+   "prompt": "flat design illustration, simple shapes, limited color palette, modern vector art, minimal shading",
+   "tags": [
+    "扁平插画",
+    "设计感"
+   ],
+   "author": "flat illustration",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7164e10f-343d-49ee-f246-78fda5184600/original=true/244895.jpeg"
+  },
+  {
+   "id": "C0138",
+   "image": "assets/library/0138-x.jpg",
+   "title": "扁平插画",
+   "prompt": "flat design illustration, simple shapes, limited color palette, modern vector art, minimal shading",
+   "tags": [
+    "扁平插画",
+    "设计感"
+   ],
+   "author": "flat illustration",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/513e7711-e389-4ff9-9fc7-87ea22831f00/original=true/244891.jpeg"
+  },
+  {
+   "id": "C0139",
+   "image": "assets/library/0139-x.jpg",
+   "title": "扁平插画",
+   "prompt": "flat design illustration, simple shapes, limited color palette, modern vector art, minimal shading",
+   "tags": [
+    "扁平插画",
+    "设计感"
+   ],
+   "author": "flat illustration",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ca127b45-9ef1-482d-afd0-68768397ea00/original=true/244887.jpeg"
+  },
+  {
+   "id": "C0140",
+   "image": "assets/library/0140-x.jpg",
+   "title": "双重曝光",
+   "prompt": "double exposure, portrait blended with landscape, artistic overlay, ethereal, creative photography",
+   "tags": [
+    "双重曝光",
+    "摄影感"
+   ],
+   "author": "Double Exposure",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/dccb96fb-d0a2-4a52-b7ba-240e399e41f2/original=true/3354532.jpeg"
+  },
+  {
+   "id": "C0141",
+   "image": "assets/library/0141-x.jpg",
+   "title": "双重曝光",
+   "prompt": "double exposure, portrait blended with landscape, artistic overlay, ethereal, creative photography",
+   "tags": [
+    "双重曝光",
+    "摄影感"
+   ],
+   "author": "Double Exposure",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/eee696e4-6bef-4d5c-a405-9a8534ee1c61/original=true/3354530.jpeg"
+  },
+  {
+   "id": "C0142",
+   "image": "assets/library/0142-x.jpg",
+   "title": "双重曝光",
+   "prompt": "double exposure, portrait blended with landscape, artistic overlay, ethereal, creative photography",
+   "tags": [
+    "双重曝光",
+    "摄影感"
+   ],
+   "author": "Double Exposure",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/73cbf0e8-4654-4800-bd85-0858820300d6/original=true/3354529.jpeg"
+  },
+  {
+   "id": "C0143",
+   "image": "assets/library/0143-x.jpg",
+   "title": "双重曝光",
+   "prompt": "double exposure, portrait blended with landscape, artistic overlay, ethereal, creative photography",
+   "tags": [
+    "双重曝光",
+    "摄影感"
+   ],
+   "author": "Double Exposure",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7fcea414-5d83-442e-ab42-7f87eef0f9ac/original=true/3354527.jpeg"
+  },
+  {
+   "id": "C0144",
+   "image": "assets/library/0144-x.jpg",
+   "title": "长曝光",
+   "prompt": "long exposure photography, light trails, silky water, motion blur, night scene, tripod shot",
+   "tags": [
+    "长曝光",
+    "摄影感"
+   ],
+   "author": "Long Exposure Style [FLUX+SDXL]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/cc827299-4192-4978-aa9b-8b406b67b36b/original=true/31727585.jpeg"
+  },
+  {
+   "id": "C0145",
+   "image": "assets/library/0145-x.jpg",
+   "title": "长曝光",
+   "prompt": "long exposure photography, light trails, silky water, motion blur, night scene, tripod shot",
+   "tags": [
+    "长曝光",
+    "摄影感"
+   ],
+   "author": "Long Exposure Style [FLUX+SDXL]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0ba40607-c8f4-4705-9393-c21044938525/original=true/31727589.jpeg"
+  },
+  {
+   "id": "C0146",
+   "image": "assets/library/0146-x.jpg",
+   "title": "长曝光",
+   "prompt": "long exposure photography, light trails, silky water, motion blur, night scene, tripod shot",
+   "tags": [
+    "长曝光",
+    "摄影感"
+   ],
+   "author": "Long Exposure Style [FLUX+SDXL]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1d215080-5e6a-4671-b038-d154abe74eb0/original=true/31727577.jpeg"
+  },
+  {
+   "id": "C0147",
+   "image": "assets/library/0147-x.jpg",
+   "title": "长曝光",
+   "prompt": "long exposure photography, light trails, silky water, motion blur, night scene, tripod shot",
+   "tags": [
+    "长曝光",
+    "摄影感"
+   ],
+   "author": "Long Exposure Style [FLUX+SDXL]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ca4791f0-7492-412f-8f90-99a561895d6f/original=true/31727581.jpeg"
+  },
+  {
+   "id": "C0148",
+   "image": "assets/library/0148-x.jpg",
+   "title": "微距",
+   "prompt": "macro photography, extreme close up, shallow depth of field, dew drops, intricate detail, bokeh",
+   "tags": [
+    "微距",
+    "摄影感"
+   ],
+   "author": "Macro Photography slider",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9a4bdec3-6a3b-43fd-aa91-98c908c9614e/original=true/3929176.jpeg"
+  },
+  {
+   "id": "C0149",
+   "image": "assets/library/0149-x.jpg",
+   "title": "微距",
+   "prompt": "macro photography, extreme close up, shallow depth of field, dew drops, intricate detail, bokeh",
+   "tags": [
+    "微距",
+    "摄影感"
+   ],
+   "author": "Macro Photography slider",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/4ea5bfc9-9466-4b6d-b32e-dae107b8806b/original=true/3929125.jpeg"
+  },
+  {
+   "id": "C0150",
+   "image": "assets/library/0150-x.jpg",
+   "title": "微距",
+   "prompt": "macro photography, extreme close up, shallow depth of field, dew drops, intricate detail, bokeh",
+   "tags": [
+    "微距",
+    "摄影感"
+   ],
+   "author": "Macro Photography slider",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1a2047e5-ed61-4ad3-80cc-37c707b19228/original=true/3929117.jpeg"
+  },
+  {
+   "id": "C0151",
+   "image": "assets/library/0151-x.jpg",
+   "title": "微距",
+   "prompt": "macro photography, extreme close up, shallow depth of field, dew drops, intricate detail, bokeh",
+   "tags": [
+    "微距",
+    "摄影感"
+   ],
+   "author": "Macro Photography slider",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9188f06e-f311-428e-ac5a-7c56c8e37e4a/original=true/3929137.jpeg"
+  },
+  {
+   "id": "C0152",
+   "image": "assets/library/0152-x.jpg",
+   "title": "航拍",
+   "prompt": "aerial drone photography, top down view, geometric landscape patterns, vast scale, golden light",
+   "tags": [
+    "航拍",
+    "摄影感"
+   ],
+   "author": "girl like aerial drone",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2eeb1950-5694-4f14-b4e6-9780fa1a72d1/original=true/49475987.jpeg"
+  },
+  {
+   "id": "C0153",
+   "image": "assets/library/0153-x.jpg",
+   "title": "航拍",
+   "prompt": "aerial drone photography, top down view, geometric landscape patterns, vast scale, golden light",
+   "tags": [
+    "航拍",
+    "摄影感"
+   ],
+   "author": "girl like aerial drone",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/69a0f33c-7ed0-464c-92e2-ac198ba89150/original=true/49476575.jpeg"
+  },
+  {
+   "id": "C0154",
+   "image": "assets/library/0154-x.jpg",
+   "title": "航拍",
+   "prompt": "aerial drone photography, top down view, geometric landscape patterns, vast scale, golden light",
+   "tags": [
+    "航拍",
+    "摄影感"
+   ],
+   "author": "girl like aerial drone",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ddaf5998-86b3-4402-ba7e-b6379e7916ef/original=true/49476137.jpeg"
+  },
+  {
+   "id": "C0155",
+   "image": "assets/library/0155-x.jpg",
+   "title": "航拍",
+   "prompt": "aerial drone photography, top down view, geometric landscape patterns, vast scale, golden light",
+   "tags": [
+    "航拍",
+    "摄影感"
+   ],
+   "author": "girl like aerial drone",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6454ad92-68a2-4128-8d06-cfd963090823/original=true/49476271.jpeg"
+  },
+  {
+   "id": "C0156",
+   "image": "assets/library/0156-x.jpg",
+   "title": "街头摄影",
+   "prompt": "street photography, candid moment, urban life, natural light, decisive moment, documentary style",
+   "tags": [
+    "街头摄影",
+    "摄影感"
+   ],
+   "author": "Streets - Street Photography",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/fb965f3b-1356-4bcd-8d29-728283ea23c8/original=true/25067336.jpeg"
+  },
+  {
+   "id": "C0157",
+   "image": "assets/library/0157-x.jpg",
+   "title": "街头摄影",
+   "prompt": "street photography, candid moment, urban life, natural light, decisive moment, documentary style",
+   "tags": [
+    "街头摄影",
+    "摄影感"
+   ],
+   "author": "Streets - Street Photography",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6eff2eff-949f-4c27-ba10-014b6eed9494/original=true/25067334.jpeg"
+  },
+  {
+   "id": "C0158",
+   "image": "assets/library/0158-x.jpg",
+   "title": "街头摄影",
+   "prompt": "street photography, candid moment, urban life, natural light, decisive moment, documentary style",
+   "tags": [
+    "街头摄影",
+    "摄影感"
+   ],
+   "author": "Streets - Street Photography",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/02ee5eb8-7b5d-4c18-b544-bc55222cab16/original=true/25067356.jpeg"
+  },
+  {
+   "id": "C0159",
+   "image": "assets/library/0159-x.jpg",
+   "title": "街头摄影",
+   "prompt": "street photography, candid moment, urban life, natural light, decisive moment, documentary style",
+   "tags": [
+    "街头摄影",
+    "摄影感"
+   ],
+   "author": "Streets - Street Photography",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2c5d42e9-250f-491e-8e05-1e7d511c7d23/original=true/25067333.jpeg"
+  },
+  {
+   "id": "C0160",
+   "image": "assets/library/0160-x.jpg",
+   "title": "人像摄影",
+   "prompt": "studio portrait photography, softbox lighting, sharp eyes, skin texture, professional headshot, bokeh background",
+   "tags": [
+    "人像摄影",
+    "摄影感"
+   ],
+   "author": "Portrait Photography",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2c71aaea-abcd-43d4-b400-84f1a0c83ae0/original=true/95775529.jpeg"
+  },
+  {
+   "id": "C0161",
+   "image": "assets/library/0161-x.jpg",
+   "title": "人像摄影",
+   "prompt": "studio portrait photography, softbox lighting, sharp eyes, skin texture, professional headshot, bokeh background",
+   "tags": [
+    "人像摄影",
+    "摄影感"
+   ],
+   "author": "Portrait Photography",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d0a6a55a-036d-4b5a-af12-52c0b533e930/original=true/95775538.jpeg"
+  },
+  {
+   "id": "C0162",
+   "image": "assets/library/0162-x.jpg",
+   "title": "人像摄影",
+   "prompt": "studio portrait photography, softbox lighting, sharp eyes, skin texture, professional headshot, bokeh background",
+   "tags": [
+    "人像摄影",
+    "摄影感"
+   ],
+   "author": "Portrait Photography",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/803b022a-7e60-45b8-a548-b4aa5b6f3790/original=true/95775536.jpeg"
+  },
+  {
+   "id": "C0163",
+   "image": "assets/library/0163-x.jpg",
+   "title": "人像摄影",
+   "prompt": "studio portrait photography, softbox lighting, sharp eyes, skin texture, professional headshot, bokeh background",
+   "tags": [
+    "人像摄影",
+    "摄影感"
+   ],
+   "author": "Portrait Photography:",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7e1a00df-d0d4-4d6e-94c3-073211901d62/original=true/96579955.jpeg"
+  },
+  {
+   "id": "C0164",
+   "image": "assets/library/0164-x.jpg",
+   "title": "黑白摄影",
+   "prompt": "black and white photography, high contrast, fine art, dramatic light, timeless composition, ansel adams style",
+   "tags": [
+    "黑白摄影",
+    "摄影感"
+   ],
+   "author": "black and white photo slider",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/91c945a0-ba7f-4b25-9e93-cd27110a082f/original=true/3723306.jpeg"
+  },
+  {
+   "id": "C0165",
+   "image": "assets/library/0165-x.jpg",
+   "title": "黑白摄影",
+   "prompt": "black and white photography, high contrast, fine art, dramatic light, timeless composition, ansel adams style",
+   "tags": [
+    "黑白摄影",
+    "摄影感"
+   ],
+   "author": "black and white photo slider",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3f706c48-1a9b-4f74-b419-44c1c79bae70/original=true/3723321.jpeg"
+  },
+  {
+   "id": "C0166",
+   "image": "assets/library/0166-x.jpg",
+   "title": "黑白摄影",
+   "prompt": "black and white photography, high contrast, fine art, dramatic light, timeless composition, ansel adams style",
+   "tags": [
+    "黑白摄影",
+    "摄影感"
+   ],
+   "author": "black and white photo slider",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/28354da6-8ae5-40cf-8468-26e81b7a2719/original=true/3723322.jpeg"
+  },
+  {
+   "id": "C0167",
+   "image": "assets/library/0167-x.jpg",
+   "title": "黑白摄影",
+   "prompt": "black and white photography, high contrast, fine art, dramatic light, timeless composition, ansel adams style",
+   "tags": [
+    "黑白摄影",
+    "摄影感"
+   ],
+   "author": "black and white photo slider",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7a61b4e8-f21f-4057-bb84-b597f9f261bd/original=true/3723303.jpeg"
+  },
+  {
+   "id": "C0168",
+   "image": "assets/library/0168-x.jpg",
+   "title": "移轴微缩",
+   "prompt": "tilt shift photography, miniature effect, selective focus, toy town aesthetic, aerial view",
+   "tags": [
+    "移轴微缩",
+    "摄影感"
+   ],
+   "author": "tilt-shift",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f2c03e0e-8a81-47da-b372-1a685542c0d5/original=true/3627053.jpeg"
+  },
+  {
+   "id": "C0169",
+   "image": "assets/library/0169-x.jpg",
+   "title": "移轴微缩",
+   "prompt": "tilt shift photography, miniature effect, selective focus, toy town aesthetic, aerial view",
+   "tags": [
+    "移轴微缩",
+    "摄影感"
+   ],
+   "author": "tilt-shift",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5e926d34-bede-42c4-8400-4c8042cd7649/original=true/3627047.jpeg"
+  },
+  {
+   "id": "C0170",
+   "image": "assets/library/0170-x.jpg",
+   "title": "移轴微缩",
+   "prompt": "tilt shift photography, miniature effect, selective focus, toy town aesthetic, aerial view",
+   "tags": [
+    "移轴微缩",
+    "摄影感"
+   ],
+   "author": "tilt-shift",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/4792b3be-811e-4ec0-81db-5df98dcbf270/original=true/3627079.jpeg"
+  },
+  {
+   "id": "C0171",
+   "image": "assets/library/0171-x.jpg",
+   "title": "移轴微缩",
+   "prompt": "tilt shift photography, miniature effect, selective focus, toy town aesthetic, aerial view",
+   "tags": [
+    "移轴微缩",
+    "摄影感"
+   ],
+   "author": "Tilt shift photography style XL + F1D",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/40106e88-455a-44bc-ae9d-a22b90174a42/original=true/42430506.jpeg"
+  },
+  {
+   "id": "C0172",
+   "image": "assets/library/0172-x.jpg",
+   "title": "雾气森林",
+   "prompt": "misty forest, dense fog, moody atmosphere, tall trees, ethereal light, mystical woodland",
+   "tags": [
+    "雾气森林",
+    "自然"
+   ],
+   "author": "Mystic Forest",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/845804ae-9938-4ab4-9580-07b4d0151039/original=true/123824506.jpeg"
+  },
+  {
+   "id": "C0173",
+   "image": "assets/library/0173-x.jpg",
+   "title": "雾气森林",
+   "prompt": "misty forest, dense fog, moody atmosphere, tall trees, ethereal light, mystical woodland",
+   "tags": [
+    "雾气森林",
+    "自然"
+   ],
+   "author": "Mystic Forest",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9849a27d-30af-41cc-8997-e9495f16dfa0/original=true/123824517.jpeg"
+  },
+  {
+   "id": "C0174",
+   "image": "assets/library/0174-x.jpg",
+   "title": "雾气森林",
+   "prompt": "misty forest, dense fog, moody atmosphere, tall trees, ethereal light, mystical woodland",
+   "tags": [
+    "雾气森林",
+    "自然"
+   ],
+   "author": "Mystic Forest",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5d6e4185-3f3b-40c2-a6e7-1987d56a0a5b/original=true/123824519.jpeg"
+  },
+  {
+   "id": "C0175",
+   "image": "assets/library/0175-x.jpg",
+   "title": "雾气森林",
+   "prompt": "misty forest, dense fog, moody atmosphere, tall trees, ethereal light, mystical woodland",
+   "tags": [
+    "雾气森林",
+    "自然"
+   ],
+   "author": "Mystic Forest",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/976aa400-6cc5-41fd-a0a0-099023924056/original=true/123824522.jpeg"
+  },
+  {
+   "id": "C0176",
+   "image": "assets/library/0176-x.jpg",
+   "title": "沙漠戈壁",
+   "prompt": "desert sand dunes, rippled sand texture, harsh sunlight, minimalist landscape, warm tones",
+   "tags": [
+    "沙漠戈壁",
+    "自然"
+   ],
+   "author": "Sandy Desert (Background) (Illustrious) (AD)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a850dd3e-d82b-4675-b3a0-a651ff8a7f83/original=true/121568843.jpeg"
+  },
+  {
+   "id": "C0177",
+   "image": "assets/library/0177-x.jpg",
+   "title": "沙漠戈壁",
+   "prompt": "desert sand dunes, rippled sand texture, harsh sunlight, minimalist landscape, warm tones",
+   "tags": [
+    "沙漠戈壁",
+    "自然"
+   ],
+   "author": "Sandy Desert (Background) (Illustrious) (AD)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2bb07478-f7b4-4b7c-9040-ca6d818e9839/original=true/121568847.jpeg"
+  },
+  {
+   "id": "C0178",
+   "image": "assets/library/0178-x.jpg",
+   "title": "沙漠戈壁",
+   "prompt": "desert sand dunes, rippled sand texture, harsh sunlight, minimalist landscape, warm tones",
+   "tags": [
+    "沙漠戈壁",
+    "自然"
+   ],
+   "author": "Sandy Desert (Background) (Illustrious) (AD)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a83280a4-ea17-4e05-9e04-1ece412746fc/original=true/121568846.jpeg"
+  },
+  {
+   "id": "C0179",
+   "image": "assets/library/0179-x.jpg",
+   "title": "沙漠戈壁",
+   "prompt": "desert sand dunes, rippled sand texture, harsh sunlight, minimalist landscape, warm tones",
+   "tags": [
+    "沙漠戈壁",
+    "自然"
+   ],
+   "author": "Sandy Desert (Background) (Illustrious) (AD)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/95732e6a-9370-48f0-acb4-7e6dbaa50803/original=true/121568842.jpeg"
+  },
+  {
+   "id": "C0180",
+   "image": "assets/library/0180-x.jpg",
+   "title": "海浪",
+   "prompt": "dramatic ocean waves, crashing surf, spray and foam, powerful sea, dynamic motion, seascape",
+   "tags": [
+    "海浪",
+    "自然"
+   ],
+   "author": "『Ocean Waves』 (Umi ga kikoeru) 海がきこえる Character Set+Special ",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d9bdb70c-f1e1-440e-b87c-2082a4965555/original=true/138454952.jpeg"
+  },
+  {
+   "id": "C0181",
+   "image": "assets/library/0181-x.jpg",
+   "title": "海浪",
+   "prompt": "dramatic ocean waves, crashing surf, spray and foam, powerful sea, dynamic motion, seascape",
+   "tags": [
+    "海浪",
+    "自然"
+   ],
+   "author": "『Ocean Waves』 (Umi ga kikoeru) 海がきこえる Character Set+Special ",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5a977f6e-8bab-4a82-8325-d2c11ba297f6/original=true/138454958.jpeg"
+  },
+  {
+   "id": "C0182",
+   "image": "assets/library/0182-x.jpg",
+   "title": "海浪",
+   "prompt": "dramatic ocean waves, crashing surf, spray and foam, powerful sea, dynamic motion, seascape",
+   "tags": [
+    "海浪",
+    "自然"
+   ],
+   "author": "『Ocean Waves』 (Umi ga kikoeru) 海がきこえる Character Set+Special ",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/144628e3-7d12-4e5b-9c52-aaec32aa4557/original=true/138454963.jpeg"
+  },
+  {
+   "id": "C0183",
+   "image": "assets/library/0183-x.jpg",
+   "title": "海浪",
+   "prompt": "dramatic ocean waves, crashing surf, spray and foam, powerful sea, dynamic motion, seascape",
+   "tags": [
+    "海浪",
+    "自然"
+   ],
+   "author": "『Ocean Waves』 (Umi ga kikoeru) 海がきこえる Character Set+Special ",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/875f47d4-ec03-4535-a4a9-84775eb286b7/original=true/138454960.jpeg"
+  },
+  {
+   "id": "C0184",
+   "image": "assets/library/0184-x.jpg",
+   "title": "星空银河",
+   "prompt": "starry night sky, milky way galaxy, astrophotography, long exposure, silhouetted landscape, cosmic",
+   "tags": [
+    "星空银河",
+    "自然"
+   ],
+   "author": "[Background] Starry Sky",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a0f9d4ec-87e5-48ba-80b9-d7bc89a5a7af/original=true/79996007.jpeg"
+  },
+  {
+   "id": "C0185",
+   "image": "assets/library/0185-x.jpg",
+   "title": "星空银河",
+   "prompt": "starry night sky, milky way galaxy, astrophotography, long exposure, silhouetted landscape, cosmic",
+   "tags": [
+    "星空银河",
+    "自然"
+   ],
+   "author": "[Background] Starry Sky",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f71d6788-8e47-41f0-a2a2-259ff3545197/original=true/79996004.jpeg"
+  },
+  {
+   "id": "C0186",
+   "image": "assets/library/0186-x.jpg",
+   "title": "星空银河",
+   "prompt": "starry night sky, milky way galaxy, astrophotography, long exposure, silhouetted landscape, cosmic",
+   "tags": [
+    "星空银河",
+    "自然"
+   ],
+   "author": "[Background] Starry Sky",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/bbc3c1d4-426d-49a5-9fbc-8692bd9e721a/original=true/77518382.jpeg"
+  },
+  {
+   "id": "C0187",
+   "image": "assets/library/0187-x.jpg",
+   "title": "星空银河",
+   "prompt": "starry night sky, milky way galaxy, astrophotography, long exposure, silhouetted landscape, cosmic",
+   "tags": [
+    "星空银河",
+    "自然"
+   ],
+   "author": "[Background] Starry Sky",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/154946a5-d89f-463c-9f0e-dafd15988612/original=true/77518385.jpeg"
+  },
+  {
+   "id": "C0188",
+   "image": "assets/library/0188-x.jpg",
+   "title": "极光",
+   "prompt": "aurora borealis, northern lights, vibrant green and purple, snowy landscape, night photography",
+   "tags": [
+    "极光",
+    "自然"
+   ],
+   "author": "Aurora Borealis",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/00e3f13c-5947-427b-9362-7f60b8b3ce69/original=true/45071985.jpeg"
+  },
+  {
+   "id": "C0189",
+   "image": "assets/library/0189-x.jpg",
+   "title": "极光",
+   "prompt": "aurora borealis, northern lights, vibrant green and purple, snowy landscape, night photography",
+   "tags": [
+    "极光",
+    "自然"
+   ],
+   "author": "Aurora Borealis",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8d30e86e-e85b-4c53-a27a-60cb2b130d4b/original=true/45064961.jpeg"
+  },
+  {
+   "id": "C0190",
+   "image": "assets/library/0190-x.jpg",
+   "title": "极光",
+   "prompt": "aurora borealis, northern lights, vibrant green and purple, snowy landscape, night photography",
+   "tags": [
+    "极光",
+    "自然"
+   ],
+   "author": "Aurora Borealis",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/95eeece2-d91b-4b9e-a032-e4cf535a1468/original=true/45071984.jpeg"
+  },
+  {
+   "id": "C0191",
+   "image": "assets/library/0191-x.jpg",
+   "title": "极光",
+   "prompt": "aurora borealis, northern lights, vibrant green and purple, snowy landscape, night photography",
+   "tags": [
+    "极光",
+    "自然"
+   ],
+   "author": "Aurora Borealis",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/518070e1-3111-4a9d-92e3-d0f7a8ef2fc6/original=true/45064953.jpeg"
+  },
+  {
+   "id": "C0192",
+   "image": "assets/library/0192-x.jpg",
+   "title": "秋色",
+   "prompt": "autumn foliage, golden leaves, warm fall colors, forest path, soft light, seasonal landscape",
+   "tags": [
+    "秋色",
+    "自然"
+   ],
+   "author": "Autumn Dress Code - by EDG",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/450effdb-a416-4c52-8249-d6ead426126e/original=true/2591962.jpeg"
+  },
+  {
+   "id": "C0193",
+   "image": "assets/library/0193-x.jpg",
+   "title": "秋色",
+   "prompt": "autumn foliage, golden leaves, warm fall colors, forest path, soft light, seasonal landscape",
+   "tags": [
+    "秋色",
+    "自然"
+   ],
+   "author": "Autumn Dress Code - by EDG",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/23ab5037-8fe6-4567-bfec-20b5c74e8b6a/original=true/2591902.jpeg"
+  },
+  {
+   "id": "C0194",
+   "image": "assets/library/0194-x.jpg",
+   "title": "秋色",
+   "prompt": "autumn foliage, golden leaves, warm fall colors, forest path, soft light, seasonal landscape",
+   "tags": [
+    "秋色",
+    "自然"
+   ],
+   "author": "Autumn Dress Code - by EDG",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6e069aa5-2440-467b-a92f-90b48c22c774/original=true/2591899.jpeg"
+  },
+  {
+   "id": "C0195",
+   "image": "assets/library/0195-x.jpg",
+   "title": "秋色",
+   "prompt": "autumn foliage, golden leaves, warm fall colors, forest path, soft light, seasonal landscape",
+   "tags": [
+    "秋色",
+    "自然"
+   ],
+   "author": "Autumn Dress Code - by EDG",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9754688e-ace6-4d84-8eab-6efd0caeb706/original=true/2591900.jpeg"
+  },
+  {
+   "id": "C0196",
+   "image": "assets/library/0196-x.jpg",
+   "title": "冬日雪景",
+   "prompt": "winter snow landscape, pristine snow, blue hour, quiet atmosphere, frosty trees, serene",
+   "tags": [
+    "冬日雪景",
+    "自然"
+   ],
+   "author": "Yao Winter Solstice (Snow Break) 4costumes NoobaXLEpslon",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a20d0107-eebe-4337-a343-c0518e699699/original=true/117624893.jpeg"
+  },
+  {
+   "id": "C0197",
+   "image": "assets/library/0197-x.jpg",
+   "title": "冬日雪景",
+   "prompt": "winter snow landscape, pristine snow, blue hour, quiet atmosphere, frosty trees, serene",
+   "tags": [
+    "冬日雪景",
+    "自然"
+   ],
+   "author": "Yao Winter Solstice (Snow Break) 4costumes NoobaXLEpslon",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/cbc785ad-0e46-4bfc-8cc4-4a8fd8daa661/original=true/117624896.jpeg"
+  },
+  {
+   "id": "C0198",
+   "image": "assets/library/0198-x.jpg",
+   "title": "冬日雪景",
+   "prompt": "winter snow landscape, pristine snow, blue hour, quiet atmosphere, frosty trees, serene",
+   "tags": [
+    "冬日雪景",
+    "自然"
+   ],
+   "author": "Gawr Gura Winter Outfit (Snow Shark) | Hololive Vtuber | Ill",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7e2625ff-73f2-484b-baf1-9772a85d7375/original=true/53954547.jpeg"
+  },
+  {
+   "id": "C0199",
+   "image": "assets/library/0199-x.jpg",
+   "title": "热带海滩",
+   "prompt": "tropical beach paradise, turquoise water, palm trees, white sand, bright sunlight, vacation vibe",
+   "tags": [
+    "热带海滩",
+    "自然"
+   ],
+   "author": "Tropical Beach",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e7c27398-9cd8-41d7-80d4-9790b845e79e/original=true/60472130.jpeg"
+  },
+  {
+   "id": "C0200",
+   "image": "assets/library/0200-x.jpg",
+   "title": "热带海滩",
+   "prompt": "tropical beach paradise, turquoise water, palm trees, white sand, bright sunlight, vacation vibe",
+   "tags": [
+    "热带海滩",
+    "自然"
+   ],
+   "author": "Tropical Beach",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/aebbfb97-e00b-4f3a-a7e6-73f3591d67bf/original=true/60472128.jpeg"
+  },
+  {
+   "id": "C0201",
+   "image": "assets/library/0201-x.jpg",
+   "title": "热带海滩",
+   "prompt": "tropical beach paradise, turquoise water, palm trees, white sand, bright sunlight, vacation vibe",
+   "tags": [
+    "热带海滩",
+    "自然"
+   ],
+   "author": "Tropical Beach",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d389b814-8811-4621-94a7-dcc601e08a10/original=true/60472129.jpeg"
+  },
+  {
+   "id": "C0202",
+   "image": "assets/library/0202-x.jpg",
+   "title": "热带海滩",
+   "prompt": "tropical beach paradise, turquoise water, palm trees, white sand, bright sunlight, vacation vibe",
+   "tags": [
+    "热带海滩",
+    "自然"
+   ],
+   "author": "tropical beach at night",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/06ee7063-302d-46ad-a74e-20f4088f226b/original=true/59056271.jpeg"
+  },
+  {
+   "id": "C0203",
+   "image": "assets/library/0203-x.jpg",
+   "title": "山峦日出",
+   "prompt": "mountain peak at sunrise, alpenglow, layered ridges, dramatic sky, epic landscape, crisp air",
+   "tags": [
+    "山峦日出",
+    "自然"
+   ],
+   "author": "Lumiose City Background",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/237f4e9e-c7a3-43f1-bcb8-401303fcef8f/original=true/117389852.jpeg"
+  },
+  {
+   "id": "C0204",
+   "image": "assets/library/0204-x.jpg",
+   "title": "山峦日出",
+   "prompt": "mountain peak at sunrise, alpenglow, layered ridges, dramatic sky, epic landscape, crisp air",
+   "tags": [
+    "山峦日出",
+    "自然"
+   ],
+   "author": "Lumiose City Background",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/478add51-a840-4564-88e8-5a68d0f44a61/original=true/117389855.jpeg"
+  },
+  {
+   "id": "C0205",
+   "image": "assets/library/0205-x.jpg",
+   "title": "山峦日出",
+   "prompt": "mountain peak at sunrise, alpenglow, layered ridges, dramatic sky, epic landscape, crisp air",
+   "tags": [
+    "山峦日出",
+    "自然"
+   ],
+   "author": "Lumiose City Background",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/cac87191-8cfb-46aa-80f2-78dad8252b84/original=true/117389856.jpeg"
+  },
+  {
+   "id": "C0206",
+   "image": "assets/library/0206-x.jpg",
+   "title": "山峦日出",
+   "prompt": "mountain peak at sunrise, alpenglow, layered ridges, dramatic sky, epic landscape, crisp air",
+   "tags": [
+    "山峦日出",
+    "自然"
+   ],
+   "author": "Lumiose City Background",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/787fd622-f13a-4433-afce-3860c7f187b2/original=true/117389854.jpeg"
+  },
+  {
+   "id": "C0207",
+   "image": "assets/library/0207-x.jpg",
+   "title": "水下世界",
+   "prompt": "underwater photography, sun rays through water, marine life, blue depths, ethereal, light caustics",
+   "tags": [
+    "水下世界",
+    "自然"
+   ],
+   "author": "Underwater (Concept)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/871aac4c-996e-4c1b-8c1f-08ebf206f203/original=true/2442959.jpeg"
+  },
+  {
+   "id": "C0208",
+   "image": "assets/library/0208-x.jpg",
+   "title": "水下世界",
+   "prompt": "underwater photography, sun rays through water, marine life, blue depths, ethereal, light caustics",
+   "tags": [
+    "水下世界",
+    "自然"
+   ],
+   "author": "Underwater",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c1bc0d63-fd5f-4c3a-8da4-025dd58d643e/original=true/1874923.jpeg"
+  },
+  {
+   "id": "C0209",
+   "image": "assets/library/0209-x.jpg",
+   "title": "水下世界",
+   "prompt": "underwater photography, sun rays through water, marine life, blue depths, ethereal, light caustics",
+   "tags": [
+    "水下世界",
+    "自然"
+   ],
+   "author": "Underwater",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/377e2816-8b24-48aa-a341-8ca1e105bf39/original=true/1874924.jpeg"
+  },
+  {
+   "id": "C0210",
+   "image": "assets/library/0210-x.jpg",
+   "title": "水下世界",
+   "prompt": "underwater photography, sun rays through water, marine life, blue depths, ethereal, light caustics",
+   "tags": [
+    "水下世界",
+    "自然"
+   ],
+   "author": "Underwater",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/338a0149-fec8-4657-8671-3bfe84c9d552/original=true/1874925.jpeg"
+  },
+  {
+   "id": "C0211",
+   "image": "assets/library/0211-x.jpg",
+   "title": "奇幻城堡",
+   "prompt": "fantasy castle, epic architecture, dramatic clouds, magical atmosphere, concept art, highly detailed",
+   "tags": [
+    "奇幻城堡",
+    "奇幻"
+   ],
+   "author": "Burning Castle Inselgard (Fantasy) (Fairy Tails PACK)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2d128aab-b568-47ae-b623-9b5c6466236e/original=true/30084839.jpeg"
+  },
+  {
+   "id": "C0212",
+   "image": "assets/library/0212-x.jpg",
+   "title": "奇幻城堡",
+   "prompt": "fantasy castle, epic architecture, dramatic clouds, magical atmosphere, concept art, highly detailed",
+   "tags": [
+    "奇幻城堡",
+    "奇幻"
+   ],
+   "author": "Burning Castle Inselgard (Fantasy) (Fairy Tails PACK)",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8bbd7c67-7be8-48df-aded-ce7e1973f3c9/original=true/30081884.jpeg"
+  },
+  {
+   "id": "C0213",
+   "image": "assets/library/0213-x.jpg",
+   "title": "奇幻城堡",
+   "prompt": "fantasy castle, epic architecture, dramatic clouds, magical atmosphere, concept art, highly detailed",
+   "tags": [
+    "奇幻城堡",
+    "奇幻"
+   ],
+   "author": "medieval fantasy castle exterior illu",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c795ee4f-2967-4844-a9dc-d8254b5b3e21/original=true/120276685.jpeg"
+  },
+  {
+   "id": "C0214",
+   "image": "assets/library/0214-x.jpg",
+   "title": "奇幻城堡",
+   "prompt": "fantasy castle, epic architecture, dramatic clouds, magical atmosphere, concept art, highly detailed",
+   "tags": [
+    "奇幻城堡",
+    "奇幻"
+   ],
+   "author": "medieval fantasy castle exterior illu",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7a9686bc-0dd4-4454-b518-b076d490dbac/original=true/120276677.jpeg"
+  },
+  {
+   "id": "C0215",
+   "image": "assets/library/0215-x.jpg",
+   "title": "龙与传说",
+   "prompt": "epic dragon, scales detail, flying over mountains, fire breath, fantasy art, dramatic lighting",
+   "tags": [
+    "龙与传说",
+    "奇幻"
+   ],
+   "author": "Dragon Dark Fantasy",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c976c46b-dada-4850-a327-47484b0406f9/original=true/45004062.jpeg"
+  },
+  {
+   "id": "C0216",
+   "image": "assets/library/0216-x.jpg",
+   "title": "龙与传说",
+   "prompt": "epic dragon, scales detail, flying over mountains, fire breath, fantasy art, dramatic lighting",
+   "tags": [
+    "龙与传说",
+    "奇幻"
+   ],
+   "author": "Dragon Dark Fantasy",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ea71b3b7-47f5-47e1-a3c8-3286b2c2f7e6/original=true/45004063.jpeg"
+  },
+  {
+   "id": "C0217",
+   "image": "assets/library/0217-x.jpg",
+   "title": "龙与传说",
+   "prompt": "epic dragon, scales detail, flying over mountains, fire breath, fantasy art, dramatic lighting",
+   "tags": [
+    "龙与传说",
+    "奇幻"
+   ],
+   "author": "Dragon Dark Fantasy",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9c0440ad-6aff-474d-bdc4-ae5f2786d888/original=true/45004061.jpeg"
+  },
+  {
+   "id": "C0218",
+   "image": "assets/library/0218-x.jpg",
+   "title": "龙与传说",
+   "prompt": "epic dragon, scales detail, flying over mountains, fire breath, fantasy art, dramatic lighting",
+   "tags": [
+    "龙与传说",
+    "奇幻"
+   ],
+   "author": "Dragon Dark Fantasy",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c7613c89-c19c-4509-ba22-f149ee4f5406/original=true/45004690.jpeg"
+  },
+  {
+   "id": "C0219",
+   "image": "assets/library/0219-x.jpg",
+   "title": "精灵森林",
+   "prompt": "enchanted fairy forest, glowing mushrooms, magical particles, bioluminescence, mystical atmosphere",
+   "tags": [
+    "精灵森林",
+    "奇幻"
+   ],
+   "author": "fairy forest",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6d9f5214-62bf-45e3-b496-daee9c876649/original=true/28073917.jpeg"
+  },
+  {
+   "id": "C0220",
+   "image": "assets/library/0220-x.jpg",
+   "title": "精灵森林",
+   "prompt": "enchanted fairy forest, glowing mushrooms, magical particles, bioluminescence, mystical atmosphere",
+   "tags": [
+    "精灵森林",
+    "奇幻"
+   ],
+   "author": "fairy forest",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b377c89b-ab67-4866-a67e-ab7f965b6a5e/original=true/28073927.jpeg"
+  },
+  {
+   "id": "C0221",
+   "image": "assets/library/0221-x.jpg",
+   "title": "精灵森林",
+   "prompt": "enchanted fairy forest, glowing mushrooms, magical particles, bioluminescence, mystical atmosphere",
+   "tags": [
+    "精灵森林",
+    "奇幻"
+   ],
+   "author": "fairy forest",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6ea038a3-4a16-4606-b8c4-34a5581354ce/original=true/28073911.jpeg"
+  },
+  {
+   "id": "C0222",
+   "image": "assets/library/0222-x.jpg",
+   "title": "精灵森林",
+   "prompt": "enchanted fairy forest, glowing mushrooms, magical particles, bioluminescence, mystical atmosphere",
+   "tags": [
+    "精灵森林",
+    "奇幻"
+   ],
+   "author": "fairy forest",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/708ea992-85b2-4a14-9a1d-1ea8bf1fde42/original=true/28073929.jpeg"
+  },
+  {
+   "id": "C0223",
+   "image": "assets/library/0223-x.jpg",
+   "title": "哥特暗黑",
+   "prompt": "gothic architecture, dark cathedral, moody fog, candlelight, ornate details, dark fantasy",
+   "tags": [
+    "哥特暗黑",
+    "奇幻"
+   ],
+   "author": "Dark Gothic Anime",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/e4fb55f0-32e0-4e50-9b23-c4d513cc0ed0/original=true/50980234.jpeg"
+  },
+  {
+   "id": "C0224",
+   "image": "assets/library/0224-x.jpg",
+   "title": "哥特暗黑",
+   "prompt": "gothic architecture, dark cathedral, moody fog, candlelight, ornate details, dark fantasy",
+   "tags": [
+    "哥特暗黑",
+    "奇幻"
+   ],
+   "author": "Dark Gothic Anime",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/71d3821d-31b7-4aa5-be89-9d5af886abeb/original=true/50976837.jpeg"
+  },
+  {
+   "id": "C0225",
+   "image": "assets/library/0225-x.jpg",
+   "title": "哥特暗黑",
+   "prompt": "gothic architecture, dark cathedral, moody fog, candlelight, ornate details, dark fantasy",
+   "tags": [
+    "哥特暗黑",
+    "奇幻"
+   ],
+   "author": "Dark Gothic Anime",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/36aac35d-4209-498b-8372-f682ae8d2c4e/original=true/50976874.jpeg"
+  },
+  {
+   "id": "C0226",
+   "image": "assets/library/0226-x.jpg",
+   "title": "哥特暗黑",
+   "prompt": "gothic architecture, dark cathedral, moody fog, candlelight, ornate details, dark fantasy",
+   "tags": [
+    "哥特暗黑",
+    "奇幻"
+   ],
+   "author": "Dark Gothic Anime",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/44709f33-9b45-490c-a15a-af037ee2ad02/original=true/50976388.jpeg"
+  },
+  {
+   "id": "C0227",
+   "image": "assets/library/0227-x.jpg",
+   "title": "武侠刀剑",
+   "prompt": "wuxia martial arts, swordsman on rooftop, flowing robes, bamboo forest, ink tinged, cinematic",
+   "tags": [
+    "武侠刀剑",
+    "奇幻"
+   ],
+   "author": "武侠 Wuxia V2",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/15b53e0b-cdd6-404b-a6d6-9697d5b56d11/original=true/1046173.jpeg"
+  },
+  {
+   "id": "C0228",
+   "image": "assets/library/0228-x.jpg",
+   "title": "武侠刀剑",
+   "prompt": "wuxia martial arts, swordsman on rooftop, flowing robes, bamboo forest, ink tinged, cinematic",
+   "tags": [
+    "武侠刀剑",
+    "奇幻"
+   ],
+   "author": "PAseer的武侠插画/PAseer's WuXia Line-illustration",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d42dc85c-a6bf-4a2f-acf8-dcb53378b653/original=true/896795.jpeg"
+  },
+  {
+   "id": "C0229",
+   "image": "assets/library/0229-x.jpg",
+   "title": "武侠刀剑",
+   "prompt": "wuxia martial arts, swordsman on rooftop, flowing robes, bamboo forest, ink tinged, cinematic",
+   "tags": [
+    "武侠刀剑",
+    "奇幻"
+   ],
+   "author": "PAseer的武侠插画/PAseer's WuXia Line-illustration",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9445907e-99f5-4b61-841a-c90fbffbb996/original=true/896784.jpeg"
+  },
+  {
+   "id": "C0230",
+   "image": "assets/library/0230-x.jpg",
+   "title": "武侠刀剑",
+   "prompt": "wuxia martial arts, swordsman on rooftop, flowing robes, bamboo forest, ink tinged, cinematic",
+   "tags": [
+    "武侠刀剑",
+    "奇幻"
+   ],
+   "author": "PAseer的武侠插画/PAseer's WuXia Line-illustration",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/70dfd745-b30f-4f24-88fc-1e42deaeb87b/original=true/896783.jpeg"
+  },
+  {
+   "id": "C0231",
+   "image": "assets/library/0231-x.jpg",
+   "title": "仙侠修仙",
+   "prompt": "xianxia immortal cultivator, floating mountains, flowing silk, celestial palace, ethereal glow, guofeng",
+   "tags": [
+    "仙侠修仙",
+    "奇幻"
+   ],
+   "author": "Hong Die - Red Butterfly [Renegade Immortal]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ddd2b453-d4f8-437e-9166-0700c4f6445c/original=true/94939096.jpeg"
+  },
+  {
+   "id": "C0232",
+   "image": "assets/library/0232-x.jpg",
+   "title": "仙侠修仙",
+   "prompt": "xianxia immortal cultivator, floating mountains, flowing silk, celestial palace, ethereal glow, guofeng",
+   "tags": [
+    "仙侠修仙",
+    "奇幻"
+   ],
+   "author": "Hong Die - Red Butterfly [Renegade Immortal]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a9795d7f-2ee7-435c-890e-cf990a75f329/original=true/94939288.jpeg"
+  },
+  {
+   "id": "C0233",
+   "image": "assets/library/0233-x.jpg",
+   "title": "仙侠修仙",
+   "prompt": "xianxia immortal cultivator, floating mountains, flowing silk, celestial palace, ethereal glow, guofeng",
+   "tags": [
+    "仙侠修仙",
+    "奇幻"
+   ],
+   "author": "Hong Die - Red Butterfly [Renegade Immortal]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3911f51c-49bf-4163-8545-935dc3c117dc/original=true/94940405.jpeg"
+  },
+  {
+   "id": "C0234",
+   "image": "assets/library/0234-x.jpg",
+   "title": "仙侠修仙",
+   "prompt": "xianxia immortal cultivator, floating mountains, flowing silk, celestial palace, ethereal glow, guofeng",
+   "tags": [
+    "仙侠修仙",
+    "奇幻"
+   ],
+   "author": "Hong Die - Red Butterfly [Renegade Immortal]",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/301c93ea-3baa-4b0d-9ff9-494f8d75dc86/original=true/94940392.jpeg"
+  },
+  {
+   "id": "C0235",
+   "image": "assets/library/0235-x.jpg",
+   "title": "蒸汽波",
+   "prompt": "vaporwave aesthetic, pink and cyan gradient, greek statue, retro computer, grid horizon, glitch",
+   "tags": [
+    "蒸汽波",
+    "潮流"
+   ],
+   "author": "Vaporwave Graphic",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5df10051-8ab0-46c1-b589-abb18e854b4f/original=true/31366201.jpeg"
+  },
+  {
+   "id": "C0236",
+   "image": "assets/library/0236-x.jpg",
+   "title": "蒸汽波",
+   "prompt": "vaporwave aesthetic, pink and cyan gradient, greek statue, retro computer, grid horizon, glitch",
+   "tags": [
+    "蒸汽波",
+    "潮流"
+   ],
+   "author": "Vaporwave Graphic",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1b9446f6-486c-44d4-b16f-f6ac546e7e9e/original=true/31366214.jpeg"
+  },
+  {
+   "id": "C0237",
+   "image": "assets/library/0237-x.jpg",
+   "title": "蒸汽波",
+   "prompt": "vaporwave aesthetic, pink and cyan gradient, greek statue, retro computer, grid horizon, glitch",
+   "tags": [
+    "蒸汽波",
+    "潮流"
+   ],
+   "author": "Vaporwave Graphic",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3bac09e8-5672-4d8f-9a20-36ac74b8e7d5/original=true/31366199.jpeg"
+  },
+  {
+   "id": "C0238",
+   "image": "assets/library/0238-x.jpg",
+   "title": "蒸汽波",
+   "prompt": "vaporwave aesthetic, pink and cyan gradient, greek statue, retro computer, grid horizon, glitch",
+   "tags": [
+    "蒸汽波",
+    "潮流"
+   ],
+   "author": "Vaporwave Graphic",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c151ecef-4672-4e44-833c-e095888a2bcd/original=true/31366198.jpeg"
+  },
+  {
+   "id": "C0239",
+   "image": "assets/library/0239-x.jpg",
+   "title": "复古80年代",
+   "prompt": "synthwave retrowave, 80s neon, sunset grid, chrome text, laser lines, nostalgic futurism",
+   "tags": [
+    "复古80年代",
+    "潮流"
+   ],
+   "author": "Retro 80s Vaporwave",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/1110af00-cf75-4219-9ce4-131cf8f802ec/original=true/139304545.jpeg"
+  },
+  {
+   "id": "C0240",
+   "image": "assets/library/0240-x.jpg",
+   "title": "复古80年代",
+   "prompt": "synthwave retrowave, 80s neon, sunset grid, chrome text, laser lines, nostalgic futurism",
+   "tags": [
+    "复古80年代",
+    "潮流"
+   ],
+   "author": "Retro 80s Vaporwave",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c0e6a73d-2592-4824-80ff-b572c0d19967/original=true/139304546.jpeg"
+  },
+  {
+   "id": "C0241",
+   "image": "assets/library/0241-x.jpg",
+   "title": "复古80年代",
+   "prompt": "synthwave retrowave, 80s neon, sunset grid, chrome text, laser lines, nostalgic futurism",
+   "tags": [
+    "复古80年代",
+    "潮流"
+   ],
+   "author": "Retro 80s Vaporwave",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/bc5d3a09-e8b5-4278-9fef-190c564989ac/original=true/139304549.jpeg"
+  },
+  {
+   "id": "C0242",
+   "image": "assets/library/0242-x.jpg",
+   "title": "复古80年代",
+   "prompt": "synthwave retrowave, 80s neon, sunset grid, chrome text, laser lines, nostalgic futurism",
+   "tags": [
+    "复古80年代",
+    "潮流"
+   ],
+   "author": "Retro 80s/90s Hair",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5ae00dc5-d3f6-4eb4-9148-436576d3d94d/original=true/43661872.jpeg"
+  },
+  {
+   "id": "C0243",
+   "image": "assets/library/0243-x.jpg",
+   "title": "Y2K 千禧",
+   "prompt": "y2k aesthetic, metallic chrome, bubble shapes, millennium futurism, glossy plastic, iridescent",
+   "tags": [
+    "Y2K 千禧",
+    "潮流"
+   ],
+   "author": "Y2K Aesthetic",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/beb766cc-a99f-49c3-d863-d7f2c05dff00/original=true/333381.jpeg"
+  },
+  {
+   "id": "C0244",
+   "image": "assets/library/0244-x.jpg",
+   "title": "Y2K 千禧",
+   "prompt": "y2k aesthetic, metallic chrome, bubble shapes, millennium futurism, glossy plastic, iridescent",
+   "tags": [
+    "Y2K 千禧",
+    "潮流"
+   ],
+   "author": "Y2K Aesthetic",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f32fd87d-9d41-4f76-bb89-abe10eb88c00/original=true/333397.jpeg"
+  },
+  {
+   "id": "C0245",
+   "image": "assets/library/0245-x.jpg",
+   "title": "Y2K 千禧",
+   "prompt": "y2k aesthetic, metallic chrome, bubble shapes, millennium futurism, glossy plastic, iridescent",
+   "tags": [
+    "Y2K 千禧",
+    "潮流"
+   ],
+   "author": "Y2K Aesthetic",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3725e091-2f46-4ab4-68d3-2d1888f58500/original=true/333396.jpeg"
+  },
+  {
+   "id": "C0246",
+   "image": "assets/library/0246-x.jpg",
+   "title": "Y2K 千禧",
+   "prompt": "y2k aesthetic, metallic chrome, bubble shapes, millennium futurism, glossy plastic, iridescent",
+   "tags": [
+    "Y2K 千禧",
+    "潮流"
+   ],
+   "author": "Y2K Aesthetic",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/4bacf69d-c909-416c-bfd7-5c49c4973200/original=true/333395.jpeg"
+  },
+  {
+   "id": "C0247",
+   "image": "assets/library/0247-x.jpg",
+   "title": "粗野建筑",
+   "prompt": "brutalist architecture, raw concrete, geometric mass, dramatic shadows, overcast sky, monolithic",
+   "tags": [
+    "粗野建筑",
+    "城市"
+   ],
+   "author": "Brutalist architecture",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0c11f978-3016-44bc-a764-bf73f8192096/original=true/78954744.jpeg"
+  },
+  {
+   "id": "C0248",
+   "image": "assets/library/0248-x.jpg",
+   "title": "粗野建筑",
+   "prompt": "brutalist architecture, raw concrete, geometric mass, dramatic shadows, overcast sky, monolithic",
+   "tags": [
+    "粗野建筑",
+    "城市"
+   ],
+   "author": "Brutalist architecture",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6defef0b-9c8f-4216-a1a5-25eff0385e84/original=true/78954741.jpeg"
+  },
+  {
+   "id": "C0249",
+   "image": "assets/library/0249-x.jpg",
+   "title": "粗野建筑",
+   "prompt": "brutalist architecture, raw concrete, geometric mass, dramatic shadows, overcast sky, monolithic",
+   "tags": [
+    "粗野建筑",
+    "城市"
+   ],
+   "author": "Brutalist architecture",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d3bf00b9-2830-468d-8e3b-4653a158682a/original=true/78954743.jpeg"
+  },
+  {
+   "id": "C0250",
+   "image": "assets/library/0250-x.jpg",
+   "title": "粗野建筑",
+   "prompt": "brutalist architecture, raw concrete, geometric mass, dramatic shadows, overcast sky, monolithic",
+   "tags": [
+    "粗野建筑",
+    "城市"
+   ],
+   "author": "Brutalist architecture",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3838e990-531d-4857-8f7f-16f107b3745b/original=true/78954742.jpeg"
+  },
+  {
+   "id": "C0251",
+   "image": "assets/library/0251-x.jpg",
+   "title": "日式庭院",
+   "prompt": "japanese zen garden, cherry blossoms, stone path, tea house, tranquil, soft morning light",
+   "tags": [
+    "日式庭院",
+    "城市"
+   ],
+   "author": "JJ's Japanese Garden",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/dfe735f1-b542-49f7-b4c5-8f2deb7cb281/original=true/51472420.jpeg"
+  },
+  {
+   "id": "C0252",
+   "image": "assets/library/0252-x.jpg",
+   "title": "日式庭院",
+   "prompt": "japanese zen garden, cherry blossoms, stone path, tea house, tranquil, soft morning light",
+   "tags": [
+    "日式庭院",
+    "城市"
+   ],
+   "author": "JJ's Japanese Garden",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/4cee6918-85db-4bf8-a5c6-96867cf2a711/original=true/51472481.jpeg"
+  },
+  {
+   "id": "C0253",
+   "image": "assets/library/0253-x.jpg",
+   "title": "日式庭院",
+   "prompt": "japanese zen garden, cherry blossoms, stone path, tea house, tranquil, soft morning light",
+   "tags": [
+    "日式庭院",
+    "城市"
+   ],
+   "author": "JJ's Japanese Garden",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/4e6e9a07-73b8-4e90-8a09-3e41c1a484b8/original=true/51472501.jpeg"
+  },
+  {
+   "id": "C0254",
+   "image": "assets/library/0254-x.jpg",
+   "title": "日式庭院",
+   "prompt": "japanese zen garden, cherry blossoms, stone path, tea house, tranquil, soft morning light",
+   "tags": [
+    "日式庭院",
+    "城市"
+   ],
+   "author": "JJ's Japanese Garden",
+   "_src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0640cbf6-6043-4638-93e0-22a72898388c/original=true/51472798.jpeg"
   }
  ]
 }
