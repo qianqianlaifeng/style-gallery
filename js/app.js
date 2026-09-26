@@ -88,7 +88,7 @@
   const state = { all: [], filtered: [], current: -1, focus: 0, cat: "", shown: 0, liveTried: new Set() };
 
   // 仅用于真正出错时给一句提示，平时不显示任何模式/来源文字
-  function setStatus(t) { const el = $("#status"); el.textContent = t || ""; el.hidden = !t; }
+  function setStatus(t) { const el = $("#status"); if (!el) return; el.textContent = t || ""; el.hidden = !t; }
 
   // ============ 实时流：Civitai models 接口 ============
   const LIVE_WORDS = 6;      // 每轮拉取的风格词数
@@ -211,7 +211,7 @@
       cats.map(c => `<button class="cat-chip${state.cat === c ? " active" : ""}" data-cat="${escapeHtml(c)}">${escapeHtml(c)} (${counts.get(c)})</button>`).join("");
   }
 
-  const PAGE = 60;
+  const PAGE = 36;
   function renderGallery(append) {
     const g = $("#gallery");
     $("#empty").hidden = state.filtered.length > 0;
@@ -232,6 +232,7 @@
     else g.innerHTML = html;
     state.shown = Math.min(state.filtered.length, start + slice.length);
 
+    $$(".card-img img", g).forEach(im => { if (im.complete && im.naturalWidth) im.classList.add("loaded"); });
     $$(".card", g).forEach(c => {
       if (c.dataset.bound) return;
       c.dataset.bound = "1";
@@ -329,6 +330,11 @@
   }
 
   // ============ 事件绑定 ============
+  // 图片加载完成后淡入（load 不冒泡，捕获委托）；缓存的图渲染时已 complete，同步补上
+  document.addEventListener("load", (e) => {
+    const t = e.target;
+    if (t && t.tagName === "IMG" && t.closest && t.closest(".card-img")) t.classList.add("loaded");
+  }, true);
   document.addEventListener("error", onImgError, true); // error 不冒泡，用捕获委托
   document.addEventListener("DOMContentLoaded", () => {
     $("#search").addEventListener("input", applyFilter);

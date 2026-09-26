@@ -3,51 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>风格参考 · 实时 AI 灵感画廊</title>
-  <meta name="description" content="实时 AI 视频风格参考画廊，自动从公开接口拉取最新 AI 作品与提示词，照着 zeezhi.pages.dev 的精致版式呈现。" />
+  <title>风格参考 · AI 视频灵感档案</title>
+  <meta name="description" content="AI 视频风格参考档案，实时拉取最新 AI 画风与可直接复制的提示词。" />
+  <link rel="preconnect" href="https://image.civitai.com" />
+  <link rel="preconnect" href="https://civitai.com" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="brand">
-      <span class="logo">风格参考</span>
-      <span class="logo-sub">STYLE REFERENCE · 实时灵感画廊</span>
+      <span class="brand-wordmark">风格参考<span class="brand-period">.</span></span>
+      <span class="editorial-label">AI VIDEO STYLE ARCHIVE</span>
     </div>
     <div class="toolbar">
       <input id="search" type="text" placeholder="搜索 提示词 / 标签" autocomplete="off" />
-      <button id="refresh" class="btn" title="重新拉取实时接口">↻ 刷新</button>
+      <button id="refresh" class="btn" title="重新拉取实时接口">↻ 实时刷新</button>
     </div>
   </header>
 
   <main class="wrap">
-    <section class="intro">
-      <h1>做 AI 视频没灵感？来逛风格参考</h1>
-    </section>
-
-    <div id="status" class="status" hidden></div>
-
     <section class="spotlight" id="spotlight" hidden>
-      <div class="spotlight-img">
-        <img id="spotImg" src="" alt="" />
-        <div class="spotlight-nav">
-          <button class="spot-btn" id="spotPrev" aria-label="上一个">‹</button>
-          <button class="spot-btn" id="spotNext" aria-label="下一个">›</button>
+      <div class="spot-head">
+        <div class="editorial-label">SPOTLIGHT · 焦点风格</div>
+        <div class="spot-hint">← → 或滚轮切换 · 点击图片看提示词</div>
+      </div>
+      <h1 class="spot-title" id="spotTitle"></h1>
+      <div class="spot-grid">
+        <div class="spotlight-img" id="spotImgWrap">
+          <img id="spotImg" src="" alt="" />
+          <div class="film-texture"></div>
+          <div class="spotlight-nav">
+            <button class="spot-btn" id="spotPrev" aria-label="上一个">‹</button>
+            <button class="spot-btn" id="spotNext" aria-label="下一个">›</button>
+          </div>
+        </div>
+        <div class="spotlight-info">
+          <div class="chips static" id="spotTags"></div>
+          <p class="spot-prompt" id="spotPrompt"></p>
+          <button class="btn primary" id="spotEnter">查看完整提示词 →</button>
         </div>
       </div>
-      <div class="spotlight-info">
-        <div class="spot-kicker">焦点风格 · SPOTLIGHT</div>
-        <h2 id="spotTitle"></h2>
-        <div class="chips static" id="spotTags"></div>
-        <p class="spot-prompt" id="spotPrompt"></p>
-        <button class="btn primary" id="spotEnter">查看提示词 / 进入详情 →</button>
-        <div class="spot-hint">← → 或鼠标滚轮切换焦点 · 点击大图进入详情</div>
-      </div>
     </section>
 
-    <div class="grid-head">
-      <h2>全部风格</h2>
-      <span class="grid-sub" id="count"></span>
-    </div>
+    <section class="archive-heading">
+      <div class="editorial-label">ARCHIVE · 档案</div>
+      <h1>全部风格<em>.</em></h1>
+      <span class="archive-count" id="count"></span>
+    </section>
+
     <div class="cats" id="cats"></div>
     <div id="gallery" class="gallery"></div>
     <div class="loadmore-wrap"><button class="btn" id="loadmore" hidden>加载更多 ↓</button></div>
@@ -55,8 +58,14 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>风格参考 ｜ 由浅浅来风（白日梦社区）提供技术支持</p>
+    <div class="footer-band" aria-hidden="true">
+      <div class="footer-band-track">
+        <span>风格参考 STYLE REFERENCE — AI 视频灵感档案 — 由浅浅来风（白日梦社区）提供技术支持 —&nbsp;</span><span>风格参考 STYLE REFERENCE — AI 视频灵感档案 — 由浅浅来风（白日梦社区）提供技术支持 —&nbsp;</span><span>风格参考 STYLE REFERENCE — AI 视频灵感档案 — 由浅浅来风（白日梦社区）提供技术支持 —&nbsp;</span><span>风格参考 STYLE REFERENCE — AI 视频灵感档案 — 由浅浅来风（白日梦社区）提供技术支持 —&nbsp;</span>
+      </div>
+    </div>
+    <div class="wrap footer-meta">
+      <span>风格参考 ｜ 由浅浅来风（白日梦社区）提供技术支持</span>
+      <span class="editorial-label">EST. 2026 · EVERY REFRESH BRINGS NEW STYLES</span>
     </div>
   </footer>
 
