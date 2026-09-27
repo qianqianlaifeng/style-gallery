@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>风格参考 · AI 视频灵感档案</title>
   <meta name="description" content="AI 视频风格参考档案，实时拉取最新 AI 画风与可直接复制的提示词。" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="preconnect" href="https://image.civitai.com" />
   <link rel="preconnect" href="https://civitai.com" />
   <link rel="stylesheet" href="css/style.css" />
@@ -87,7 +86,16 @@
             <div class="chips static" id="modalTags"></div>
           </div>
           <div class="info-block">
-            <div class="info-label">风格提示词（可直接复制到 MJ / SD）</div>
+            <div class="info-label">视频生成提示词（Seedance / MiniMax / 可灵 / 即梦）</div>
+            <div class="prompt-box">
+              <div class="prompt-line">
+                <code id="modalVideo"></code>
+                <button class="copy-btn" id="copyVideoBtn">复制</button>
+              </div>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">风格要点（可叠加在提示词前后）</div>
             <div class="prompt-box">
               <div class="prompt-line">
                 <code id="modalPrompt"></code>

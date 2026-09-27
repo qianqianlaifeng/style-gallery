@@ -170,3 +170,9 @@ img{max-width:100%;}
 .card-src.live{color:#0a0a0a;background:#8bbf9f;border-color:#8bbf9f;}
 
 .chip.static.live{color:#0a0a0a;background:#8bbf9f;border-color:#8bbf9f;}
+
+/* 视频生成提示词主框（暖色强调） */
+#modalVideo{color:#f2e3c8;}
+#copyVideoBtn{border-color:#d8b46a;color:#d8b46a;}
+#copyVideoBtn:hover{background:#d8b46a;color:#070707;}
+#copyVideoBtn.done{border-color:#8bbf9f;color:#8bbf9f;}

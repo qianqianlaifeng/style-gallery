@@ -239,7 +239,7 @@
     state.filtered = state.all.filter(s => {
       if (cat && s.cat !== cat) return false;
       if (!kw) return true;
-      const hay = [s.name, s.desc, s.prompt, s.cat].join(" ").toLowerCase();
+      const hay = [s.name, s.desc, s.prompt, s.vp, s.cat].join(" ").toLowerCase();
       return hay.includes(kw);
     });
     state.focus = 0;
@@ -308,7 +308,7 @@
     img.dataset.civitai = isCivitai(s.image) ? "1" : "0"; img.dataset.retry = "0";
     $("#spotTitle").textContent = s.name;
     $("#spotTags").innerHTML = `<span class="chip static">${escapeHtml(s.cat)}</span><span class="chip static ${s._imgs && s._imgs.length ? "live" : ""}">${s._imgs && s._imgs.length ? "实时参考图" : "参考图"}</span>`;
-    const p = (s.prompt || "").replace(/\s+/g, " ").trim();
+    const p = ((s.vp || s.prompt) || "").replace(/\s+/g, " ").trim();
     $("#spotPrompt").textContent = p;
   }
 
@@ -330,6 +330,7 @@
     img.dataset.civitai = isCivitai(s.image) ? "1" : "0"; img.dataset.retry = "0";
     $("#modalTitle").textContent = s.name;
     $("#modalTags").innerHTML = `<span class="chip static">${escapeHtml(s.cat)}</span><span class="chip static">${escapeHtml(s.desc)}</span><span class="chip static ${s._imgs && s._imgs.length ? "live" : ""}">${s._imgs && s._imgs.length ? "实时参考图" : "参考图"}</span>`;
+    $("#modalVideo").textContent = s.vp || s.prompt || "（无提示词）";
     $("#modalPrompt").textContent = s.prompt || "（无提示词）";
     $("#modal").hidden = false;
     document.body.style.overflow = "hidden";
@@ -342,9 +343,10 @@
     openModal(n);
   }
 
-  function copyPrompt() {
-    const text = $("#modalPrompt").textContent;
-    const btn = $("#copyBtn");
+  function copyPrompt() { copyText($("#copyBtn"), $("#modalPrompt")); }
+  function copyVideo() { copyText($("#copyVideoBtn"), $("#modalVideo")); }
+  function copyText(btn, codeEl) {
+    const text = codeEl.textContent;
     const done = () => { btn.textContent = "已复制"; btn.classList.add("done"); setTimeout(() => { btn.textContent = "复制"; btn.classList.remove("done"); }, 1400); };
     if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done).catch(() => fallback(text, done));
     else fallback(text, done);
@@ -369,6 +371,7 @@
       applyFilter();
     });
     $("#copyBtn").addEventListener("click", copyPrompt);
+    $("#copyVideoBtn").addEventListener("click", copyVideo);
     $("#navPrev").addEventListener("click", () => navModal(-1));
     $("#navNext").addEventListener("click", () => navModal(1));
     $("#spotPrev").addEventListener("click", () => moveFocus(-1));
