@@ -39,6 +39,13 @@
   function isCivitai(u) { return typeof u === "string" && u.indexOf("civitai.com") >= 0; }
   function thumbUrl(u) { return u ? u.replace("original=true", "width=420") : ""; }
 
+  // ============ 图片加速：本地静态图走 jsDelivr CDN（国内快） ============
+  // 相对路径(assets/...) -> jsDelivr；失败时 onImgError 自动回退 github.io 原站
+  const CDN = "https://cdn.jsdelivr.net/gh/qianqianlaifeng/style-gallery@main/";
+  function cdnUrl(u) {
+    return (typeof u === "string" && u && u.indexOf("http") !== 0 && u.indexOf("data:") !== 0) ? CDN + u : u;
+  }
+
   // ============ 数据加载 ============
   function getStyles() {
     return (window.__STYLES__ && Array.isArray(window.__STYLES__)) ? window.__STYLES__ : [];
@@ -62,18 +69,21 @@
     if (!img || img.tagName !== "IMG" || !img.src) return;
     if (!(img.closest(".card-img") || img.closest(".spotlight-img") || img.closest(".modal-img"))) return;
     const step = parseInt(img.dataset.retry || "0", 10);
+    const rel = (img.dataset.fallback || "");
+    const hasRel = rel && rel.indexOf("http") !== 0; // 本地参考图的相对路径兜底
+
     if (step === 0) {
-      // 第一次失败：换更小尺寸重试
       img.dataset.retry = "1";
-      img.src = img.src.replace("width=420", "width=256").replace("width=512", "width=256");
-      return;
+      if (img.src.indexOf(CDN) === 0) { img.src = img.src.slice(CDN.length); return; } // CDN -> 原站
+      if (isCivitai(img.src)) { img.src = img.src.replace("width=420", "width=256").replace("width=512", "width=256"); return; }
+      if (hasRel) { img.src = cdnUrl(rel); return; }                                   // 原站 -> CDN
+    } else if (step === 1) {
+      img.dataset.retry = "2";
+      if (img.dataset.civitai === "1" && hasRel) { img.dataset.civitai = "0"; img.src = cdnUrl(rel); return; } // 真实图 -> 本地图
+      if (hasRel && img.src !== cdnUrl(rel)) { img.src = cdnUrl(rel); return; }        // 原站 -> CDN
+      if (hasRel && img.src !== rel) { img.src = rel; return; }                        // CDN -> 原站
     }
-    // 第二次失败：真实图（Civitai）回退到本地参考图；本地图再失败才占位
-    if (img.dataset.civitai === "1" && img.dataset.fallback) {
-      img.dataset.retry = "2"; img.dataset.civitai = "0";
-      img.src = img.dataset.fallback;
-      return;
-    }
+    // 重试链用尽：画廊卡片换占位色块（焦点/弹窗大图保留原位，避免破坏元素引用）
     const box = img.closest(".card-img");
     if (box && !box.querySelector(".img-ph")) {
       const ph = document.createElement("div");
@@ -111,6 +121,33 @@
     finally { clearTimeout(t); }
   }
 
+  // 第二图源：Wikimedia Commons（keyless、CORS 开放 origin=*）。返回 420 宽缩略图。
+  const COMMONS_API = "https://commons.wikimedia.org/w/api.php";
+  async function fetchCommons(qw, n) {
+    const url = COMMONS_API + "?action=query&generator=search&gsrsearch=" +
+      encodeURIComponent(qw + " art") + "&gsrnamespace=6&gsrlimit=" + n +
+      "&prop=imageinfo&iiprop=url%7Cmime&iiurlwidth=420&format=json&origin=*";
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT);
+    try {
+      const res = await fetch(url, { signal: ctrl.signal });
+      if (!res.ok) return [];
+      const data = await res.json();
+      const pages = (data.query && data.query.pages) || {};
+      const out = [];
+      for (const pid in pages) {
+        const ii = (pages[pid].imageinfo || [])[0];
+        if (!ii) continue;
+        const mime = ii.mime || "";
+        if (mime.indexOf("image/") !== 0) continue;       // 只要图片，过滤 PDF/Office
+        const u = ii.thumburl || ii.url;
+        if (u) out.push(u);
+      }
+      return out;
+    } catch (e) { return []; }
+    finally { clearTimeout(t); }
+  }
+
   // 选出某风格当前应显示的图（real 优先，按 off 轮换；否则本地兜底）
   function pickImage(s) {
     if (s._imgs && s._imgs.length) return s._imgs[state.off % s._imgs.length];
@@ -130,51 +167,68 @@
       im.dataset.civitai = isCivitai(s.image) ? "1" : "0";
       im.dataset.retry = "0";
       im.classList.remove("loaded");
-      im.src = s.image;
+      im.src = cdnUrl(s.image);
     });
     $$("[data-src]").forEach(tag => {
       const s = byId[tag.dataset.src];
       if (!s) return;
       const live = !!(s._imgs && s._imgs.length);
-      tag.textContent = live ? "Civitai 实时" : "参考图";
+      tag.textContent = live ? "实时参考图" : "参考图";
       tag.classList.toggle("live", live);
     });
   }
 
-  async function backgroundLive() {
-    if (liveRunning) return;
-    liveRunning = true;
-    setLive("正在拉取真实风格图…", false);
-    // 按 q 去重分组
-    const groups = {};
-    state.all.forEach(s => {
-      const q = s.q || s.match || s.name;
-      (groups[q] = groups[q] || []).push(s);
-    });
-    const entries = Object.keys(groups).map(q => [q, groups[q]]);
+  // 并发拉取一组（按查询去重）并将结果写入 style._key
+  async function runGroups(entries, fetcher, key, n) {
     const CONC = 4;
-    let okQ = 0, failQ = 0;
     async function worker() {
       while (entries.length) {
         const [q, styles] = entries.shift();
-        const imgs = await fetchCivitai(q, 16);
-        if (imgs.length) {
-          okQ++;
-          styles.forEach(s => { s._imgs = imgs; (catPool[s.cat] = catPool[s.cat] || []).push(...imgs); });
-        } else {
-          failQ++;
-          // 限流/失败：用同大类已拉到的真实图兜底
-          styles.forEach(s => { if (!s._imgs && catPool[s.cat] && catPool[s.cat].length) s._imgs = catPool[s.cat]; });
-        }
+        const imgs = await fetcher(q, n);
+        styles.forEach(s => { s["_" + key] = imgs; });
         reassignImages();
       }
     }
     const ws = [];
     for (let i = 0; i < Math.min(CONC, entries.length); i++) ws.push(worker());
     await Promise.all(ws);
+  }
+
+  async function backgroundLive() {
+    if (liveRunning) return;
+    liveRunning = true;
+    setLive("正在从 Civitai + Wikimedia 拉取真实风格图…", false);
+
+    // 按查询去重分组（两个图源分别分组）
+    const cGroups = {}, wGroups = {};
+    state.all.forEach(s => {
+      if (s.q) (cGroups[s.q] = cGroups[s.q] || []).push(s);
+      if (s.qw) (wGroups[s.qw] = wGroups[s.qw] || []).push(s);
+    });
+
+    // 图源1：Civitai（动漫/插画/3D 强）
+    await runGroups(Object.entries(cGroups).map(e => [e[0], e[1]]), fetchCivitai, "civ", 16);
+    // 图源2：Wikimedia Commons（摄影/电影/实拍强）
+    await runGroups(Object.entries(wGroups).map(e => [e[0], e[1]]), fetchCommons, "cm", 12);
+
+    // 合并两源 -> _imgs，并汇入同大类兜底池
+    state.all.forEach(s => {
+      const merged = [];
+      if (s._civ) merged.push(...s._civ);
+      if (s._cm) merged.push(...s._cm);
+      s._imgs = merged;
+      if (merged.length) (catPool[s.cat] = catPool[s.cat] || []).push(...merged);
+    });
     reassignImages();
-    if (okQ) setLive("已加载真实风格图 · " + okQ + " 组", true);
-    else setLive("真实图暂不可用，已用参考图兜底", false);
+
+    // 两源都失败的风格，用同大类已拉到的真实图兜底
+    state.all.forEach(s => {
+      if (!s._imgs.length && catPool[s.cat] && catPool[s.cat].length) s._imgs = catPool[s.cat];
+    });
+    reassignImages();
+
+    const ok = state.all.filter(s => s._imgs && s._imgs.length).length;
+    setLive("已加载真实风格图 · " + ok + "/" + state.all.length + " 种（Civitai + Wikimedia）", true);
     liveRunning = false;
   }
 
@@ -216,7 +270,7 @@
       return `
       <article class="card" data-index="${i}">
         <div class="card-img">
-          <img src="${s.image}" alt="${escapeHtml(s.name)}" data-key="${escapeHtml(s.id)}" data-fallback="${escapeHtml(s.fallback)}" loading="lazy" decoding="async" />
+          <img src="${cdnUrl(s.image)}" alt="${escapeHtml(s.name)}" data-key="${escapeHtml(s.id)}" data-fallback="${escapeHtml(s.fallback)}" loading="lazy" decoding="async" />
           <span class="card-src" data-src="${escapeHtml(s.id)}"></span>
         </div>
         <div class="card-body">
@@ -249,11 +303,11 @@
     if (!s) { sec.hidden = true; return; }
     sec.hidden = false;
     const img = $("#spotImg");
-    img.src = s.image; img.alt = s.name;
+    img.src = cdnUrl(s.image); img.alt = s.name;
     img.dataset.key = s.id; img.dataset.fallback = s.fallback; img.dataset.cur = s.image;
     img.dataset.civitai = isCivitai(s.image) ? "1" : "0"; img.dataset.retry = "0";
     $("#spotTitle").textContent = s.name;
-    $("#spotTags").innerHTML = `<span class="chip static">${escapeHtml(s.cat)}</span><span class="chip static ${s._imgs && s._imgs.length ? "live" : ""}">${s._imgs && s._imgs.length ? "Civitai 实时" : "参考图"}</span>`;
+    $("#spotTags").innerHTML = `<span class="chip static">${escapeHtml(s.cat)}</span><span class="chip static ${s._imgs && s._imgs.length ? "live" : ""}">${s._imgs && s._imgs.length ? "实时参考图" : "参考图"}</span>`;
     const p = (s.prompt || "").replace(/\s+/g, " ").trim();
     $("#spotPrompt").textContent = p;
   }
@@ -271,11 +325,11 @@
     if (!s) return;
     state.current = i;
     const img = $("#modalImg");
-    img.src = s.image; img.alt = s.name;
+    img.src = cdnUrl(s.image); img.alt = s.name;
     img.dataset.key = s.id; img.dataset.fallback = s.fallback; img.dataset.cur = s.image;
     img.dataset.civitai = isCivitai(s.image) ? "1" : "0"; img.dataset.retry = "0";
     $("#modalTitle").textContent = s.name;
-    $("#modalTags").innerHTML = `<span class="chip static">${escapeHtml(s.cat)}</span><span class="chip static">${escapeHtml(s.desc)}</span><span class="chip static ${s._imgs && s._imgs.length ? "live" : ""}">${s._imgs && s._imgs.length ? "Civitai 实时" : "参考图"}</span>`;
+    $("#modalTags").innerHTML = `<span class="chip static">${escapeHtml(s.cat)}</span><span class="chip static">${escapeHtml(s.desc)}</span><span class="chip static ${s._imgs && s._imgs.length ? "live" : ""}">${s._imgs && s._imgs.length ? "实时参考图" : "参考图"}</span>`;
     $("#modalPrompt").textContent = s.prompt || "（无提示词）";
     $("#modal").hidden = false;
     document.body.style.overflow = "hidden";

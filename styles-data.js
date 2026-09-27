@@ -7,7 +7,8 @@ window.__STYLES__ = [
   "prompt": "国风仙侠3D漫剧，三渲二质感的国漫。兼顾3D模型的立体度与国风绘画的线条美感。整体基调明快通透。摒弃厚重暗黑的仙侠油画质感。偏向轻松诙谐的东方修真美学。适合短视频漫剧成片。",
   "image": "assets/library/0231-x.jpg",
   "match": "仙侠修仙",
-  "q": "chinese 3d anime"
+  "q": "chinese 3d anime",
+  "qw": "chinese 3d anime"
  },
  {
   "id": "S002",
@@ -17,7 +18,8 @@ window.__STYLES__ = [
   "prompt": "三渲二国漫风格，以3D模型构建角色立体度与场景空间，叠加二维手绘上色与国风描边。线条干净利落，色彩明快，光影柔和自然。避免厚重写实渲染，保留动画番剧的清爽观感。适合国漫番剧与短视频漫改。",
   "image": "assets/library/0080-x.jpg",
   "match": "国风古韵",
-  "q": "chinese 3d anime"
+  "q": "chinese 3d anime",
+  "qw": "chinese 3d anime"
  },
  {
   "id": "S003",
@@ -27,7 +29,8 @@ window.__STYLES__ = [
   "prompt": "敦煌壁画动画风格，矿物颜料般的石青石绿与土红，飞天体态舒展、衣袂飘带流动如风。线条有壁画皴擦的拙朴感，背景可作斑驳岩彩肌理。整体庄重华美又空灵。适合文化宣传片与国风短片。",
   "image": "assets/library/0080-x.jpg",
   "match": "国风古韵",
-  "q": "chinese ancient art"
+  "q": "chinese ancient art",
+  "qw": "chinese ancient art"
  },
  {
   "id": "S004",
@@ -37,7 +40,8 @@ window.__STYLES__ = [
   "prompt": "盛唐华丽国风，工笔重彩般的金碧设色，牡丹、锦鲤、楼阁与仕女。线条繁复精致，金线勾边，光感温润富贵。摒弃清冷留白，追求恢弘绚烂的大唐气象。适合古装国漫与文旅宣传。",
   "image": "assets/library/0080-x.jpg",
   "match": "国风古韵",
-  "q": "chinese ancient art"
+  "q": "chinese ancient art",
+  "qw": "chinese ancient art"
  },
  {
   "id": "S005",
@@ -47,7 +51,8 @@ window.__STYLES__ = [
   "prompt": "宋代极简美学水墨动画，大面积留白，淡墨轻染，天青与藕荷的低饱和设色。构图疏朗有禅意，笔触含蓄克制。摒弃浓烈色彩与繁复细节，追求雨过天青般的清雅。适合文人气质的短视频。",
   "image": "assets/library/0076-x.jpg",
   "match": "水墨 / 国画",
-  "q": "chinese ink painting"
+  "q": "chinese ink painting",
+  "qw": "chinese ink painting"
  },
  {
   "id": "S006",
@@ -57,7 +62,8 @@ window.__STYLES__ = [
   "prompt": "水墨写意动画，以皴擦点染表现山石云水，墨色浓淡相破，笔意潇洒流动。保留宣纸晕染的随机肌理与飞白。动态如行云流水，气韵生动。适合诗意短片与文化类视频。",
   "image": "assets/library/0076-x.jpg",
   "match": "水墨 / 国画",
-  "q": "chinese ink painting"
+  "q": "chinese ink painting",
+  "qw": "chinese ink painting"
  },
  {
   "id": "S007",
@@ -67,7 +73,8 @@ window.__STYLES__ = [
   "prompt": "新派武侠写实动画，徐克式凌厉的冷兵器打斗与飘逸轻功。雪夜、竹林、客栈等场景，冷蓝月色与刀光交错。人物衣袂随动作飞扬，运镜凌厉有压迫感。适合武侠漫剧与游戏宣传。",
   "image": "assets/library/0227-x.jpg",
   "match": "武侠刀剑",
-  "q": "chinese wuxia"
+  "q": "chinese wuxia",
+  "qw": "chinese wuxia"
  },
  {
   "id": "S008",
@@ -77,7 +84,8 @@ window.__STYLES__ = [
   "prompt": "萌系国风Q版，圆润 fat-cheek 的角色穿着唐装汉服，表情夸张喜庆。配色甜暖，红金为主，线条圆钝可爱。摒弃写实比例，追求糖豆般的解压萌感。适合儿童内容与节庆短视频。",
   "image": "assets/library/0060-x.jpg",
   "match": "Q版可爱",
-  "q": "chinese chibi"
+  "q": "chinese chibi",
+  "qw": "chinese chibi"
  },
  {
   "id": "S009",
@@ -87,7 +95,8 @@ window.__STYLES__ = [
   "prompt": "赛璐璐平涂国风动画，清晰硬边线稿搭配平涂的固有色块，阴影分层明确。国风纹样与建筑作背景，色彩饱满不脏。保留手绘动画的清爽节奏感。适合国风番剧与虚拟偶像。",
   "image": "assets/library/0080-x.jpg",
   "match": "国风古韵",
-  "q": "chinese 3d anime"
+  "q": "chinese 3d anime",
+  "qw": "chinese 3d anime"
  },
  {
   "id": "S010",
@@ -97,7 +106,8 @@ window.__STYLES__ = [
   "prompt": "剪纸与皮影非遗动画，红黑镂空剪影，层叠的纸感与透光。人物与景物以侧影轮廓叙事，关节可动的皮影质感。配民乐与暖光投影。适合非遗科普与民俗短片。",
   "image": "assets/library/0124-x.jpg",
   "match": "剪纸层叠",
-  "q": "chinese papercut"
+  "q": "chinese papercut",
+  "qw": "chinese papercut"
  },
  {
   "id": "S011",
@@ -107,7 +117,8 @@ window.__STYLES__ = [
   "prompt": "国风美食治愈动画，舌尖上的中国式暖光与氤氲热气，食材纹理细腻诱人。运镜贴近锅灶，慢镜头捕捉油花与蒸汽。色调暖橙米白，安静治愈。适合美食账号与带货短视频。",
   "image": "assets/library/0076-x.jpg",
   "match": "水墨 / 国画",
-  "q": "chinese food"
+  "q": "chinese food",
+  "qw": "chinese food"
  },
  {
   "id": "S012",
@@ -117,7 +128,8 @@ window.__STYLES__ = [
   "prompt": "山海经神兽奇幻风，上古异兽以青铜纹样与玉雕质感呈现，鳞片羽毛有古器物般的厚重光泽。背景山海云雾缭绕，设色神秘沉稳带金。适合神话IP与国潮短片。",
   "image": "assets/library/0215-x.jpg",
   "match": "龙与传说",
-  "q": "chinese ancient art"
+  "q": "chinese ancient art",
+  "qw": "chinese ancient art"
  },
  {
   "id": "S013",
@@ -127,7 +139,8 @@ window.__STYLES__ = [
   "prompt": "新海诚风格，极致通透的蓝天与层叠卷积云，逆光下的发丝光斑与镜头光晕。世界设定细腻，建筑与街道有真实质感，天空占据大量画面。色调清亮带淡淡胶片暖。适合青春恋爱与旅行短片。",
   "image": "assets/library/0048-x.jpg",
   "match": "动画风景",
-  "q": "makoto shinkai"
+  "q": "makoto shinkai",
+  "qw": "makoto shinkai"
  },
  {
   "id": "S014",
@@ -137,7 +150,8 @@ window.__STYLES__ = [
   "prompt": "吉卜力手绘动画，水彩般柔和的自然光，草地、麦田与老屋有手绘的温润笔触。角色动作生活化，空气感与微风流动。色调田园温暖，拒绝锐利3D。适合治愈系与儿童向。",
   "image": "assets/library/0052-x.jpg",
   "match": "吉卜力风",
-  "q": "ghibli"
+  "q": "ghibli",
+  "qw": "ghibli"
  },
  {
   "id": "S015",
@@ -147,7 +161,8 @@ window.__STYLES__ = [
   "prompt": "日式赛璐璐上色动画，清晰硬边线稿加平涂固有色，阴影为明确分层块面而非渐变。色彩明快饱和，保留动画赛道的清爽节奏。适合番剧OP与角色 PV。",
   "image": "assets/library/0056-x.jpg",
   "match": "动漫人像",
-  "q": "cel shaded anime"
+  "q": "cel shaded anime",
+  "qw": "cel shaded anime"
  },
  {
   "id": "S016",
@@ -157,7 +172,8 @@ window.__STYLES__ = [
   "prompt": "京都动画式质感，极致细腻的日常描绘，发丝与布料有柔和光感，空气透视与丁达尔光。表情与眼神戏精准，画面安静有呼吸感。适合校园日常与情感向短片。",
   "image": "assets/library/0056-x.jpg",
   "match": "动漫人像",
-  "q": "anime aesthetic"
+  "q": "anime aesthetic",
+  "qw": "anime aesthetic"
  },
  {
   "id": "S017",
@@ -167,7 +183,8 @@ window.__STYLES__ = [
   "prompt": "ufotable 式剑戟动画，角色周围环绕蓝色粒子与和风符文特效，刀光以发光轨迹呈现。背景水墨与实景融合，打斗运镜高速凌厉。色彩冷调带金光。适合战斗 PV 与游戏宣传。",
   "image": "assets/library/0227-x.jpg",
   "match": "武侠刀剑",
-  "q": "anime action"
+  "q": "anime action",
+  "qw": "anime action"
  },
  {
   "id": "S018",
@@ -177,7 +194,8 @@ window.__STYLES__ = [
   "prompt": "MAPPA 式热血动画，极度夸张的演出与高速动态，速度线与画面撕裂强调冲击。角色表情扭曲有张力，运镜不安定却精准。适合燃系漫改与电竞宣传。",
   "image": "assets/library/0032-x.jpg",
   "match": "机甲",
-  "q": "anime action"
+  "q": "anime action",
+  "qw": "anime action"
  },
  {
   "id": "S019",
@@ -187,7 +205,8 @@ window.__STYLES__ = [
   "prompt": "今敏式心理动画，现实与梦境无缝剪辑的超现实蒙太奇，空间扭曲与身份错位。色调偏冷灰蓝，细微噪点增添胶片感。叙事迷离克制。适合悬疑文艺短片。",
   "image": "assets/library/0100-x.jpg",
   "match": "超现实",
-  "q": "surreal anime"
+  "q": "surreal anime",
+  "qw": "surreal anime"
  },
  {
   "id": "S020",
@@ -197,7 +216,8 @@ window.__STYLES__ = [
   "prompt": "Y2K 日系辣妹动画，2000年代复古滤镜，高饱和粉紫与低对比胶片颗粒。角色穿搭张扬，街拍式构图。带怀旧 VHS 抖动的活泼感。适合潮流与穿搭短视频。",
   "image": "assets/library/0243-x.jpg",
   "match": "Y2K 千禧",
-  "q": "gyaru"
+  "q": "gyaru",
+  "qw": "gyaru"
  },
  {
   "id": "S021",
@@ -207,7 +227,8 @@ window.__STYLES__ = [
   "prompt": "昭和年代复古动画，明显胶片颗粒与轻微褪色，手绘赛璐璐的温热质感。色彩偏旧暖，边缘有年代抖动。叙事舒缓。适合怀旧向与年代剧。",
   "image": "assets/library/0064-x.jpg",
   "match": "漫画黑白",
-  "q": "retro anime"
+  "q": "retro anime",
+  "qw": "retro anime"
  },
  {
   "id": "S022",
@@ -217,7 +238,8 @@ window.__STYLES__ = [
   "prompt": "萌系日常动画，轻松校园与居家场景，柔光与粉嫩设色。角色动作可爱夸张，表情丰富。运镜平稳温馨。适合萌系 IP 与表情包短视频。",
   "image": "assets/library/0060-x.jpg",
   "match": "Q版可爱",
-  "q": "cute anime"
+  "q": "cute anime",
+  "qw": "cute anime"
  },
  {
   "id": "S023",
@@ -227,7 +249,8 @@ window.__STYLES__ = [
   "prompt": "日系机战动画，巨型机器人与战舰以硬朗线条与金属高光呈现，爆炸与光束有手绘张狂感。地平线低、构图宏大。色调冷钢蓝带橙红火光。适合机甲 PV 与玩具广告。",
   "image": "assets/library/0032-x.jpg",
   "match": "机甲",
-  "q": "anime action"
+  "q": "anime action",
+  "qw": "anime action"
  },
  {
   "id": "S024",
@@ -237,7 +260,8 @@ window.__STYLES__ = [
   "prompt": "皮克斯式3D动画，圆润可爱的人物比例，皮肤与布料有柔和次表面散射。表情夸张精准，眼神传递情绪。光影温暖自然，材质细腻但不写实。适合合家欢短片与品牌动画。",
   "image": "assets/library/0120-x.jpg",
   "match": "黏土定格",
-  "q": "pixar 3d"
+  "q": "pixar 3d",
+  "qw": "pixar 3d"
  },
  {
   "id": "S025",
@@ -247,7 +271,8 @@ window.__STYLES__ = [
   "prompt": "迪士尼经典动画，音乐剧式华丽场面，角色有舞台化的夸张表情与肢体。色彩饱满童话感强，背景水彩与实景融合。运镜流畅喜庆。适合童话改編与节日内容。",
   "image": "assets/library/0211-x.jpg",
   "match": "奇幻城堡",
-  "q": "disney"
+  "q": "disney",
+  "qw": "disney"
  },
  {
   "id": "S026",
@@ -257,7 +282,8 @@ window.__STYLES__ = [
   "prompt": "蜘蛛侠平行宇宙式动画，漫画分格与半调网点叠加，霓虹撞色与故障(glitch)错位。笔触与墨点保留手绘瑕疵感，帧率故意不连贯制造动感。适合潮酷 MV 与潮流短片。",
   "image": "assets/library/0104-x.jpg",
   "match": "波普艺术",
-  "q": "comic art"
+  "q": "comic art",
+  "qw": "comic art"
  },
  {
   "id": "S027",
@@ -267,7 +293,8 @@ window.__STYLES__ = [
   "prompt": "美式卡通，橡胶管(rubber hose)式的弹性肢体，粗黑轮廓线与平涂亮色。动作夸张弹性十足，节奏明快。摒弃写实透视。适合表情包与轻松广告。",
   "image": "assets/library/0136-x.jpg",
   "match": "扁平插画",
-  "q": "cartoon"
+  "q": "cartoon",
+  "qw": "cartoon"
  },
  {
   "id": "S028",
@@ -277,7 +304,8 @@ window.__STYLES__ = [
   "prompt": "定格动画，实体偶与纸艺逐帧拍摄，保留手工微抖与材质纹理。光线有舞台剧般的戏剧感，边缘略不规则。温润手工温度。适合独立短片与创意广告。",
   "image": "assets/library/0120-x.jpg",
   "match": "黏土定格",
-  "q": "stop motion"
+  "q": "stop motion",
+  "qw": "stop motion"
  },
  {
   "id": "S029",
@@ -287,7 +315,8 @@ window.__STYLES__ = [
   "prompt": "Low Poly 低多边形3D，以三角面块面化呈现角色与场景，flat shading 的硬边光影。配色清新有限调色板，几何感强却可爱。适合科普动画与 App 引导。",
   "image": "assets/library/0112-x.jpg",
   "match": "低多边形",
-  "q": "low poly"
+  "q": "low poly",
+  "qw": "low poly"
  },
  {
   "id": "S030",
@@ -297,7 +326,8 @@ window.__STYLES__ = [
   "prompt": "美式漫画英雄动画，硬派光影与浓重阴影，人物肌肉线条夸张。分镜如漫画跨页，速度线与拟声词点缀。色调高对比。适合超级英雄 PV 与游戏过场。",
   "image": "assets/library/0211-x.jpg",
   "match": "奇幻城堡",
-  "q": "comic book"
+  "q": "comic book",
+  "qw": "comic book"
  },
  {
   "id": "S031",
@@ -307,7 +337,8 @@ window.__STYLES__ = [
   "prompt": "欧洲独立动画，手绘水粉或蜡笔质感，文艺克制的叙事与留白。色彩低饱和带忧郁，运镜缓慢有呼吸。适合艺术短片与电影节向内容。",
   "image": "assets/library/0096-x.jpg",
   "match": "印象派",
-  "q": "indie animation"
+  "q": "indie animation",
+  "qw": "indie animation"
  },
  {
   "id": "S032",
@@ -317,7 +348,8 @@ window.__STYLES__ = [
   "prompt": "好莱坞史诗大片质感，IMAX 宽幅构图，壮丽的实景与 CG 融合。黄金时刻与戏剧硬光，浅景深与动态运镜兼具宏大与细节。色调电影感饱和。适合预告片与品牌大片。",
   "image": "assets/library/0001-x.jpg",
   "match": "电影感 / 胶片大片",
-  "q": "cinematic"
+  "q": "cinematic",
+  "qw": "cinematic"
  },
  {
   "id": "S033",
@@ -327,7 +359,8 @@ window.__STYLES__ = [
   "prompt": "王家卫式电影语言，霓虹与暖黄街灯的暧昧光晕，抽帧慢镜与晃动手持。高饱和红绿色调，人物的孤独与欲望在细节里流淌。适合情绪向与都市短片。",
   "image": "assets/library/0016-x.jpg",
   "match": "霓虹光效",
-  "q": "wong kar wai"
+  "q": "wong kar wai",
+  "qw": "wong kar wai"
  },
  {
   "id": "S034",
@@ -337,7 +370,8 @@ window.__STYLES__ = [
   "prompt": "柯达胶片电影质感，明显的胶片颗粒与暖调偏色，光线柔和弥散。构图经典，景深如老电影般温柔。轻微光晕与划痕增添年代感。适合文艺片与怀旧广告。",
   "image": "assets/library/0001-x.jpg",
   "match": "电影感 / 胶片大片",
-  "q": "film photography"
+  "q": "film photography",
+  "qw": "film photography"
  },
  {
   "id": "S035",
@@ -347,7 +381,8 @@ window.__STYLES__ = [
   "prompt": "诺兰式 IMAX 实拍，冷峻的实景宏大场面，IMAX 65mm 的极致清晰与景深。非线性叙事感，音画压迫，色调克制偏蓝灰。适合科幻与悬疑预告。",
   "image": "assets/library/0001-x.jpg",
   "match": "电影感 / 胶片大片",
-  "q": "cinematic"
+  "q": "cinematic",
+  "qw": "cinematic"
  },
  {
   "id": "S036",
@@ -357,7 +392,8 @@ window.__STYLES__ = [
   "prompt": "侯孝贤式长镜头美学，固定机位与缓慢的横移，自然光与真实环境的呼吸感。人物融入环境，叙事含蓄留白。色调清冷素朴。适合文艺纪录片与生活流短片。",
   "image": "assets/library/0172-x.jpg",
   "match": "雾气森林",
-  "q": "slow cinema"
+  "q": "slow cinema",
+  "qw": "slow cinema"
  },
  {
   "id": "S037",
@@ -367,7 +403,8 @@ window.__STYLES__ = [
   "prompt": "高端广告电影感，产品为主体的浅景深与柔光，金属与玻璃质感分明。运镜顺滑推拉，背景虚化成高级色块。色调干净通透。适合产品发布与电商大片。",
   "image": "assets/library/0160-x.jpg",
   "match": "人像摄影",
-  "q": "cinematic"
+  "q": "cinematic",
+  "qw": "cinematic"
  },
  {
   "id": "S038",
@@ -377,7 +414,8 @@ window.__STYLES__ = [
   "prompt": "纪实手持摄影，轻微晃动与呼吸感，自然光下的真实瞬间。构图不完美却鲜活，噪点可接受。排斥过度美化。适合新闻感与真实记录短片。",
   "image": "assets/library/0156-x.jpg",
   "match": "街头摄影",
-  "q": "documentary"
+  "q": "documentary",
+  "qw": "documentary"
  },
  {
   "id": "S039",
@@ -387,7 +425,8 @@ window.__STYLES__ = [
   "prompt": "黑白文艺影像，高反差的光影雕塑感，肌理与轮廓成为主角。摒弃色彩干扰，极简构图。颗粒细腻如银盐相纸。适合人物肖像与情绪短片。",
   "image": "assets/library/0164-x.jpg",
   "match": "黑白摄影",
-  "q": "black and white photo"
+  "q": "black and white photo",
+  "qw": "black and white photo"
  },
  {
   "id": "S040",
@@ -397,7 +436,8 @@ window.__STYLES__ = [
   "prompt": "韩剧式唯美质感，柔光与清透肤色，浅景深虚化背景为奶油光斑。色调淡粉米白，画面干净养眼。运镜舒缓唯美。适合爱情向与美妆内容。",
   "image": "assets/library/0160-x.jpg",
   "match": "人像摄影",
-  "q": "korean drama"
+  "q": "korean drama",
+  "qw": "korean drama"
  },
  {
   "id": "S041",
@@ -407,7 +447,8 @@ window.__STYLES__ = [
   "prompt": "英剧式冷峻叙事质感，灰蓝低饱和的阴郁光线，克制的构图与长镜。细节里藏情绪，色调如伦敦阴天。适合悬疑与严肃题材。",
   "image": "assets/library/0251-x.jpg",
   "match": "日式庭院",
-  "q": "moody cinematic"
+  "q": "moody cinematic",
+  "qw": "moody cinematic"
  },
  {
   "id": "S042",
@@ -417,7 +458,8 @@ window.__STYLES__ = [
   "prompt": "赛博朋克都市，密集霓虹招牌与全息广告，湿漉漉的街道反射彩色光。亚洲街市混杂未来科技，雨水与雾气柔化高光。色调青品红撞色。适合反乌托邦短片。",
   "image": "assets/library/0024-x.jpg",
   "match": "赛博朋克",
-  "q": "cyberpunk"
+  "q": "cyberpunk",
+  "qw": "cyberpunk"
  },
  {
   "id": "S043",
@@ -427,7 +469,8 @@ window.__STYLES__ = [
   "prompt": "银翼杀手2049 式科幻，巨大孤独的废墟与沙漠城市，橙黄与幽蓝的雾气漫射。巨型建筑与微小人影的尺度对比。色调沉静史诗。适合哲学向科幻。",
   "image": "assets/library/0028-x.jpg",
   "match": "科幻都市",
-  "q": "blade runner"
+  "q": "blade runner",
+  "qw": "blade runner"
  },
  {
   "id": "S044",
@@ -437,7 +480,8 @@ window.__STYLES__ = [
   "prompt": "科幻 UI 视觉，半透明全息面板、数据流动与 HUD 抬头显示，霓虹蓝绿的光线与网格。界面有玻璃质感与扫描线。适合科技产品演示与未来战争片。",
   "image": "assets/library/0036-x.jpg",
   "match": "星际星云",
-  "q": "sci fi ui"
+  "q": "sci fi ui",
+  "qw": "sci fi ui"
  },
  {
   "id": "S045",
@@ -447,7 +491,8 @@ window.__STYLES__ = [
   "prompt": "太空歌剧，宏大的星舰与异星地貌，星云与行星的壮丽 CG。光线来自恒星与引擎辉光，构图史诗对称。色调深空蓝紫带暖橙。适合科幻 IP 与游戏过场。",
   "image": "assets/library/0036-x.jpg",
   "match": "星际星云",
-  "q": "space opera"
+  "q": "space opera",
+  "qw": "space opera"
  },
  {
   "id": "S046",
@@ -457,7 +502,8 @@ window.__STYLES__ = [
   "prompt": "故障艺术(glitch)视觉，RGB 通道错位、像素撕裂与扫描线干扰，数字信号的混沌美。色彩在噪点中炸裂。适合电子乐 MV 与赛博主题。",
   "image": "assets/library/0104-x.jpg",
   "match": "波普艺术",
-  "q": "glitch art"
+  "q": "glitch art",
+  "qw": "glitch art"
  },
  {
   "id": "S047",
@@ -467,7 +513,8 @@ window.__STYLES__ = [
   "prompt": "虚幻引擎5写实渲染，光线追踪的实时光影与反射，Nanite 级别的几何细节。电影级调色，材质真实到毛孔。适合实时虚拟拍摄与游戏宣传。",
   "image": "assets/library/0028-x.jpg",
   "match": "科幻都市",
-  "q": "unreal engine"
+  "q": "unreal engine",
+  "qw": "unreal engine"
  },
  {
   "id": "S048",
@@ -477,7 +524,8 @@ window.__STYLES__ = [
   "prompt": "蒸汽朋克，黄铜与齿轮的机械造物，维多利亚风貌的城市与飞艇。暖棕金色调，蒸汽与烟尘柔化光线。细节繁复有手作感。适合架空奇幻与机械主题。",
   "image": "assets/library/0040-x.jpg",
   "match": "蒸汽朋克",
-  "q": "steampunk"
+  "q": "steampunk",
+  "qw": "steampunk"
  },
  {
   "id": "S049",
@@ -487,7 +535,8 @@ window.__STYLES__ = [
   "prompt": "异星地表，荒芜奇异的地貌与双日或异色天空，植物与生物形态陌生。光线来自不熟悉的恒星，色调荒凉带神秘紫。适合科幻探索短片。",
   "image": "assets/library/0044-x.jpg",
   "match": "末世废土",
-  "q": "alien planet"
+  "q": "alien planet",
+  "qw": "alien planet"
  },
  {
   "id": "S050",
@@ -497,7 +546,8 @@ window.__STYLES__ = [
   "prompt": "三丽鸥式可爱，圆滚滚的大头身比，豆豆眼与简单表情，糖果色与纯白背景。线条干净无阴影，治愈无害。适合萌物 IP 与儿童内容。",
   "image": "assets/library/0060-x.jpg",
   "match": "Q版可爱",
-  "q": "sanrio"
+  "q": "sanrio",
+  "qw": "sanrio"
  },
  {
   "id": "S051",
@@ -507,7 +557,8 @@ window.__STYLES__ = [
   "prompt": "萌系水彩，粉彩晕染的柔软角色，边缘有手绘水痕与留白。色彩甜美不刺眼，光感轻盈。适合手账风与治愈短视频。",
   "image": "assets/library/0068-x.jpg",
   "match": "水彩",
-  "q": "cute watercolor"
+  "q": "cute watercolor",
+  "qw": "cute watercolor"
  },
  {
   "id": "S052",
@@ -517,7 +568,8 @@ window.__STYLES__ = [
   "prompt": "Chibi Q 版，夸张的大头小身比，弹性十足的动作与表情。平涂上色，高光点状可爱。适合表情包与游戏角色展示。",
   "image": "assets/library/0060-x.jpg",
   "match": "Q版可爱",
-  "q": "chibi"
+  "q": "chibi",
+  "qw": "chibi"
  },
  {
   "id": "S053",
@@ -527,7 +579,8 @@ window.__STYLES__ = [
   "prompt": "黏土动画风，角色如手工捏塑，表面有指纹与软糯高光。动作顿挫可爱，材质温润。适合童趣短片与品牌吉祥物。",
   "image": "assets/library/0120-x.jpg",
   "match": "黏土定格",
-  "q": "claymation"
+  "q": "claymation",
+  "qw": "claymation"
  },
  {
   "id": "S054",
@@ -537,7 +590,8 @@ window.__STYLES__ = [
   "prompt": "极简扁平萌系，纯色块无描边的圆润造型，有限糖果调色板。构图留白清爽，信息一目了然。适合科普与 App 插画动画。",
   "image": "assets/library/0136-x.jpg",
   "match": "扁平插画",
-  "q": "flat cute"
+  "q": "flat cute",
+  "qw": "flat cute"
  },
  {
   "id": "S055",
@@ -547,7 +601,8 @@ window.__STYLES__ = [
   "prompt": "治愈系日常，慵懒的猫与慢生活场景，暖米色调与柔光。运镜安静如呼吸，细节里有生活温度。适合解压短视频与白噪音内容。",
   "image": "assets/library/0060-x.jpg",
   "match": "Q版可爱",
-  "q": "cozy"
+  "q": "cozy",
+  "qw": "cozy"
  },
  {
   "id": "S056",
@@ -557,7 +612,8 @@ window.__STYLES__ = [
   "prompt": "16 位像素 RPG 风，塞尔达与最终幻想式的方块像素角色与场景，有限调色板与清晰像素边缘。战斗与探索的明快节奏。适合游戏预告与怀旧内容。",
   "image": "assets/library/0108-x.jpg",
   "match": "像素风",
-  "q": "pixel art"
+  "q": "pixel art",
+  "qw": "pixel art"
  },
  {
   "id": "S057",
@@ -567,7 +623,8 @@ window.__STYLES__ = [
   "prompt": "像素音乐录影带，霓虹栅格地平线与像素化的都市夜景，蒸汽波配色。像素精灵随节拍舞动，扫描线增添复古荧光感。适合 chiptune 与电子乐。",
   "image": "assets/library/0108-x.jpg",
   "match": "像素风",
-  "q": "pixel art"
+  "q": "pixel art",
+  "qw": "pixel art"
  },
  {
   "id": "S058",
@@ -577,7 +634,8 @@ window.__STYLES__ = [
   "prompt": "8 位街机像素，极简调色板与粗大像素，横版卷轴与硬核手感。色彩鲜亮撞色。适合复古游戏 IP 与怀旧广告。",
   "image": "assets/library/0108-x.jpg",
   "match": "像素风",
-  "q": "pixel art"
+  "q": "pixel art",
+  "qw": "pixel art"
  },
  {
   "id": "S059",
@@ -587,7 +645,8 @@ window.__STYLES__ = [
   "prompt": "复古 VHS 录像带质感，明显扫描线与色彩串扰，画面轻微抖动与磁带噪点。暖褪色与边缘扭曲。适合 80-90 年代怀旧短片与混剪。",
   "image": "assets/library/0239-x.jpg",
   "match": "复古80年代",
-  "q": "retro vintage"
+  "q": "retro vintage",
+  "qw": "retro vintage"
  },
  {
   "id": "S060",
@@ -597,7 +656,8 @@ window.__STYLES__ = [
   "prompt": "老照片做旧质感，泛黄褪色与边角暗角，细微划痕与霉斑。颗粒柔和如银盐相纸年代感。适合家族影像与怀旧叙事。",
   "image": "assets/library/0140-x.jpg",
   "match": "双重曝光",
-  "q": "retro vintage"
+  "q": "retro vintage",
+  "qw": "retro vintage"
  },
  {
   "id": "S061",
@@ -607,7 +667,8 @@ window.__STYLES__ = [
   "prompt": "宝丽来即时成像，方形构图配白边框，偶发漏光与偏色。色调奶油怀旧，边缘柔和晕开。适合旅行手账与情感短片。",
   "image": "assets/library/0239-x.jpg",
   "match": "复古80年代",
-  "q": "retro vintage"
+  "q": "retro vintage",
+  "qw": "retro vintage"
  },
  {
   "id": "S062",
@@ -617,7 +678,8 @@ window.__STYLES__ = [
   "prompt": "苹果式产品广告，纯白或纯黑极简背景，产品缓慢旋转展示，柔和环形光勾勒轮廓。构图呼吸感强，无多余元素。色调干净高级。适合电子与科技产品。",
   "image": "assets/library/0136-x.jpg",
   "match": "扁平插画",
-  "q": "advertising"
+  "q": "advertising",
+  "qw": "advertising"
  },
  {
   "id": "S063",
@@ -627,7 +689,8 @@ window.__STYLES__ = [
   "prompt": "汽车广告质感，暗调影棚与流动光带勾勒车身曲线，雨渍与镜面反射增添高级。低速运镜贴合车漆光泽，节奏紧绷有力量。适合车型发布。",
   "image": "assets/library/0028-x.jpg",
   "match": "科幻都市",
-  "q": "advertising"
+  "q": "advertising",
+  "qw": "advertising"
  },
  {
   "id": "S064",
@@ -637,7 +700,8 @@ window.__STYLES__ = [
   "prompt": "美妆广告，柔焦与珠光质感，肤色通透如瓷。微距捕捉唇釉与眼影的光泽，背景虚化成粉雾色块。色调甜美高级。适合美妆带货。",
   "image": "assets/library/0160-x.jpg",
   "match": "人像摄影",
-  "q": "advertising"
+  "q": "advertising",
+  "qw": "advertising"
  },
  {
   "id": "S065",
@@ -647,7 +711,8 @@ window.__STYLES__ = [
   "prompt": "美食广告，微距逼近食材表面，油光与蒸汽诱人，慢镜头捕捉酱汁流动。暖光打亮主体，背景虚化。色调食欲感强。适合餐饮与食品带货。",
   "image": "assets/library/0140-x.jpg",
   "match": "双重曝光",
-  "q": "advertising"
+  "q": "advertising",
+  "qw": "advertising"
  },
  {
   "id": "S066",
@@ -657,7 +722,8 @@ window.__STYLES__ = [
   "prompt": "运动品牌广告，高速运镜与升格慢动作交替，汗水与肌肉的张力爆发。强对比光影与撞色，节奏鼓点驱动。适合运动装备与赛事宣传。",
   "image": "assets/library/0016-x.jpg",
   "match": "霓虹光效",
-  "q": "advertising"
+  "q": "advertising",
+  "qw": "advertising"
  },
  {
   "id": "S067",
@@ -667,7 +733,8 @@ window.__STYLES__ = [
   "prompt": "高奢珠宝广告，黑金极简背景，微距捕捉钻石火彩与金属反光。光线精准如聚光，每一面都璀璨。节奏缓慢尊贵。适合腕表与珠宝品牌。",
   "image": "assets/library/0092-x.jpg",
   "match": "装饰艺术",
-  "q": "advertising"
+  "q": "advertising",
+  "qw": "advertising"
  },
  {
   "id": "S068",
@@ -677,7 +744,8 @@ window.__STYLES__ = [
   "prompt": "霓虹夜店 MV，激光与频闪随节拍切割画面，人物剪影与烟雾交织。高饱和撞色，动态模糊制造律动。适合电音与潮流歌曲。",
   "image": "assets/library/0016-x.jpg",
   "match": "霓虹光效",
-  "q": "music video"
+  "q": "music video",
+  "qw": "music video"
  },
  {
   "id": "S069",
@@ -687,7 +755,8 @@ window.__STYLES__ = [
   "prompt": "蒸汽波音乐录影带，粉蓝紫的网格地平线与落日，古希腊雕塑与棕榈的复古未来拼贴。画面如梦境慢速漂移。适合 chillwave 与怀旧电子。",
   "image": "assets/library/0235-x.jpg",
   "match": "蒸汽波",
-  "q": "music video"
+  "q": "music video",
+  "qw": "music video"
  },
  {
   "id": "S070",
@@ -697,7 +766,8 @@ window.__STYLES__ = [
   "prompt": "演唱会大屏视觉，巨型粒子与光束随副歌爆发，人群剪影与舞台激光交融。色彩绚烂有冲击力，节奏与现场同步。适合 live 与音乐节。",
   "image": "assets/library/0036-x.jpg",
   "match": "星际星云",
-  "q": "music video"
+  "q": "music video",
+  "qw": "music video"
  },
  {
   "id": "S071",
@@ -707,7 +777,8 @@ window.__STYLES__ = [
   "prompt": "抒情慢歌 MV，自然光与影子诉说情绪，长镜跟随人物的细微表情。色调低饱和温柔，叙事留白。适合 ballad 与独立音乐。",
   "image": "assets/library/0164-x.jpg",
   "match": "黑白摄影",
-  "q": "music video"
+  "q": "music video",
+  "qw": "music video"
  },
  {
   "id": "S072",
@@ -717,7 +788,8 @@ window.__STYLES__ = [
   "prompt": "电子音乐可视化，几何图形与音频频谱脉冲同步，色块随节拍炸裂重组。画面炫目未来感强。适合 EDM 与视觉系现场。",
   "image": "assets/library/0104-x.jpg",
   "match": "波普艺术",
-  "q": "music video"
+  "q": "music video",
+  "qw": "music video"
  },
  {
   "id": "S073",
@@ -727,7 +799,8 @@ window.__STYLES__ = [
   "prompt": "K-pop 音乐录影带，快切分镜与整齐编舞，潮牌场景与高饱和打光。服装造型前卫，节奏精准卡点。适合偶像与潮流歌曲。",
   "image": "assets/library/0016-x.jpg",
   "match": "霓虹光效",
-  "q": "music video"
+  "q": "music video",
+  "qw": "music video"
  },
  {
   "id": "S074",
@@ -737,7 +810,8 @@ window.__STYLES__ = [
   "prompt": "流体艺术动画，墨水与颜料在水中自由扩散晕染，有机形态缓缓流动。色彩交融如梦，无明确主体。适合片头与氛围背景。",
   "image": "assets/library/0068-x.jpg",
   "match": "水彩",
-  "q": "abstract art"
+  "q": "abstract art",
+  "qw": "abstract art"
  },
  {
   "id": "S075",
@@ -747,7 +821,8 @@ window.__STYLES__ = [
   "prompt": "极简动态图形(Motion Graphics)，几何形状与文字的弹性动效，有限调色板与留白。节奏明快信息清晰。适合数据可视化与品牌片头。",
   "image": "assets/library/0136-x.jpg",
   "match": "扁平插画",
-  "q": "abstract art"
+  "q": "abstract art",
+  "qw": "abstract art"
  },
  {
   "id": "S076",
@@ -757,7 +832,8 @@ window.__STYLES__ = [
   "prompt": "装饰艺术(Art Deco)风格，对称几何与阶梯线条，金黑配色的奢华质感。扇形与光芒纹样充满帧面。适合复古奢华主题与片头。",
   "image": "assets/library/0092-x.jpg",
   "match": "装饰艺术",
-  "q": "abstract art"
+  "q": "abstract art",
+  "qw": "abstract art"
  },
  {
   "id": "S077",
@@ -767,7 +843,8 @@ window.__STYLES__ = [
   "prompt": "超现实主义，达利式的融化时钟与悬浮巨石，空间逻辑被打破的梦境。光影如古典油画般细腻，氛围静谧诡谲。适合艺术短片。",
   "image": "assets/library/0100-x.jpg",
   "match": "超现实",
-  "q": "abstract art"
+  "q": "abstract art",
+  "qw": "abstract art"
  },
  {
   "id": "S078",
@@ -777,7 +854,8 @@ window.__STYLES__ = [
   "prompt": "双重曝光影像，人物肖像与森林/城市/飞鸟在透明度中叠合，叙事隐喻于交错。色调统一柔和。适合文艺片头与个人表达。",
   "image": "assets/library/0140-x.jpg",
   "match": "双重曝光",
-  "q": "abstract art"
+  "q": "abstract art",
+  "qw": "abstract art"
  },
  {
   "id": "S079",
@@ -787,6 +865,1184 @@ window.__STYLES__ = [
   "prompt": "粒子尘埃动画，无数光点在虚空中缓慢漂浮聚散，如星尘与灵光。明暗呼吸般脉动，空灵治愈。适合冥想背景与片尾。",
   "image": "assets/library/0184-x.jpg",
   "match": "星空银河",
-  "q": "abstract art"
+  "q": "abstract art",
+  "qw": "abstract art"
+ },
+ {
+  "id": "S080",
+  "name": "雾山五行",
+  "cat": "国漫国风",
+  "desc": "水墨打斗、写意向",
+  "prompt": "国风武侠动画雾山五行，以大写意水墨笔触表现凌厉打斗，墨色飞白与喷溅如武术节奏。山石云水有传统皴法，色彩克制留白。动作设计兼具舞蹈美与爆发力。适合武侠短片与动作番。",
+  "image": "assets/library/0076-x.jpg",
+  "match": "水墨 / 国画",
+  "q": "chinese ink animation",
+  "qw": "wuxia animation"
+ },
+ {
+  "id": "S081",
+  "name": "罗小黑战记",
+  "cat": "国漫国风",
+  "desc": "治愈萌系、妖灵",
+  "prompt": "罗小黑式国风萌系动画，圆润可爱的妖灵角色与清新自然的山水，暖色治愈的光。运镜舒缓有呼吸感，神怪设定轻松讨喜。适合合家欢与治愈向。",
+  "image": "assets/library/0060-x.jpg",
+  "match": "Q版可爱",
+  "q": "chinese cute anime",
+  "qw": "cute spirit anime"
+ },
+ {
+  "id": "S082",
+  "name": "刺客伍六七",
+  "cat": "国漫国风",
+  "desc": "无厘头、市井武侠",
+  "prompt": "刺客伍六七式国漫，无厘头喜剧包裹市井武侠，粗粝手绘与夸张演出。角色接地气，打斗俏皮有创意。色调明快带市井烟火气。适合搞笑动作番。",
+  "image": "assets/library/0227-x.jpg",
+  "match": "武侠刀剑",
+  "q": "chinese action anime",
+  "qw": "assassin comedy anime"
+ },
+ {
+  "id": "S083",
+  "name": "凡人修仙传(3D)",
+  "cat": "国漫国风",
+  "desc": "写实3D、修仙",
+  "prompt": "凡人修仙传式3D国漫，偏写实的角色建模与厚重服饰质感，修仙世界宏大。打斗运镜凌厉有分量，光影自然。摒弃低幼卡通，追求成年向的修真厚度。适合长篇漫剧。",
+  "image": "assets/library/0231-x.jpg",
+  "match": "仙侠修仙",
+  "q": "chinese 3d xianxia",
+  "qw": "xianxia cultivation"
+ },
+ {
+  "id": "S084",
+  "name": "斗破苍穹(3D)",
+  "cat": "国漫国风",
+  "desc": "玄幻3D、异火",
+  "prompt": "斗破苍穹式3D玄幻国漫，异火与斗气的炫目特效，角色比例写实。场景从荒漠到宗门层次丰富，运镜大气。色彩饱和带史诗感。适合玄幻漫改。",
+  "image": "assets/library/0231-x.jpg",
+  "match": "仙侠修仙",
+  "q": "chinese 3d donghua",
+  "qw": "donghua fantasy"
+ },
+ {
+  "id": "S085",
+  "name": "画江湖系列",
+  "cat": "国漫国风",
+  "desc": "暗黑武侠、权谋",
+  "prompt": "画江湖式暗黑国漫武侠，权谋与江湖恩怨交织，成人向的冷峻基调。人物刻画世故而复杂，打斗狠辣真实。色调偏青灰沉郁。适合成人武侠剧。",
+  "image": "assets/library/0227-x.jpg",
+  "match": "武侠刀剑",
+  "q": "chinese wuxia anime",
+  "qw": "wuxia dark"
+ },
+ {
+  "id": "S086",
+  "name": "中国唱诗班",
+  "cat": "国漫国风",
+  "desc": "诗词动画、文人",
+  "prompt": "中国唱诗班式国风诗词动画，以古诗意境驱动画面，水墨与工笔交织。叙事含蓄留白，配乐古雅。整体文人气质浓厚，节奏舒缓。适合文化短片。",
+  "image": "assets/library/0076-x.jpg",
+  "match": "水墨 / 国画",
+  "q": "chinese poetry animation",
+  "qw": "chinese poetry"
+ },
+ {
+  "id": "S087",
+  "name": "一人之下",
+  "cat": "国漫国风",
+  "desc": "现代异能、炁体",
+  "prompt": "一人之下式现代国风异能动画，传统炁体源流与都市格格不入的神秘感。打斗结合民俗功法，演出张扬。色彩现代又带水墨底子。适合都市异能番。",
+  "image": "assets/library/0080-x.jpg",
+  "match": "国风古韵",
+  "q": "chinese modern donghua",
+  "qw": "chinese superpower anime"
+ },
+ {
+  "id": "S088",
+  "name": "魔道祖师",
+  "cat": "国漫国风",
+  "desc": "仙侠、情义",
+  "prompt": "魔道祖师式仙侠国漫，清雅的修真门派与山水，人物情感细腻。打斗飘逸灵动，服饰纹样考究。整体明丽又不失暗涌。适合古风言情漫剧。",
+  "image": "assets/library/0231-x.jpg",
+  "match": "仙侠修仙",
+  "q": "chinese xianxia anime",
+  "qw": "xianxia anime"
+ },
+ {
+  "id": "S089",
+  "name": "白蛇缘起",
+  "cat": "国漫国风",
+  "desc": "神话、唯美",
+  "prompt": "白蛇缘起式国风神话动画，唯美的江南水乡与蛇妖传说，光影氤氲。角色柔情，场景如工笔长卷。色调青绿温润带神秘。适合神话爱情短片。",
+  "image": "assets/library/0080-x.jpg",
+  "match": "国风古韵",
+  "q": "chinese mythology anime",
+  "qw": "white snake legend"
+ },
+ {
+  "id": "S090",
+  "name": "哪吒(饺子)",
+  "cat": "国漫国风",
+  "desc": "燃、反叛、3D",
+  "prompt": "哪吒之魔童降世式3D国漫，燃系反叛少年气，夸张表情与高速演出。角色设计痞帅有记忆点，水墨烟云打底。色调浓烈撞色。适合合家欢燃向大片。",
+  "image": "assets/library/0080-x.jpg",
+  "match": "国风古韵",
+  "q": "chinese 3d mythology",
+  "qw": "nezha animation"
+ },
+ {
+  "id": "S091",
+  "name": "大圣归来",
+  "cat": "国漫国风",
+  "desc": "硬派、东方英雄",
+  "prompt": "西游记之大圣归来式国漫，硬派东方英雄归来，毛发与铠甲质感厚重。打斗有重量与顿挫，山水气势磅礴。色调金红沉稳带史诗。适合国漫英雄片。",
+  "image": "assets/library/0080-x.jpg",
+  "match": "国风古韵",
+  "q": "chinese monkey king anime",
+  "qw": "monkey king"
+ },
+ {
+  "id": "S092",
+  "name": "雄狮少年",
+  "cat": "国漫国风",
+  "desc": "现实、舞狮、热血",
+  "prompt": "雄狮少年式国漫，现实底色下的少年舞狮热血，岭南小镇烟火气十足。真人表演捕捉细腻，舞狮段落燃动。色调暖黄怀旧带希望。适合现实向励志片。",
+  "image": "assets/library/0080-x.jpg",
+  "match": "国风古韵",
+  "q": "chinese realistic anime",
+  "qw": "lion dance film"
+ },
+ {
+  "id": "S093",
+  "name": "深海(田晓鹏)",
+  "cat": "国漫国风",
+  "desc": "粒子水墨、治愈",
+  "prompt": "深海式粒子水墨动画，无数彩色粒子涌动如海底星河，水墨与油画交融。情绪细腻治愈，梦境般的光。适合情感疗愈短片。",
+  "image": "assets/library/0076-x.jpg",
+  "match": "水墨 / 国画",
+  "q": "chinese ink 3d animation",
+  "qw": "underwater animation"
+ },
+ {
+  "id": "S094",
+  "name": "细田守",
+  "cat": "日系动画",
+  "desc": "家庭、时光、通透",
+  "prompt": "细田守式动画电影，家庭与时光的温柔叙事，通透的自然光与细腻表情。运镜生活化却宏大，色彩温润。适合治愈系与奇幻亲情片。",
+  "image": "assets/library/0052-x.jpg",
+  "match": "吉卜力风",
+  "q": "anime movie",
+  "qw": "anime scenery"
+ },
+ {
+  "id": "S095",
+  "name": "汤浅政明",
+  "cat": "日系动画",
+  "desc": "狂想、变形、跳切",
+  "prompt": "汤浅政明式动画，天马行空的视觉狂想，人物变形与跳切如音乐律动。色彩高饱和撞色，节奏疯癫又诗意。适合实验向与音乐短片。",
+  "image": "assets/library/0048-x.jpg",
+  "match": "动漫",
+  "q": "surreal anime",
+  "qw": "experimental anime"
+ },
+ {
+  "id": "S096",
+  "name": "大友克洋(阿基拉)",
+  "cat": "日系动画",
+  "desc": "赛博东京、精细",
+  "prompt": "大友克洋阿基拉式动画，精细到极致的赛博东京与爆炸，背景描线如照片。冷调科幻与人体异变，运镜压迫。适合硬核科幻。",
+  "image": "assets/library/0064-x.jpg",
+  "match": "漫画黑白",
+  "q": "akira cyberpunk",
+  "qw": "akira tokyo"
+ },
+ {
+  "id": "S097",
+  "name": "押井守(攻壳)",
+  "cat": "日系动画",
+  "desc": "冷峻哲学、雨",
+  "prompt": "押井守攻壳机动队式动画，冷峻的哲学思辨与冷雨中的义体都市。实拍质感背景，缓慢沉思的镜头。色调青灰孤寂。适合赛博哲学片。",
+  "image": "assets/library/0064-x.jpg",
+  "match": "漫画黑白",
+  "q": "ghost in the shell",
+  "qw": "ghost in the shell"
+ },
+ {
+  "id": "S098",
+  "name": "几原邦彦",
+  "cat": "日系动画",
+  "desc": "华丽、象征、舞台",
+  "prompt": "几原邦彦式动画，华丽过剩的舞台美学与象征主义，玫瑰与剧场充斥画面。叙事暧昧如童话隐喻，配色妖艳。适合艺术向番剧。",
+  "image": "assets/library/0048-x.jpg",
+  "match": "动漫",
+  "q": "artistic anime",
+  "qw": "symbolist anime"
+ },
+ {
+  "id": "S099",
+  "name": "WIT(进击的巨人)",
+  "cat": "日系动画",
+  "desc": "张力、演出、尘土",
+  "prompt": "WIT工作室进击的巨人式动画，极具张力的演出与尘土飞扬的立体机动。人物在绝望中迸发，运镜随动作甩动。色调灰黄压抑带燃点。适合热血战斗番。",
+  "image": "assets/library/0056-x.jpg",
+  "match": "动漫人像",
+  "q": "attack on titan anime",
+  "qw": "titan anime"
+ },
+ {
+  "id": "S100",
+  "name": "骨头社",
+  "cat": "日系动画",
+  "desc": "燃系、分镜、爽",
+  "prompt": "Bones骨头社式动画，燃系演出与流畅分镜，机械与超能力齐飞。动作干净利落有爽感，光影明快。适合少年漫改与机战。",
+  "image": "assets/library/0048-x.jpg",
+  "match": "动漫",
+  "q": "shonen anime fight",
+  "qw": "shonen anime"
+ },
+ {
+  "id": "S101",
+  "name": "4℃工作室",
+  "cat": "日系动画",
+  "desc": "作者性、短片",
+  "prompt": "4℃工作室式动画，强烈作者性的短片美学，拼贴与手绘实验并存。叙事自由不羁，视觉先锋。适合艺术短片与 MV。",
+  "image": "assets/library/0048-x.jpg",
+  "match": "动漫",
+  "q": "anime short film",
+  "qw": "independent animation"
+ },
+ {
+  "id": "S102",
+  "name": "新世纪EVA",
+  "cat": "日系动画",
+  "desc": "心理、使徒、红白",
+  "prompt": "新世纪福音战士式动画，心理分析与宗教意象交织，使徒与初号机红白撞色。运镜神经质，光影冷峻带油画感。适合深度科幻番。",
+  "image": "assets/library/0056-x.jpg",
+  "match": "动漫人像",
+  "q": "evangelion",
+  "qw": "evangelion"
+ },
+ {
+  "id": "S103",
+  "name": "星际牛仔",
+  "cat": "日系动画",
+  "desc": "爵士、太空、潇洒",
+  "prompt": "星际牛仔式动画，爵士慵懒与太空歌剧融合，潇洒的赏金猎人。运镜如老电影流畅，色调暖橙怀旧带蓝。适合复古科幻番。",
+  "image": "assets/library/0048-x.jpg",
+  "match": "动漫",
+  "q": "cowboy bebop",
+  "qw": "cowboy bebop"
+ },
+ {
+  "id": "S104",
+  "name": "灌篮高手(井上)",
+  "cat": "日系动画",
+  "desc": "热血、 sweat、写实",
+  "prompt": "灌篮高手式运动动画，汗水与肌肉写实的赛场张力，分镜随球飞动。人物表情燃烧，光影随体育馆变化。适合运动热血番。",
+  "image": "assets/library/0056-x.jpg",
+  "match": "动漫人像",
+  "q": "slam dunk anime",
+  "qw": "sports anime"
+ },
+ {
+  "id": "S105",
+  "name": "爱死机",
+  "cat": "美式西式",
+  "desc": "多元、实验、科幻",
+  "prompt": "爱死机(Love Death Robots)式动画短片集，每集独立画风与科幻脑洞，从写实到极简。演出大胆前卫，节奏凌厉。适合实验科幻短片。",
+  "image": "assets/library/0024-x.jpg",
+  "match": "科幻",
+  "q": "love death robots",
+  "qw": "sci fi short film"
+ },
+ {
+  "id": "S106",
+  "name": "瑞克和莫蒂",
+  "cat": "美式西式",
+  "desc": "荒诞、科幻、粗线",
+  "prompt": "瑞克和莫蒂式动画，荒诞科幻与黑色幽默，粗黑轮廓线配高饱和。宇宙荒诞感与家庭闹剧交织，演出癫狂。适合成人喜剧科幻。",
+  "image": "assets/library/0104-x.jpg",
+  "match": "波普艺术",
+  "q": "rick and morty",
+  "qw": "rick and morty"
+ },
+ {
+  "id": "S107",
+  "name": "马男波杰克",
+  "cat": "美式西式",
+  "desc": "丧、治愈、扁平",
+  "prompt": "马男波杰克式动画，扁平插画下的存在主义丧感，角色演出精准戳心。色调柔和奶油，情绪克制绵长。适合成人治愈喜剧。",
+  "image": "assets/library/0136-x.jpg",
+  "match": "扁平插画",
+  "q": "bojack horseman",
+  "qw": "sad comedy cartoon"
+ },
+ {
+  "id": "S108",
+  "name": "辛普森一家",
+  "cat": "美式西式",
+  "desc": "美式家庭、黄皮",
+  "prompt": "辛普森一家式动画，经典美式家庭讽刺，黄皮角色与粗轮廓。演出夸张连续，小镇日常荒诞。色调明快饱和。适合长篇情景动画。",
+  "image": "assets/library/0104-x.jpg",
+  "match": "波普艺术",
+  "q": "simpsons",
+  "qw": "simpsons style"
+ },
+ {
+  "id": "S109",
+  "name": "南方公园",
+  "cat": "美式西式",
+  "desc": "粗粝、讽刺、剪纸感",
+  "prompt": "南方公园式动画，故意粗粝的剪纸感与即兴讽刺，角色圆钝怪诞。演出随意却犀利，对白密集。适合成人讽刺动画。",
+  "image": "assets/library/0104-x.jpg",
+  "match": "波普艺术",
+  "q": "south park",
+  "qw": "south park"
+ },
+ {
+  "id": "S110",
+  "name": "海绵宝宝",
+  "cat": "美式西式",
+  "desc": "海底、荒诞、明亮",
+  "prompt": "海绵宝宝式动画，海底世界的明亮荒诞，角色弹性夸张表情。色彩高饱和糖果，演出神经质欢乐。适合合家欢搞笑动画。",
+  "image": "assets/library/0136-x.jpg",
+  "match": "扁平插画",
+  "q": "spongebob",
+  "qw": "spongebob"
+ },
+ {
+  "id": "S111",
+  "name": "探险活宝",
+  "cat": "美式西式",
+  "desc": "奇幻、手绘、童真",
+  "prompt": "探险活宝式动画，后启示录奇幻与手绘童真，角色圆润可爱。世界观怪诞温情，演出随性。色调明快带怀旧。适合冒险合家欢。",
+  "image": "assets/library/0048-x.jpg",
+  "match": "动漫",
+  "q": "adventure time",
+  "qw": "adventure time"
+ },
+ {
+  "id": "S112",
+  "name": "降世神通",
+  "cat": "美式西式",
+  "desc": "东方武学、水墨",
+  "prompt": "降世神通式动画，东方气宗武学与水墨意蕴，四大元素操控如舞蹈。角色成长热血，场景东西融合。色调温暖史诗。适合全年龄冒险番。",
+  "image": "assets/library/0080-x.jpg",
+  "match": "国风古韵",
+  "q": "avatar the last airbender",
+  "qw": "avatar airbender"
+ },
+ {
+  "id": "S113",
+  "name": "武士杰克",
+  "cat": "美式西式",
+  "desc": "极简、禅意、剑",
+  "prompt": "武士杰克式动画，极简禅意的剑客之旅，大面积留白与几何背景。动作干净如武道，演出肃穆。色调有限调色板高级。适合极简动作动画。",
+  "image": "assets/library/0064-x.jpg",
+  "match": "漫画黑白",
+  "q": "samurai jack",
+  "qw": "samurai jack"
+ },
+ {
+  "id": "S114",
+  "name": "蝙蝠侠动画(蒂姆)",
+  "cat": "美式西式",
+  "desc": "暗黑、哥特、硬派",
+  "prompt": "蝙蝠侠动画系列(布鲁斯·蒂姆)式，哥特暗黑的硬派超级英雄，高对比光影与 Art Deco 都市。演出电影化，色调冷蓝黑。适合暗黑英雄番。",
+  "image": "assets/library/0064-x.jpg",
+  "match": "漫画黑白",
+  "q": "batman animated",
+  "qw": "batman animated"
+ },
+ {
+  "id": "S115",
+  "name": "乐一通",
+  "cat": "美式西式",
+  "desc": "经典、弹性、闹剧",
+  "prompt": "乐一通式经典动画，橡胶管弹性肢体与闹剧节奏，角色夸张无害。演出快速俏皮，色彩明快。适合经典搞笑短片。",
+  "image": "assets/library/0136-x.jpg",
+  "match": "扁平插画",
+  "q": "looney tunes",
+  "qw": "classic cartoon"
+ },
+ {
+  "id": "S116",
+  "name": "飞天小女警",
+  "cat": "美式西式",
+  "desc": "糖果、方块、萌战",
+  "prompt": "飞天小女警式动画，糖果色方块都市与三小女警萌战，极简几何造型。演出明快英雄主义，色彩甜亮。适合儿童超英动画。",
+  "image": "assets/library/0136-x.jpg",
+  "match": "扁平插画",
+  "q": "powerpuff girls",
+  "qw": "powerpuff girls"
+ },
+ {
+  "id": "S117",
+  "name": "张艺谋",
+  "cat": "写实电影感",
+  "desc": "浓烈、红、仪式",
+  "prompt": "张艺谋式电影美学，浓烈的红与大面积色块仪式感，构图对称庄重。运镜沉稳有戏曲韵律，光影戏剧化。适合史诗与民俗题材。",
+  "image": "assets/library/0001-x.jpg",
+  "match": "电影感 / 胶片大片",
+  "q": "zhang yimou cinematic",
+  "qw": "zhang yimou"
+ },
+ {
+  "id": "S118",
+  "name": "陈凯歌",
+  "cat": "写实电影感",
+  "desc": "诗意、大气、黄",
+  "prompt": "陈凯歌式电影语言，诗意的宏大叙事与黄土地般的厚重，长镜如画卷展开。意象饱满象征浓，光影油画感。适合历史史诗。",
+  "image": "assets/library/0001-x.jpg",
+  "match": "电影感 / 胶片大片",
+  "q": "chen kaige film",
+  "qw": "chinese epic film"
+ },
+ {
+  "id": "S119",
+  "name": "是枝裕和",
+  "cat": "写实电影感",
+  "desc": "日常、留白、温柔",
+  "prompt": "是枝裕和式电影，日常家庭的温柔留白，自然光下的细腻羁绊。运镜静止克制，叙事如生活本身。色调清淡素朴。适合家庭剧情片。",
+  "image": "assets/library/0172-x.jpg",
+  "match": "自然",
+  "q": "koreeda film",
+  "qw": "japanese family drama"
+ },
+ {
+  "id": "S120",
+  "name": "园子温",
+  "cat": "写实电影感",
+  "desc": "暴烈、 cult、红",
+  "prompt": "园子温式电影，暴烈 cult 气质与高浓度情绪，红与血色意象刺眼。运镜不安定挑衅，叙事越界。适合激进作者电影。",
+  "image": "assets/library/0004-x.jpg",
+  "match": "黑色电影 / 暗调",
+  "q": "sono shion film",
+  "qw": "japanese cult film"
+ },
+ {
+  "id": "S121",
+  "name": "韦斯安德森",
+  "cat": "写实电影感",
+  "desc": "对称、糖果、复古",
+  "prompt": "韦斯·安德森式电影，强迫症般的对称构图与糖果色调色板，复古道具繁复。运镜平移如舞台，叙事俏皮工整。适合怪趣喜剧。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "设计感",
+  "q": "wes anderson",
+  "qw": "wes anderson"
+ },
+ {
+  "id": "S122",
+  "name": "蒂姆伯顿",
+  "cat": "写实电影感",
+  "desc": "哥特、怪诞、黑",
+  "prompt": "蒂姆·伯顿式电影，哥特怪诞的暗黑童话，苍白角色与扭曲造型。光影戏剧化带幽默，色调黑紫。适合暗黑奇幻。",
+  "image": "assets/library/0223-x.jpg",
+  "match": "哥特暗黑",
+  "q": "tim burton",
+  "qw": "tim burton"
+ },
+ {
+  "id": "S123",
+  "name": "雷德利斯科特",
+  "cat": "写实电影感",
+  "desc": "冷峻、科幻、史诗",
+  "prompt": "雷德利·斯科特式电影，冷峻的科幻与历史史诗，质感厚重细腻。运镜沉稳大气，光影如油画。色调偏冷蓝褐。适合科幻与历史大片。",
+  "image": "assets/library/0001-x.jpg",
+  "match": "电影感 / 胶片大片",
+  "q": "ridley scott film",
+  "qw": "ridley scott"
+ },
+ {
+  "id": "S124",
+  "name": "丹尼斯维伦纽瓦",
+  "cat": "写实电影感",
+  "desc": "宏大、留白、声画",
+  "prompt": "丹尼斯·维伦纽瓦式电影，克制的宏大与声音设计的压迫，沙与寂静中的史诗。运镜缓慢精确，光影极简。适合科幻沉思大片。",
+  "image": "assets/library/0001-x.jpg",
+  "match": "电影感 / 胶片大片",
+  "q": "denis villeneuve",
+  "qw": "denis villeneuve"
+ },
+ {
+  "id": "S125",
+  "name": "罗杰迪金斯(摄影)",
+  "cat": "写实电影感",
+  "desc": "黄金时刻、油画",
+  "prompt": "罗杰·迪金斯式摄影，黄金时刻与逆光的油画质感，自然光雕塑空间。构图古典平衡，颗粒细腻。适合电影感广告与剧情。",
+  "image": "assets/library/0008-x.jpg",
+  "match": "黄金时刻光",
+  "q": "roger deakins cinematography",
+  "qw": "cinematography golden hour"
+ },
+ {
+  "id": "S126",
+  "name": "杜可风(摄影)",
+  "cat": "写实电影感",
+  "desc": "霓虹、晃动、港味",
+  "prompt": "杜可风式摄影，霓虹与晃动手持的港味浪漫，色彩泼辣流动。运镜自由即兴，光斑迷离。适合都市文艺与港片。",
+  "image": "assets/library/0016-x.jpg",
+  "match": "霓虹光效",
+  "q": "christopher doyle cinematography",
+  "qw": "hong kong neon"
+ },
+ {
+  "id": "S127",
+  "name": "曹郁(摄影)",
+  "cat": "写实电影感",
+  "desc": "诗意、暗调、呼吸",
+  "prompt": "曹郁式摄影，诗意的暗调与空气呼吸感，光如宣纸晕染。构图留白含蓄，颗粒温润。适合文艺大片与年代剧。",
+  "image": "assets/library/0001-x.jpg",
+  "match": "电影感 / 胶片大片",
+  "q": "cao yu cinematography",
+  "qw": "chinese cinematography"
+ },
+ {
+  "id": "S128",
+  "name": "杨德昌",
+  "cat": "写实电影感",
+  "desc": "都市、冷峻、理性",
+  "prompt": "杨德昌式电影，都市中产冷峻解剖，长镜与固定机位如社会观察。叙事理性绵密，色调灰冷。适合城市剧情片。",
+  "image": "assets/library/0247-x.jpg",
+  "match": "城市",
+  "q": "edward yang film",
+  "qw": "taipei urban film"
+ },
+ {
+  "id": "S129",
+  "name": "小津安二郎",
+  "cat": "写实电影感",
+  "desc": "低机位、静、家庭",
+  "prompt": "小津安二郎式电影，低机位与静默的家庭伦理，构图如榻榻米般平稳。叙事克制留白，光影淡素。适合家庭日常片。",
+  "image": "assets/library/0172-x.jpg",
+  "match": "自然",
+  "q": "ozu film",
+  "qw": "japanese classic film"
+ },
+ {
+  "id": "S130",
+  "name": "李安",
+  "cat": "写实电影感",
+  "desc": "东西、克制、技术",
+  "prompt": "李安式电影，东西方情感克制交融，技术服务于叙事的沉浸。运镜沉稳含蓄，光影细腻。适合剧情与特效大片。",
+  "image": "assets/library/0001-x.jpg",
+  "match": "电影感 / 胶片大片",
+  "q": "ang lee film",
+  "qw": "ang lee"
+ },
+ {
+  "id": "S131",
+  "name": "陈可辛",
+  "cat": "写实电影感",
+  "desc": "港味、人情、暖",
+  "prompt": "陈可辛式电影，港味人情世的温暖刻画，群像表演精准。运镜贴近人物，光柔和带怀旧。适合现实情感片。",
+  "image": "assets/library/0160-x.jpg",
+  "match": "人像摄影",
+  "q": "peter chan film",
+  "qw": "hong kong drama"
+ },
+ {
+  "id": "S132",
+  "name": "杜琪峰(枪火)",
+  "cat": "写实电影感",
+  "desc": "站位、冷调、黑帮",
+  "prompt": "杜琪峰枪火式电影，冷调黑帮的几何站位美学，动静之间的张力。运镜克制如棋局，光硬朗。适合港式犯罪片。",
+  "image": "assets/library/0004-x.jpg",
+  "match": "黑色电影 / 暗调",
+  "q": "johnnie to film",
+  "qw": "hong kong crime film"
+ },
+ {
+  "id": "S133",
+  "name": "攻壳机动队",
+  "cat": "赛博科幻",
+  "desc": "义体、雨、哲学",
+  "prompt": "攻壳机动队式赛博朋克，义体都市的冷雨与全息，哲学追问自我。实拍质感背景，运镜冷峻。色调青蓝孤寂带橙光。适合深度赛博科幻。",
+  "image": "assets/library/0024-x.jpg",
+  "match": "赛博朋克",
+  "q": "ghost in the shell",
+  "qw": "cyberpunk anime"
+ },
+ {
+  "id": "S134",
+  "name": "阿基拉",
+  "cat": "赛博科幻",
+  "desc": "东京、异变、精细",
+  "prompt": "阿基拉式赛博朋克，未来东京的精细描线与人体异变，红蓝撞色爆炸。运镜高速压迫，光影冷硬。适合硬核科幻。",
+  "image": "assets/library/0028-x.jpg",
+  "match": "科幻都市",
+  "q": "akira cyberpunk",
+  "qw": "akira tokyo"
+ },
+ {
+  "id": "S135",
+  "name": "心理测量者",
+  "cat": "赛博科幻",
+  "desc": "独裁、血红、监视",
+  "prompt": "心理测量者式赛博，西比拉系统的血红监视美学，都市冷峻秩序。运镜电影化，光影冷蓝带警示红。适合近未来悬疑。",
+  "image": "assets/library/0024-x.jpg",
+  "match": "赛博朋克",
+  "q": "psychopass",
+  "qw": "psychopass"
+ },
+ {
+  "id": "S136",
+  "name": "EVA(机战)",
+  "cat": "赛博科幻",
+  "desc": "使徒、红白、绝望",
+  "prompt": "EVA式机战科幻，使徒降临与初号机红白撞色的绝望战斗。运镜神经质，光影冷峻带宗教油画。适合深度机甲番。",
+  "image": "assets/library/0032-x.jpg",
+  "match": "机甲",
+  "q": "evangelion mecha",
+  "qw": "evangelion mecha"
+ },
+ {
+  "id": "S137",
+  "name": "星际牛仔(太空)",
+  "cat": "赛博科幻",
+  "desc": "太空、爵士、潇洒",
+  "prompt": "星际牛仔式太空歌剧，爵士慵懒与赏金猎人的潇洒，飞船与霓虹都市。运镜老电影流畅，暖橙怀旧。适合复古太空番。",
+  "image": "assets/library/0028-x.jpg",
+  "match": "科幻都市",
+  "q": "cowboy bebop space",
+  "qw": "space western"
+ },
+ {
+  "id": "S138",
+  "name": "黑客帝国",
+  "cat": "赛博科幻",
+  "desc": "绿码、子弹时间",
+  "prompt": "黑客帝国式科幻，绿调代码雨与子弹时间的冷峻哲学。运镜环绕如虚拟，光影数码冷绿。适合赛博动作大片。",
+  "image": "assets/library/0028-x.jpg",
+  "match": "科幻都市",
+  "q": "matrix film",
+  "qw": "the matrix"
+ },
+ {
+  "id": "S139",
+  "name": "沙丘",
+  "cat": "赛博科幻",
+  "desc": "沙漠、巨构、橙",
+  "prompt": "沙丘式科幻，浩瀚沙漠与巨型文明的史诗，橙黄沙海吞噬一切。运镜缓慢庄严，光影灼热。适合硬科幻史诗。",
+  "image": "assets/library/0176-x.jpg",
+  "match": "沙漠戈壁",
+  "q": "dune film",
+  "qw": "dune desert"
+ },
+ {
+  "id": "S140",
+  "name": "降临",
+  "cat": "赛博科幻",
+  "desc": "异星文字、雾",
+  "prompt": "降临式科幻，异星飞船与环形文字的神秘雾气，冷蓝光影如梦境。运镜静止沉思，氛围孤寂。适合语言与外星题材。",
+  "image": "assets/library/0036-x.jpg",
+  "match": "星际星云",
+  "q": "arrival film",
+  "qw": "alien sci fi"
+ },
+ {
+  "id": "S141",
+  "name": "湮灭",
+  "cat": "赛博科幻",
+  "desc": "折射、变异、梦幻",
+  "prompt": "湮灭式科幻，灯塔折射下的变异自然，生物如梦境扭曲。运镜迷离，光影虹彩诡谲。适合生态科幻惊悚。",
+  "image": "assets/library/0207-x.jpg",
+  "match": "水下世界",
+  "q": "annihilation film",
+  "qw": "sci fi nature"
+ },
+ {
+  "id": "S142",
+  "name": "瞬息全宇宙",
+  "cat": "赛博科幻",
+  "desc": "多元宇宙、荒诞、拼贴",
+  "prompt": "瞬息全宇宙式科幻，多元宇宙拼贴的荒诞狂欢，从超市到石头宇宙。运镜跳跃失控，色彩炸裂。适合脑洞多元宇宙片。",
+  "image": "assets/library/0024-x.jpg",
+  "match": "科幻",
+  "q": "everything everywhere all at once",
+  "qw": "multiverse film"
+ },
+ {
+  "id": "S143",
+  "name": "宝可梦",
+  "cat": "萌系可爱",
+  "desc": "圆润、冒险、萌",
+  "prompt": "宝可梦式可爱动画，圆润萌宠与明快冒险，角色弹性讨喜。色彩明亮饱和，演出欢乐。适合全年龄冒险动画。",
+  "image": "assets/library/0060-x.jpg",
+  "match": "Q版可爱",
+  "q": "pokemon",
+  "qw": "pokemon"
+ },
+ {
+  "id": "S144",
+  "name": "迪士尼宝宝",
+  "cat": "萌系可爱",
+  "desc": "软糯、圆、治愈",
+  "prompt": "迪士尼宝宝式可爱，软糯圆润的婴儿角色与糖果世界，无害治愈。运镜轻柔，光温暖。适合低龄合家欢。",
+  "image": "assets/library/0060-x.jpg",
+  "match": "Q版可爱",
+  "q": "disney baby",
+  "qw": "cute baby disney"
+ },
+ {
+  "id": "S145",
+  "name": "Line 熊",
+  "cat": "萌系可爱",
+  "desc": "扁平、表情、社交",
+  "prompt": "Line Friends 式可爱，扁平简约的萌物表情包美学，角色靠表情传达。色彩清新，构图留白。适合表情与贴纸动画。",
+  "image": "assets/library/0136-x.jpg",
+  "match": "扁平插画",
+  "q": "line friends",
+  "qw": "line friends"
+ },
+ {
+  "id": "S146",
+  "name": "懒蛋蛋",
+  "cat": "萌系可爱",
+  "desc": "呆、蛋、解压",
+  "prompt": "懒蛋蛋式可爱，呆萌蛋形角色的慢生活解压，动作极简慵懒。色调奶油柔和，演出无聊却治愈。适合解压短视频。",
+  "image": "assets/library/0060-x.jpg",
+  "match": "Q版可爱",
+  "q": "lazy egg",
+  "qw": "kawaii egg"
+ },
+ {
+  "id": "S147",
+  "name": "治愈萌宠",
+  "cat": "萌系可爱",
+  "desc": "猫狗、暖、慢",
+  "prompt": "治愈系萌宠动画，慵懒猫狗的暖光日常，慢镜头里的小确幸。色调米暖，运镜安静。适合解压与白噪音内容。",
+  "image": "assets/library/0060-x.jpg",
+  "match": "Q版可爱",
+  "q": "cute pet",
+  "qw": "cute pet"
+ },
+ {
+  "id": "S148",
+  "name": "史莱姆",
+  "cat": "萌系可爱",
+  "desc": "果冻、弹、透明",
+  "prompt": "史莱姆式可爱，果冻般透明弹润的萌物，光影在胶体里流动。色彩糖果，动作Q弹。适合解压动画。",
+  "image": "assets/library/0136-x.jpg",
+  "match": "扁平插画",
+  "q": "slime cute",
+  "qw": "slime"
+ },
+ {
+  "id": "S149",
+  "name": "吉卜力萌物",
+  "cat": "萌系可爱",
+  "desc": "龙猫、煤球、软",
+  "prompt": "吉卜力式萌物，龙猫与煤球精灵的软糯治愈，自然光里的奇幻小生物。色调田园温暖。适合治愈短片。",
+  "image": "assets/library/0052-x.jpg",
+  "match": "吉卜力风",
+  "q": "ghibli cute",
+  "qw": "ghibli creature"
+ },
+ {
+  "id": "S150",
+  "name": "萌化美食",
+  "cat": "萌系可爱",
+  "desc": "拟脸、可爱、甜",
+  "prompt": "萌化美食动画，食物拟人化的大眼萌脸，甜品与饭团会眨眼。色彩甜美，笔触水彩。适合美食萌系短视频。",
+  "image": "assets/library/0068-x.jpg",
+  "match": "水彩",
+  "q": "cute food",
+  "qw": "cute food"
+ },
+ {
+  "id": "S151",
+  "name": "超级马里奥",
+  "cat": "像素复古",
+  "desc": "水管、跳、经典",
+  "prompt": "超级马里奥式像素，经典平台跳跃的方块世界，有限调色板明快。像素边缘干净，节奏欢快。适合游戏改编与怀旧。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "像素风",
+  "q": "super mario pixel",
+  "qw": "super mario"
+ },
+ {
+  "id": "S152",
+  "name": "索尼克",
+  "cat": "像素复古",
+  "desc": "速度、环、蓝",
+  "prompt": "索尼克式像素，高速环道与蓝色音速刺猬，速度线拉满。色彩鲜亮撞色，节奏燃。适合竞速游戏动画。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "像素风",
+  "q": "sonic pixel",
+  "qw": "sonic"
+ },
+ {
+  "id": "S153",
+  "name": "GameBoy 掌机",
+  "cat": "像素复古",
+  "desc": "绿屏、4色、怀旧",
+  "prompt": "GameBoy 式像素，4 色绿屏的极简怀旧，点阵颗粒感十足。调色板受限于墨绿，构图复古。适合复古掌机风。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "像素风",
+  "q": "gameboy pixel",
+  "qw": "gameboy"
+ },
+ {
+  "id": "S154",
+  "name": "红白机FC",
+  "cat": "像素复古",
+  "desc": "8位、横版、街",
+  "prompt": "红白机 FC 式像素，8 位横版卷轴的硬核手感，粗像素与鲜亮撞色。适合复古游戏 IP。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "像素风",
+  "q": "nes pixel art",
+  "qw": "retro game"
+ },
+ {
+  "id": "S155",
+  "name": "世嘉MD",
+  "cat": "像素复古",
+  "desc": "16位、炫、动",
+  "prompt": "世嘉 MD 式像素，16 位更细腻的炫技动画，动感更强。色彩更丰富，演出更炸。适合复古游戏改编。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "像素风",
+  "q": "sega pixel",
+  "qw": "retro console"
+ },
+ {
+  "id": "S156",
+  "name": "俄罗斯方块",
+  "cat": "像素复古",
+  "desc": "方块、下落、极简",
+  "prompt": "俄罗斯方块式极简像素，下落方块与消行的纯粹节奏，有限色块。构图几何清爽。适合解压与游戏致敬。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "像素风",
+  "q": "tetris",
+  "qw": "tetris"
+ },
+ {
+  "id": "S157",
+  "name": "模拟城市",
+  "cat": "像素复古",
+  "desc": "等距、规划、微缩",
+  "prompt": "模拟城市式等距像素，微缩城市的规划美学，建筑方块错落。俯视等距视角，色调明快有序。适合城建与经营动画。",
+  "image": "assets/library/0116-x.jpg",
+  "match": "等距视角",
+  "q": "simcity isometric",
+  "qw": "isometric city"
+ },
+ {
+  "id": "S158",
+  "name": "街机厅",
+  "cat": "像素复古",
+  "desc": "霓虹、投币、80s",
+  "prompt": "街机厅式复古，80 年代霓虹投币的狂欢，扫描线闪烁。色彩荧光撞色，氛围喧闹。适合怀旧游戏短片。",
+  "image": "assets/library/0239-x.jpg",
+  "match": "复古80年代",
+  "q": "arcade retro",
+  "qw": "arcade"
+ },
+ {
+  "id": "S159",
+  "name": "房地产广告",
+  "cat": "广告产品",
+  "desc": "建筑、光、高级",
+  "prompt": "高端房地产广告，建筑体量与晨昏光影的高级感，空间通透留白。运镜缓慢推进，材质真实。色调干净克制。适合楼盘与空间宣传。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "设计感",
+  "q": "real estate ad",
+  "qw": "architecture interior"
+ },
+ {
+  "id": "S160",
+  "name": "香水广告",
+  "cat": "广告产品",
+  "desc": "微距、雾、奢",
+  "prompt": "香水广告，微距下的液体折射与香雾氤氲，奢华静物。光如珠宝般精准，背景虚化。色调金粉暧昧。适合美奢带货。",
+  "image": "assets/library/0148-x.jpg",
+  "match": "微距",
+  "q": "perfume commercial",
+  "qw": "perfume bottle"
+ },
+ {
+  "id": "S161",
+  "name": "饮料广告",
+  "cat": "广告产品",
+  "desc": "冰、溅、爽",
+  "prompt": "饮料广告，冰珠与液体飞溅的清爽特写，慢镜头捕捉气泡。光通透冷冽，色彩鲜活。适合饮品带货。",
+  "image": "assets/library/0140-x.jpg",
+  "match": "摄影感",
+  "q": "beverage ad",
+  "qw": "drink commercial"
+ },
+ {
+  "id": "S162",
+  "name": "服饰广告",
+  "cat": "广告产品",
+  "desc": "街拍、风、潮",
+  "prompt": "服饰广告，街拍风的人像与衣物飘动，自然光勾勒面料。运镜随步伐轻松，色调潮流。适合穿搭与电商。",
+  "image": "assets/library/0160-x.jpg",
+  "match": "人像摄影",
+  "q": "fashion ad",
+  "qw": "fashion lookbook"
+ },
+ {
+  "id": "S163",
+  "name": "护肤广告",
+  "cat": "广告产品",
+  "desc": "水珠、肌、润",
+  "prompt": "护肤广告，微距水珠与通透肌理，质地如瓷。光柔焦珠光，背景粉雾。色调甜美高级。适合美妆护肤带货。",
+  "image": "assets/library/0148-x.jpg",
+  "match": "微距",
+  "q": "skincare ad",
+  "qw": "skincare"
+ },
+ {
+  "id": "S164",
+  "name": "耳机广告",
+  "cat": "广告产品",
+  "desc": "极简、金属、声",
+  "prompt": "耳机广告，极简背景下的金属与硅胶质感，声波可视化轻盈。运镜顺滑，光高级冷调。适合数码产品发布。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "设计感",
+  "q": "headphone ad",
+  "qw": "headphones product"
+ },
+ {
+  "id": "S165",
+  "name": "食品包装",
+  "cat": "广告产品",
+  "desc": "插画、鲜、萌",
+  "prompt": "食品包装动画，扁平插画风的新鲜食材与萌化图标，信息清爽。色彩鲜亮食欲感，构图活泼。适合包装与电商图。",
+  "image": "assets/library/0136-x.jpg",
+  "match": "扁平插画",
+  "q": "food packaging",
+  "qw": "food package"
+ },
+ {
+  "id": "S166",
+  "name": "旅游宣传",
+  "cat": "广告产品",
+  "desc": "大景、治愈、邀",
+  "prompt": "旅游宣传片，壮阔自然大景与治愈晨昏，邀请式的开阔构图。运镜航拍舒展，光金暖。适合目的地推广。",
+  "image": "assets/library/0203-x.jpg",
+  "match": "山峦日出",
+  "q": "travel commercial",
+  "qw": "travel cinematic"
+ },
+ {
+  "id": "S167",
+  "name": "公益广告",
+  "cat": "广告产品",
+  "desc": "真实、克、善",
+  "prompt": "公益广告，真实克制的纪实影像传递善意，人物眼神说话。运镜安静不煽，色调朴素。适合社会议题传播。",
+  "image": "assets/library/0140-x.jpg",
+  "match": "摄影感",
+  "q": "psa film",
+  "qw": "documentary photo"
+ },
+ {
+  "id": "S168",
+  "name": "复古迪斯科",
+  "cat": "广告产品",
+  "desc": "镜球、暖、嗨",
+  "prompt": "复古迪斯科广告，镜面球与暖色镭射的狂欢，胶片颗粒跳跃。色彩橙紫撞色，节奏律动。适合怀旧品牌。",
+  "image": "assets/library/0239-x.jpg",
+  "match": "复古80年代",
+  "q": "disco commercial",
+  "qw": "disco"
+ },
+ {
+  "id": "S169",
+  "name": "国风MV",
+  "cat": "MV音乐",
+  "desc": "古韵、舞、词",
+  "prompt": "国风音乐录影带，古韵舞美与水墨意蕴，诗词与画面唱和。运镜如长卷，光温润。适合国风歌曲。",
+  "image": "assets/library/0080-x.jpg",
+  "match": "国风古韵",
+  "q": "chinese style mv",
+  "qw": "chinese music video"
+ },
+ {
+  "id": "S170",
+  "name": "说唱MV",
+  "cat": "MV音乐",
+  "desc": "街头、炫、切",
+  "prompt": "说唱音乐录影带，街头质感的炫技剪辑与硬核态度，快速卡点切分。光影城市冷调带霓虹。适合 hip-hop。",
+  "image": "assets/library/0156-x.jpg",
+  "match": "街头摄影",
+  "q": "rap music video",
+  "qw": "hip hop video"
+ },
+ {
+  "id": "S171",
+  "name": "抖音卡点",
+  "cat": "MV音乐",
+  "desc": "快切、潮、转场",
+  "prompt": "抖音卡点视频，高速卡点剪辑与炫酷转场，潮流滤镜与特效堆叠。节奏精准踩点，色彩高饱和。适合短视频爆款。",
+  "image": "assets/library/0235-x.jpg",
+  "match": "潮流",
+  "q": "tiktok edit",
+  "qw": "tiktok dance"
+ },
+ {
+  "id": "S172",
+  "name": "音乐节",
+  "cat": "MV音乐",
+  "desc": "灯海、焰、燃",
+  "prompt": "音乐节现场视觉，灯海与焰火随副歌炸裂，人群剪影沸腾。色彩绚烂冲击，节奏同步。适合 live 与电音节。",
+  "image": "assets/library/0016-x.jpg",
+  "match": "霓虹光效",
+  "q": "music festival",
+  "qw": "festival lights"
+ },
+ {
+  "id": "S173",
+  "name": "动画MV",
+  "cat": "MV音乐",
+  "desc": "手绘、梦、奇",
+  "prompt": "动画音乐录影带，手绘梦境般的奇想叙事，风格可随段落切换。色彩自由浪漫，节奏流动。适合独立音乐。",
+  "image": "assets/library/0048-x.jpg",
+  "match": "动漫",
+  "q": "animated music video",
+  "qw": "animation mv"
+ },
+ {
+  "id": "S174",
+  "name": "民谣弹唱",
+  "cat": "MV音乐",
+  "desc": "自然、暖、简",
+  "prompt": "民谣弹唱 MV，自然光下的简单温暖，一把吉他一片天。运镜静止贴近人物，色调淡素。适合民谣与治愈。",
+  "image": "assets/library/0172-x.jpg",
+  "match": "自然",
+  "q": "folk music video",
+  "qw": "folk acoustic"
+ },
+ {
+  "id": "S175",
+  "name": "摇滚现场",
+  "cat": "MV音乐",
+  "desc": "失真、红、炸",
+  "prompt": "摇滚现场录影带，失真吉他红蓝镭射的炸裂，汗水与发丝飞扬。运镜手持狂野，光影硬朗。适合 rock。",
+  "image": "assets/library/0016-x.jpg",
+  "match": "霓虹光效",
+  "q": "rock concert",
+  "qw": "rock stage"
+ },
+ {
+  "id": "S176",
+  "name": "钢琴独奏",
+  "cat": "MV音乐",
+  "desc": "光影、静、贵",
+  "prompt": "钢琴独奏 MV，光影雕塑琴键与侧脸，静谧高级的孤独。运镜缓慢推拉，色调电影感。适合古典与治愈。",
+  "image": "assets/library/0001-x.jpg",
+  "match": "电影感 / 胶片大片",
+  "q": "piano music video",
+  "qw": "piano performance"
+ },
+ {
+  "id": "S177",
+  "name": "国潮电音",
+  "cat": "MV音乐",
+  "desc": "东方、霓、动",
+  "prompt": "国潮电音 MV，东方元素与霓虹律动碰撞，传统纹样在故障中重生。色彩青红撞色，节奏电子。适合 guochao。",
+  "image": "assets/library/0235-x.jpg",
+  "match": "蒸汽波",
+  "q": "chinese electronic",
+  "qw": "guochao music"
+ },
+ {
+  "id": "S178",
+  "name": "复古迪斯科MV",
+  "cat": "MV音乐",
+  "desc": "镜球、律动、暖",
+  "prompt": "复古迪斯科 MV，镜面球与暖紫律动的怀旧狂欢，胶片抖动。色彩橙粉，节奏 disco。适合复古舞曲。",
+  "image": "assets/library/0239-x.jpg",
+  "match": "复古80年代",
+  "q": "disco music video",
+  "qw": "disco"
+ },
+ {
+  "id": "S179",
+  "name": "极简主义",
+  "cat": "抽象艺术",
+  "desc": "留白、少、静",
+  "prompt": "极简主义动态影像，大面积留白与极少元素的呼吸，秩序克制。色彩中性有限，运动缓慢。适合片头与冥想。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "设计感",
+  "q": "minimalist art",
+  "qw": "minimalism"
+ },
+ {
+  "id": "S180",
+  "name": "包豪斯",
+  "cat": "抽象艺术",
+  "desc": "几何、三原色、理性",
+  "prompt": "包豪斯式动态图形，基础几何与三原色的理性构成，网格严谨。运动机械精确，无装饰。适合设计感片头。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "设计感",
+  "q": "bauhaus",
+  "qw": "bauhaus"
+ },
+ {
+  "id": "S181",
+  "name": "孟菲斯",
+  "cat": "抽象艺术",
+  "desc": "撞色、花纹、玩",
+  "prompt": "孟菲斯设计风格动态，撞色块面与黑白条纹、圆点花纹的 playful 拼贴。运动俏皮不规则，色彩欢快。适合潮牌视觉。",
+  "image": "assets/library/0104-x.jpg",
+  "match": "波普艺术",
+  "q": "memphis design",
+  "qw": "memphis design"
+ },
+ {
+  "id": "S182",
+  "name": "生成艺术",
+  "cat": "抽象艺术",
+  "desc": "算法、随机、流",
+  "prompt": "生成艺术动画，算法驱动的随机形态流动，规则中诞生不可预测的图样。色彩随参数演化，运动有机。适合实验影像。",
+  "image": "assets/library/0108-x.jpg",
+  "match": "设计感",
+  "q": "generative art",
+  "qw": "generative art"
+ },
+ {
+  "id": "S183",
+  "name": "分形艺术",
+  "cat": "抽象艺术",
+  "desc": "无限、自相似、幻",
+  "prompt": "分形艺术动画，无限自相似的几何在缩放中幻化，如宇宙褶皱。色彩深空渐变，运动催眠。适合冥想与科技片。",
+  "image": "assets/library/0036-x.jpg",
+  "match": "星际星云",
+  "q": "fractal art",
+  "qw": "fractal"
+ },
+ {
+  "id": "S184",
+  "name": "霓虹抽象",
+  "cat": "抽象艺术",
+  "desc": "光丝、辉、赛博",
+  "prompt": "霓虹抽象动画，发光光丝在虚空中交织辉映，赛博霓虹的纯粹律动。色彩青品红，运动流动。适合电子乐背景。",
+  "image": "assets/library/0016-x.jpg",
+  "match": "霓虹光效",
+  "q": "neon abstract",
+  "qw": "neon abstract"
+ },
+ {
+  "id": "S185",
+  "name": "彩绘玻璃",
+  "cat": "抽象艺术",
+  "desc": "透光、圣、纹",
+  "prompt": "彩绘玻璃风格动画，透光色斑与宗教纹样的神圣几何，光穿过色彩如教堂。色块饱和带金线。适合庄重与奇幻。",
+  "image": "assets/library/0128-x.jpg",
+  "match": "彩绘玻璃",
+  "q": "stained glass",
+  "qw": "stained glass"
+ },
+ {
+  "id": "S186",
+  "name": "浮世绘",
+  "cat": "抽象艺术",
+  "desc": "线、版、和",
+  "prompt": "浮世绘风格动态，木版套色的硬朗线条与和风构图，浪与山程式化。色彩传统有限（蓝、赭、墨）。适合日式文化短片。",
+  "image": "assets/library/0084-x.jpg",
+  "match": "浮世绘",
+  "q": "ukiyo-e",
+  "qw": "ukiyo-e"
  }
 ];

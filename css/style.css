@@ -4,11 +4,11 @@
  * ============================================================ */
 @font-face{
   font-family:"Darker Grotesque";font-style:normal;font-weight:400 900;font-display:swap;
-  src:url("../assets/fonts/darker-grotesque-latin.woff2") format("woff2");
+  src:url("https://cdn.jsdelivr.net/gh/qianqianlaifeng/style-gallery@main/assets/fonts/darker-grotesque-latin.woff2") format("woff2");
 }
 @font-face{
   font-family:"Playfair Display";font-style:normal;font-weight:400 900;font-display:swap;
-  src:url("../assets/fonts/playfair-display-latin.woff2") format("woff2");
+  src:url("https://cdn.jsdelivr.net/gh/qianqianlaifeng/style-gallery@main/assets/fonts/playfair-display-latin.woff2") format("woff2");
 }
 
 :root{
