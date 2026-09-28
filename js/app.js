@@ -25,7 +25,9 @@
   let liveRunning = false;
 
   const CIVITAI_API = "https://civitai.com/api/v1/models";
-  const FETCH_TIMEOUT = 8000;
+  const FETCH_TIMEOUT = 6000;   // 单源请求超时：被墙时快速失败，不长时间挂起
+  const PROBE_TIMEOUT = 3500;   // Civitai 可达性探针超时
+  const CONC = 8;               // 并发拉取数：提高吞吐、缩短总耗时
 
   function setStatus(t) { const el = $("#status"); if (!el) return; el.textContent = t || ""; el.hidden = !t; }
   function setLive(t, ok) {
@@ -59,8 +61,21 @@
     state.off = 0;
     byId = {};
     state.all.forEach(s => { byId[s.id] = s; });
+    // 先用本地缓存的实时图秒开（二次访问），随后后台静默刷新
+    const cache = loadLiveCache();
+    if (cache) {
+      let cnt = 0;
+      state.all.forEach(s => {
+        if (cache[s.id] && cache[s.id].length) {
+          s._imgs = cache[s.id];
+          (catPool[s.cat] = catPool[s.cat] || []).push(...cache[s.id]);
+          cnt++;
+        }
+      });
+      if (cnt) { reassignImages(); setLive("已加载缓存实时图 · 后台刷新中…", true); }
+    }
     applyFilter();
-    backgroundLive();   // 后台拉真实图，不阻塞首屏
+    backgroundLive();   // 后台拉/刷新真实图，不阻塞首屏
   }
 
   // ============ 图片容错 ============
@@ -180,7 +195,6 @@
 
   // 并发拉取一组（按查询去重）并将结果写入 style._key
   async function runGroups(entries, fetcher, key, n) {
-    const CONC = 4;
     async function worker() {
       while (entries.length) {
         const [q, styles] = entries.shift();
@@ -194,10 +208,40 @@
     await Promise.all(ws);
   }
 
+  // ============ 实时图本地缓存（localStorage）：二次访问秒开 ============
+  const LIVE_CACHE_KEY = "stylegallery_live_v1";
+  function loadLiveCache() {
+    try {
+      const raw = localStorage.getItem(LIVE_CACHE_KEY);
+      if (!raw) return null;
+      const obj = JSON.parse(raw);
+      if (!obj || !obj.map || Date.now() - (obj.ts || 0) > 86400000) return null; // 24h 过期
+      return obj.map;
+    } catch (e) { return null; }
+  }
+  function saveLiveCache() {
+    try {
+      const map = {};
+      state.all.forEach(s => { if (s._imgs && s._imgs.length) map[s.id] = s._imgs; });
+      localStorage.setItem(LIVE_CACHE_KEY, JSON.stringify({ ts: Date.now(), map }));
+    } catch (e) {}
+  }
+
+  // Civitai 可达性探测（国内常被墙）。可达才跑 Civitai，否则整段省下超时等待
+  async function probeCivitai() {
+    try {
+      const ctrl = new AbortController();
+      const t = setTimeout(() => ctrl.abort(), PROBE_TIMEOUT);
+      const r = await fetch(CIVITAI_API + "?limit=1&types=Checkpoint", { signal: ctrl.signal });
+      clearTimeout(t);
+      return r.ok;
+    } catch (e) { return false; }
+  }
+
   async function backgroundLive() {
     if (liveRunning) return;
     liveRunning = true;
-    setLive("正在从 Civitai + Wikimedia 拉取真实风格图…", false);
+    setLive("正在准备实时参考图…", false);
 
     // 按查询去重分组（两个图源分别分组）
     const cGroups = {}, wGroups = {};
@@ -205,11 +249,29 @@
       if (s.q) (cGroups[s.q] = cGroups[s.q] || []).push(s);
       if (s.qw) (wGroups[s.qw] = wGroups[s.qw] || []).push(s);
     });
+    const cEntries = Object.entries(cGroups).map(e => [e[0], e[1]]);
+    const wEntries = Object.entries(wGroups).map(e => [e[0], e[1]]);
 
-    // 图源1：Civitai（动漫/插画/3D 强）
-    await runGroups(Object.entries(cGroups).map(e => [e[0], e[1]]), fetchCivitai, "civ", 16);
-    // 图源2：Wikimedia Commons（摄影/电影/实拍强）
-    await runGroups(Object.entries(wGroups).map(e => [e[0], e[1]]), fetchCommons, "cm", 12);
+    // Wikimedia 先起飞（国内可达、keyless、CORS 开放），拉到的图渐进显示
+    const jobs = [];
+    if (wEntries.length) jobs.push(runGroups(wEntries, fetchCommons, "cm", 12));
+
+    // Civitai 可达才跑；被墙则跳过，避免整段 6s×N 超时挂起
+    let civReachable = false;
+    if (cEntries.length) {
+      setLive("正在探测 Civitai 可达性…（不可达将自动跳过）", false);
+      civReachable = await probeCivitai();
+      if (civReachable) jobs.push(runGroups(cEntries, fetchCivitai, "civ", 16));
+    }
+
+    setLive("正在拉取实时参考图（Wikimedia" + (civReachable ? " + Civitai" : "，Civitai 不可达已跳过") + "）…", false);
+
+    if (!jobs.length) {           // 无任何外源：直接用本地参考图
+      setLive("实时图源不可用，已显示本地参考图", true);
+      liveRunning = false;
+      return;
+    }
+    await Promise.all(jobs);      // 双源并发
 
     // 合并两源 -> _imgs，并汇入同大类兜底池
     state.all.forEach(s => {
@@ -226,9 +288,12 @@
       if (!s._imgs.length && catPool[s.cat] && catPool[s.cat].length) s._imgs = catPool[s.cat];
     });
     reassignImages();
+    saveLiveCache();
 
     const ok = state.all.filter(s => s._imgs && s._imgs.length).length;
-    setLive("已加载真实风格图 · " + ok + "/" + state.all.length + " 种（Civitai + Wikimedia）", true);
+    const srcLabel = (civReachable ? "Civitai + " : "") + "Wikimedia";
+    if (ok > 0) setLive("已加载实时风格图 · " + ok + "/" + state.all.length + " 种（" + srcLabel + "）", true);
+    else setLive("实时图暂未拉到，已显示本地参考图（可稍后点「换一批」重试）", true);
     liveRunning = false;
   }
 
