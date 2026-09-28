@@ -5,9 +5,11 @@
  *      详细可直接复制到可灵/即梦/海螺的成片风格提示词 + Civitai 搜索词 q）。
  * 交互：画廊网格 / 焦点大图 / 分类筛选 / 搜索 / 详情弹窗（复制提示词）。
  *
- * 图片策略：先用本地参考图秒开、不白屏；随后后台按每个风格的 q 去 Civitai
- * 拉真实风格参考图，按图就地替换（保留手写视频提示词）。某风格拉取被限流时，
- * 自动回退到同大类已拉到的真实图；再不行才留本地参考图。永不破图。
+ * 图片策略：主视觉永远用「本地精选参考图」（library-data.js 中按风格分类的
+ * Civitai 精选图，相关性高、走 jsDelivr 秒开）。实时图（Civitai，仅国漫/插画强、
+ * 国内常被墙）降级为弹窗内的「更多实时参考」小图，被墙自动隐藏，绝不覆盖主图。
+ * Wikimedia 按「具体题材」（如 Makoto Shinkai / Ghibli）查询（国内通常可达），Civitai 可达时补充；
+ * 二者仅作弹窗内的「更多参考」补充池，且按风格轮转分配保证彼此不重复。永不破图。
  * ============================================================ */
 (function () {
   "use strict";
@@ -53,29 +55,53 @@
     return (window.__STYLES__ && Array.isArray(window.__STYLES__)) ? window.__STYLES__ : [];
   }
 
+  // ============ 本地精选图池（library-data.js：按风格标签分类的 Civitai 图） ============
+  const libByTag = {};          // tag -> [imagePath...]
+  function buildLibPools() {
+    const items = (window.__LIBRARY__ && window.__LIBRARY__.styles) || [];
+    items.forEach(it => { (it.tags || []).forEach(t => { (libByTag[t] = libByTag[t] || []).push(it.image); }); });
+  }
+
+  // 为每个风格分配「唯一且尽量贴合标签」的本地精选图（图库 254 张 >> 186 风格，可全唯一）
+  function assignUniqueImages() {
+    const used = new Set();
+    const need = [];
+    // Pass1：优先用 match 标签池里未被占用的图
+    state.all.forEach(s => {
+      const cand = libByTag[s.match] || [];
+      let pick = null;
+      for (const im of cand) { if (!used.has(im)) { pick = im; break; } }
+      if (pick) { used.add(pick); s.image = pick; s._needExt = false; }
+      else need.push(s);                 // 标签池耗尽，留待外部图或兜底
+    });
+    // Pass2：仍未分配的风格，用任意未占用图库图兜底（保证全唯一；相关度交给外部补）
+    need.forEach(s => {
+      let pick = null;
+      const all = (window.__LIBRARY__ && window.__LIBRARY__.styles) || [];
+      for (const it of all) { if (!used.has(it.image)) { pick = it.image; break; } }
+      if (!pick) pick = ((libByTag[s.match] || [])[0]) || (s.image || "");
+      used.add(pick); s.image = pick; s._needExt = true;
+    });
+    // 每个风格的备选池：本标签下其它未用图（换一批用）
+    state.all.forEach(s => {
+      const cand = (libByTag[s.match] || []).filter(im => im !== s.image);
+      s.pool = [s.image, ...cand];
+      s.fallback = s.image;
+    });
+  }
+
   function loadStyles() {
     const lib = getStyles();
     if (!lib.length) { setStatus("加载失败：请刷新页面重试。"); return; }
-    // 复制出可写对象：fallback=本地参考图，_imgs=真实图池，image=当前显示
-    state.all = lib.map(s => ({ ...s, fallback: s.image || "", _imgs: [], image: s.image || "" }));
-    state.off = 0;
+    buildLibPools();
+    // 复制出可写对象：image=当前主图，pool=备选池，_live=外部补充图
+    state.all = lib.map(s => ({ ...s, _live: [], pool: [], _needExt: false, image: s.image || "" }));
     byId = {};
     state.all.forEach(s => { byId[s.id] = s; });
-    // 先用本地缓存的实时图秒开（二次访问），随后后台静默刷新
-    const cache = loadLiveCache();
-    if (cache) {
-      let cnt = 0;
-      state.all.forEach(s => {
-        if (cache[s.id] && cache[s.id].length) {
-          s._imgs = cache[s.id];
-          (catPool[s.cat] = catPool[s.cat] || []).push(...cache[s.id]);
-          cnt++;
-        }
-      });
-      if (cnt) { reassignImages(); setLive("已加载缓存实时图 · 后台刷新中…", true); }
-    }
+    assignUniqueImages();      // 本地精选图：全唯一、尽量贴合标签
+    reassignImages();
     applyFilter();
-    backgroundLive();   // 后台拉/刷新真实图，不阻塞首屏
+    backgroundLive();   // 外部图（Civitai / Wikimedia 按具体题材）作补充池，绝不破坏唯一主图
   }
 
   // ============ 图片容错 ============
@@ -136,11 +162,12 @@
     finally { clearTimeout(t); }
   }
 
-  // 第二图源：Wikimedia Commons（keyless、CORS 开放 origin=*）。返回 420 宽缩略图。
+  // 外部源：Wikimedia Commons（国内通常可达、keyless、CORS 开放 origin=*）。
+  // 按「具体题材/人名」查询（如 Makoto Shinkai / Ghibli / Wes Anderson），不用泛词，相关性更好。
   const COMMONS_API = "https://commons.wikimedia.org/w/api.php";
   async function fetchCommons(qw, n) {
     const url = COMMONS_API + "?action=query&generator=search&gsrsearch=" +
-      encodeURIComponent(qw + " art") + "&gsrnamespace=6&gsrlimit=" + n +
+      encodeURIComponent(qw) + "&gsrnamespace=6&gsrlimit=" + n +
       "&prop=imageinfo&iiprop=url%7Cmime&iiurlwidth=420&format=json&origin=*";
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT);
@@ -163,11 +190,8 @@
     finally { clearTimeout(t); }
   }
 
-  // 选出某风格当前应显示的图（real 优先，按 off 轮换；否则本地兜底）
-  function pickImage(s) {
-    if (s._imgs && s._imgs.length) return s._imgs[state.off % s._imgs.length];
-    return s.fallback || "";
-  }
+  // 主视觉永远返回该风格的唯一本地精选图（相关 + 秒开）；外部图仅作弹窗补充
+  function pickImage(s) { return s.image || s.fallback || ""; }
   function reassignImages() {
     state.all.forEach(s => { s.image = pickImage(s); });
     refreshImagesInDom();
@@ -187,20 +211,24 @@
     $$("[data-src]").forEach(tag => {
       const s = byId[tag.dataset.src];
       if (!s) return;
-      const live = !!(s._imgs && s._imgs.length);
-      tag.textContent = live ? "实时参考图" : "参考图";
-      tag.classList.toggle("live", live);
+      tag.textContent = "精选参考图";                       // 主图恒为本地精选（相关 + 秒开 + 唯一）
+      tag.classList.toggle("live", !!(s._live && s._live.length));
     });
   }
 
-  // 并发拉取一组（按查询去重）并将结果写入 style._key
+  // 并发拉取一组（按查询去重）并把结果**轮转分配**给同组各风格，保证彼此不重复
   async function runGroups(entries, fetcher, key, n) {
     async function worker() {
       while (entries.length) {
         const [q, styles] = entries.shift();
         const imgs = await fetcher(q, n);
-        styles.forEach(s => { s["_" + key] = imgs; });
-        reassignImages();
+        if (imgs.length) {
+          for (let i = 0; i < styles.length; i++) {
+            const im = imgs[i % imgs.length];        // 同组各风格拿不同图，避免重复
+            styles[i]["_" + key] = (styles[i]["_" + key] || []).concat(im);
+          }
+        }
+        if (!$("#modal").hidden) renderLiveThumbs(byId[styles[0].id]);
       }
     }
     const ws = [];
@@ -208,24 +236,7 @@
     await Promise.all(ws);
   }
 
-  // ============ 实时图本地缓存（localStorage）：二次访问秒开 ============
-  const LIVE_CACHE_KEY = "stylegallery_live_v1";
-  function loadLiveCache() {
-    try {
-      const raw = localStorage.getItem(LIVE_CACHE_KEY);
-      if (!raw) return null;
-      const obj = JSON.parse(raw);
-      if (!obj || !obj.map || Date.now() - (obj.ts || 0) > 86400000) return null; // 24h 过期
-      return obj.map;
-    } catch (e) { return null; }
-  }
-  function saveLiveCache() {
-    try {
-      const map = {};
-      state.all.forEach(s => { if (s._imgs && s._imgs.length) map[s.id] = s._imgs; });
-      localStorage.setItem(LIVE_CACHE_KEY, JSON.stringify({ ts: Date.now(), map }));
-    } catch (e) {}
-  }
+  // （本地实时图缓存已不再需要：主图恒为本地精选且唯一，外部图仅作弹窗补充）
 
   // Civitai 可达性探测（国内常被墙）。可达才跑 Civitai，否则整段省下超时等待
   async function probeCivitai() {
@@ -241,9 +252,9 @@
   async function backgroundLive() {
     if (liveRunning) return;
     liveRunning = true;
-    setLive("正在准备实时参考图…", false);
+    setLive("正在准备外部参考图（Civitai / Wikimedia）…", false);
 
-    // 按查询去重分组（两个图源分别分组）
+    // 按查询去重分组
     const cGroups = {}, wGroups = {};
     state.all.forEach(s => {
       if (s.q) (cGroups[s.q] = cGroups[s.q] || []).push(s);
@@ -252,48 +263,39 @@
     const cEntries = Object.entries(cGroups).map(e => [e[0], e[1]]);
     const wEntries = Object.entries(wGroups).map(e => [e[0], e[1]]);
 
-    // Wikimedia 先起飞（国内可达、keyless、CORS 开放），拉到的图渐进显示
     const jobs = [];
-    if (wEntries.length) jobs.push(runGroups(wEntries, fetchCommons, "cm", 12));
-
-    // Civitai 可达才跑；被墙则跳过，避免整段 6s×N 超时挂起
+    // Wikimedia 按具体题材查（国内通常可达），先起飞
+    if (wEntries.length) jobs.push(runGroups(wEntries, fetchCommons, "live", 12));
+    // Civitai 可达才跑；被墙则跳过，避免整段超时挂起
     let civReachable = false;
     if (cEntries.length) {
-      setLive("正在探测 Civitai 可达性…（不可达将自动跳过）", false);
-      civReachable = await probeCivitai();
-      if (civReachable) jobs.push(runGroups(cEntries, fetchCivitai, "civ", 16));
+      try { civReachable = await probeCivitai(); } catch (e) { civReachable = false; }
+      if (civReachable) jobs.push(runGroups(cEntries, fetchCivitai, "live", 16));
     }
 
-    setLive("正在拉取实时参考图（Wikimedia" + (civReachable ? " + Civitai" : "，Civitai 不可达已跳过") + "）…", false);
-
-    if (!jobs.length) {           // 无任何外源：直接用本地参考图
-      setLive("实时图源不可用，已显示本地参考图", true);
+    if (!jobs.length) {
+      setLive("已显示本地精选参考图（无外部源）", true);
       liveRunning = false;
       return;
     }
-    await Promise.all(jobs);      // 双源并发
+    setLive("正在拉取外部参考图（Wikimedia" + (civReachable ? " + Civitai" : "，Civitai 不可达已跳过") + "）…", false);
+    await Promise.all(jobs);      // 双源并发（结果已按风格轮转分配，互不重复）
 
-    // 合并两源 -> _imgs，并汇入同大类兜底池
+    // 把外部图并入各风格 pool（主图仍保持唯一本地图；_needExt 的风格用外部图替换主图以增强相关）
+    state.all.forEach(s => { if (!s._live) s._live = []; });
     state.all.forEach(s => {
-      const merged = [];
-      if (s._civ) merged.push(...s._civ);
-      if (s._cm) merged.push(...s._cm);
-      s._imgs = merged;
-      if (merged.length) (catPool[s.cat] = catPool[s.cat] || []).push(...merged);
+      if (s._needExt && s._live.length) {
+        s.image = s._live[0]; s.fallback = s.image;
+        s.pool = [s.image, ...s._live.slice(1)];
+      } else {
+        s.pool = (s.pool && s.pool.length ? s.pool : [s.image]).concat(s._live);
+      }
     });
     reassignImages();
+    if (!$("#modal").hidden) renderLiveThumbs(state.filtered[state.current]);
 
-    // 两源都失败的风格，用同大类已拉到的真实图兜底
-    state.all.forEach(s => {
-      if (!s._imgs.length && catPool[s.cat] && catPool[s.cat].length) s._imgs = catPool[s.cat];
-    });
-    reassignImages();
-    saveLiveCache();
-
-    const ok = state.all.filter(s => s._imgs && s._imgs.length).length;
-    const srcLabel = (civReachable ? "Civitai + " : "") + "Wikimedia";
-    if (ok > 0) setLive("已加载实时风格图 · " + ok + "/" + state.all.length + " 种（" + srcLabel + "）", true);
-    else setLive("实时图暂未拉到，已显示本地参考图（可稍后点「换一批」重试）", true);
+    const ok = state.all.filter(s => s._live && s._live.length).length;
+    setLive(ok > 0 ? ("已加载外部参考图 · " + ok + "/" + state.all.length + " 种（点开风格看更多）") : "已显示本地精选参考图", true);
     liveRunning = false;
   }
 
@@ -372,7 +374,7 @@
     img.dataset.key = s.id; img.dataset.fallback = s.fallback; img.dataset.cur = s.image;
     img.dataset.civitai = isCivitai(s.image) ? "1" : "0"; img.dataset.retry = "0";
     $("#spotTitle").textContent = s.name;
-    $("#spotTags").innerHTML = `<span class="chip static">${escapeHtml(s.cat)}</span><span class="chip static ${s._imgs && s._imgs.length ? "live" : ""}">${s._imgs && s._imgs.length ? "实时参考图" : "参考图"}</span>`;
+    $("#spotTags").innerHTML = `<span class="chip static">${escapeHtml(s.cat)}</span><span class="chip static">精选参考图</span>`;
     const p = ((s.vp || s.prompt) || "").replace(/\s+/g, " ").trim();
     $("#spotPrompt").textContent = p;
   }
@@ -385,6 +387,20 @@
     if (sec && sec.scrollIntoView) sec.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
+  // 弹窗内的「更多外部参考」小图（Civitai / Wikimedia，仅补充；点击切换主图）
+  function renderLiveThumbs(s) {
+    const box = $("#liveThumbs"); const blk = $("#liveBlock");
+    if (!box || !blk) return;
+    if (!s || !s._live || !s._live.length) { blk.hidden = true; box.innerHTML = ""; return; }
+    blk.hidden = false;
+    box.innerHTML = s._live.slice(0, 8).map(u =>
+      `<img class="live-thumb" src="${escapeHtml(u)}" data-live="${escapeHtml(u)}" loading="lazy" alt="外部参考" />`).join("");
+    $$(".live-thumb", box).forEach(t => t.addEventListener("click", () => {
+      const img = $("#modalImg");
+      img.src = t.dataset.live; img.dataset.civitai = "1"; img.dataset.retry = "0";
+    }));
+  }
+
   function openModal(i) {
     const s = state.filtered[i];
     if (!s) return;
@@ -394,9 +410,10 @@
     img.dataset.key = s.id; img.dataset.fallback = s.fallback; img.dataset.cur = s.image;
     img.dataset.civitai = isCivitai(s.image) ? "1" : "0"; img.dataset.retry = "0";
     $("#modalTitle").textContent = s.name;
-    $("#modalTags").innerHTML = `<span class="chip static">${escapeHtml(s.cat)}</span><span class="chip static">${escapeHtml(s.desc)}</span><span class="chip static ${s._imgs && s._imgs.length ? "live" : ""}">${s._imgs && s._imgs.length ? "实时参考图" : "参考图"}</span>`;
+    $("#modalTags").innerHTML = `<span class="chip static">${escapeHtml(s.cat)}</span><span class="chip static">${escapeHtml(s.desc)}</span><span class="chip static">精选参考图</span>`;
     $("#modalVideo").textContent = s.vp || s.prompt || "（无提示词）";
     $("#modalPrompt").textContent = s.prompt || "（无提示词）";
+    renderLiveThumbs(s);
     $("#modal").hidden = false;
     document.body.style.overflow = "hidden";
   }
@@ -428,10 +445,15 @@
   document.addEventListener("DOMContentLoaded", () => {
     $("#search").addEventListener("input", applyFilter);
     $("#refresh").addEventListener("click", () => {
-      // 本地随机换序（秒开）+ 轮换真实图批次（不重新请求，直接用已缓存图池）
+      // 在同风格备选池里轮换主图（相关不跑题），并随机换序增加新鲜感（均秒开）
+      state.all.forEach((s, i) => {
+        if (s.pool && s.pool.length > 1) {
+          s._p = ((s._p || 0) + 1 + i) % s.pool.length;
+          s.image = s.pool[s._p]; s.fallback = s.image;
+        }
+      });
       state.all = state.all.slice().sort(() => Math.random() - 0.5);
       byId = {}; state.all.forEach(s => { byId[s.id] = s; });
-      state.off = (state.off + 3) % 97;
       reassignImages();
       applyFilter();
     });

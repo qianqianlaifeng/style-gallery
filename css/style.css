@@ -176,3 +176,9 @@ img{max-width:100%;}
 #copyVideoBtn{border-color:#d8b46a;color:#d8b46a;}
 #copyVideoBtn:hover{background:#d8b46a;color:#070707;}
 #copyVideoBtn.done{border-color:#8bbf9f;color:#8bbf9f;}
+
+/* 弹窗内「更多外部参考」小图条 */
+.live-thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;}
+.live-thumb{width:74px;height:74px;object-fit:cover;border-radius:7px;cursor:pointer;border:1px solid var(--rule);background:#111;transition:transform .12s ease,border-color .12s ease;}
+.live-thumb:hover{transform:translateY(-2px);border-color:#d8b46a;}
+#liveBlock .info-label{margin-bottom:2px;}

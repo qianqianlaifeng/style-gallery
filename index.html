@@ -17,7 +17,7 @@
     </div>
     <div class="toolbar">
       <input id="search" type="text" placeholder="搜索 提示词 / 标签" autocomplete="off" />
-      <button id="refresh" class="btn" title="重新拉取实时接口">↻ 实时刷新</button>
+      <button id="refresh" class="btn" title="在同风格备选图里轮换主图（相关不跑题）">↻ 换一批</button>
       <span id="liveStatus" class="live-status" hidden></span>
     </div>
   </header>
@@ -103,12 +103,17 @@
               </div>
             </div>
           </div>
+          <div class="info-block" id="liveBlock" hidden>
+            <div class="info-label">更多外部参考（Civitai / Wikimedia，点小图可切换主图）</div>
+            <div class="live-thumbs" id="liveThumbs"></div>
+          </div>
           <a id="modalSource" class="source-link" href="#" target="_blank" rel="noopener" style="display:none">查看原图 / 出处 ↗</a>
         </div>
       </div>
     </div>
   </div>
 
+  <script src="library-data.js"></script>
   <script src="styles-data.js"></script>
   <script src="js/app.js"></script>
 </body>
