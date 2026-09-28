@@ -57,32 +57,60 @@
 
   // ============ 本地精选图池（library-data.js：按风格标签分类的 Civitai 图） ============
   const libByTag = {};          // tag -> [imagePath...]
+  const libByCat = {};          // 大类 -> [imagePath...]（标签不够用时按大类兜底，保证相关）
+  // 10 大风格类 -> 相关标签（用于兜底分配，使溢出风格也落在同大类图里，而非随机）
+  const CAT_TAGS = {
+    "国漫国风": ["国风古韵", "仙侠修仙", "武侠刀剑", "水墨 / 国画", "浮世绘", "吉卜力风", "动漫", "动漫人像", "动画风景", "奇幻", "龙与传说", "精灵森林", "奇幻城堡", "剪纸层叠", "日式庭院"],
+    "日系动画": ["吉卜力风", "动漫", "动漫人像", "动画风景", "日式庭院", "Q版可爱", "水彩"],
+    "美式西式": ["漫画黑白", "波普艺术", "扁平插画", "设计感", "装饰艺术", "新艺术运动", "浮世绘", "油画", "绘画", "线稿", "彩绘玻璃"],
+    "写实电影感": ["电影感 / 胶片大片", "影视感", "黑色电影 / 暗调", "黄金时刻光", "体积光 / 丁达尔", "逆光剪影", "摄影感", "人像摄影", "街头摄影", "黑白摄影", "长曝光", "微距", "航拍", "水下世界", "移轴微缩"],
+    "赛博科幻": ["赛博朋克", "科幻", "科幻都市", "机甲", "星际星云", "蒸汽朋克", "末世废土", "霓虹光效", "蒸汽波", "粗野建筑", "城市"],
+    "萌系可爱": ["Q版可爱", "黏土定格", "低多边形", "水彩"],
+    "像素复古": ["像素风", "复古80年代", "Y2K 千禧", "蒸汽波", "波普艺术"],
+    "广告产品": ["设计感", "装饰艺术", "新艺术运动", "等距视角", "扁平插画", "彩绘玻璃", "双重曝光", "油画", "绘画"],
+    "MV音乐": ["双重曝光", "超现实", "蒸汽波", "霓虹光效", "潮流", "哥特暗黑"],
+    "抽象艺术": ["超现实", "波普艺术", "双重曝光", "彩绘玻璃", "线稿", "剪纸层叠", "印象派", "油画", "绘画"]
+  };
   function buildLibPools() {
     const items = (window.__LIBRARY__ && window.__LIBRARY__.styles) || [];
     items.forEach(it => { (it.tags || []).forEach(t => { (libByTag[t] = libByTag[t] || []).push(it.image); }); });
+    Object.keys(CAT_TAGS).forEach(cat => {
+      const seen = new Set();
+      (CAT_TAGS[cat] || []).forEach(t => (libByTag[t] || []).forEach(im => {
+        if (!seen.has(im)) { seen.add(im); (libByCat[cat] = libByCat[cat] || []).push(im); }
+      }));
+    });
   }
 
-  // 为每个风格分配「唯一且尽量贴合标签」的本地精选图（图库 254 张 >> 186 风格，可全唯一）
+  // 为每个风格分配「唯一 + 尽量贴合」的本地精选图（三段：精确标签 → 同大类 → 全局兜底）
   function assignUniqueImages() {
     const used = new Set();
-    const need = [];
-    // Pass1：优先用 match 标签池里未被占用的图
+    const need1 = [], need2 = [];
+    // Pass1：精确 match 标签池里未被占用的图（强相关）
     state.all.forEach(s => {
       const cand = libByTag[s.match] || [];
       let pick = null;
       for (const im of cand) { if (!used.has(im)) { pick = im; break; } }
-      if (pick) { used.add(pick); s.image = pick; s._needExt = false; }
-      else need.push(s);                 // 标签池耗尽，留待外部图或兜底
+      if (pick) { used.add(pick); s.image = pick; s._rel = "tag"; }
+      else need1.push(s);
     });
-    // Pass2：仍未分配的风格，用任意未占用图库图兜底（保证全唯一；相关度交给外部补）
-    need.forEach(s => {
+    // Pass2：标签池耗尽的，用同大类图兜底（至少同大类相关，不跑题）
+    need1.forEach(s => {
+      const cand = libByCat[s.cat] || [];
+      let pick = null;
+      for (const im of cand) { if (!used.has(im)) { pick = im; break; } }
+      if (pick) { used.add(pick); s.image = pick; s._rel = "cat"; }
+      else need2.push(s);
+    });
+    // Pass3：仍未分配的风格，用任意未占用图库图兜底（保证 186 张全唯一）
+    need2.forEach(s => {
       let pick = null;
       const all = (window.__LIBRARY__ && window.__LIBRARY__.styles) || [];
       for (const it of all) { if (!used.has(it.image)) { pick = it.image; break; } }
       if (!pick) pick = ((libByTag[s.match] || [])[0]) || (s.image || "");
-      used.add(pick); s.image = pick; s._needExt = true;
+      used.add(pick); s.image = pick; s._rel = "global";
     });
-    // 每个风格的备选池：本标签下其它未用图（换一批用）
+    // 每个风格的备选池：本标签下其它未用图（换一批用，相关不跑题）
     state.all.forEach(s => {
       const cand = (libByTag[s.match] || []).filter(im => im !== s.image);
       s.pool = [s.image, ...cand];
@@ -94,8 +122,8 @@
     const lib = getStyles();
     if (!lib.length) { setStatus("加载失败：请刷新页面重试。"); return; }
     buildLibPools();
-    // 复制出可写对象：image=当前主图，pool=备选池，_live=外部补充图
-    state.all = lib.map(s => ({ ...s, _live: [], pool: [], _needExt: false, image: s.image || "" }));
+    // 复制出可写对象：image=当前主图，pool=备选池，_live=外部补充图（仅弹窗用，不覆盖主图）
+    state.all = lib.map(s => ({ ...s, _live: [], pool: [], image: s.image || "" }));
     byId = {};
     state.all.forEach(s => { byId[s.id] = s; });
     assignUniqueImages();      // 本地精选图：全唯一、尽量贴合标签
@@ -281,15 +309,10 @@
     setLive("正在拉取外部参考图（Wikimedia" + (civReachable ? " + Civitai" : "，Civitai 不可达已跳过") + "）…", false);
     await Promise.all(jobs);      // 双源并发（结果已按风格轮转分配，互不重复）
 
-    // 把外部图并入各风格 pool（主图仍保持唯一本地图；_needExt 的风格用外部图替换主图以增强相关）
-    state.all.forEach(s => { if (!s._live) s._live = []; });
+    // 把外部图并入各风格 pool（仅作弹窗补充，绝不覆盖主图；主图永远是本地唯一精选图）
     state.all.forEach(s => {
-      if (s._needExt && s._live.length) {
-        s.image = s._live[0]; s.fallback = s.image;
-        s.pool = [s.image, ...s._live.slice(1)];
-      } else {
-        s.pool = (s.pool && s.pool.length ? s.pool : [s.image]).concat(s._live);
-      }
+      if (!s._live) s._live = [];
+      s.pool = (s.pool && s.pool.length ? s.pool : [s.image]).concat(s._live);
     });
     reassignImages();
     if (!$("#modal").hidden) renderLiveThumbs(state.filtered[state.current]);
