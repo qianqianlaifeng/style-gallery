@@ -6,10 +6,9 @@
  * 交互：画廊网格 / 焦点大图 / 分类筛选 / 搜索 / 详情弹窗（复制提示词）。
  *
  * 图片策略：主视觉永远用「本地精选参考图」（library-data.js 中按风格分类的
- * Civitai 精选图，相关性高、走 jsDelivr 秒开）。实时图（Civitai，仅国漫/插画强、
- * 国内常被墙）降级为弹窗内的「更多实时参考」小图，被墙自动隐藏，绝不覆盖主图。
- * Wikimedia 按「具体题材」（如 Makoto Shinkai / Ghibli）查询（国内通常可达），Civitai 可达时补充；
- * 二者仅作弹窗内的「更多参考」补充池，且按风格轮转分配保证彼此不重复。永不破图。
+ * Civitai 精选图，相关性高、走 jsDelivr 秒开）。弹窗内的「更多参考图」补充池
+ * 改用【国内源 360 图片 JSONP】（国内直连、无需 CORS、稳定可达），失败自动隐藏，
+ * 绝不覆盖主图。永不破图。
  * ============================================================ */
 (function () {
   "use strict";
@@ -26,9 +25,8 @@
   const catPool = {};            // cat -> 该大类已拉到的真实图 URL 池（兜底用）
   let liveRunning = false;
 
-  const CIVITAI_API = "https://civitai.com/api/v1/models";
-  const FETCH_TIMEOUT = 6000;   // 单源请求超时：被墙时快速失败，不长时间挂起
-  const PROBE_TIMEOUT = 3500;   // Civitai 可达性探针超时
+  const SO_API = "https://image.so.com/j";   // 360 图片（国内源，JSONP，浏览器直连无需 CORS）
+  const FETCH_TIMEOUT = 6000;   // 单源请求超时：失败快速放弃，不长时间挂起
   const CONC = 8;               // 并发拉取数：提高吞吐、缩短总耗时
 
   function setStatus(t) { const el = $("#status"); if (!el) return; el.textContent = t || ""; el.hidden = !t; }
@@ -167,55 +165,40 @@
   }, true);
   document.addEventListener("error", onImgError, true);
 
-  // ============ 真实图：按 q 后台拉取 + 就地替换 ============
-  async function fetchCivitai(q, n) {
-    const url = CIVITAI_API + "?limit=" + n + "&query=" + encodeURIComponent(q) +
-      "&types=Checkpoint&types=LORA&sort=Highest+Rated&nsfw=false";
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT);
-    try {
-      const res = await fetch(url, { signal: ctrl.signal });
-      if (!res.ok) return [];
-      const data = await res.json();
-      const out = [];
-      for (const m of (data.items || [])) {
-        for (const v of (m.modelVersions || [])) {
-          for (const im of (v.images || [])) {
-            if (im && im.url) { const tu = thumbUrl(im.url); if (tu) out.push(tu); }
-          }
-        }
-      }
-      return out;
-    } catch (e) { return []; }
-    finally { clearTimeout(t); }
+  // ============ 国内参考图：360 图片 JSONP（国内直连、无需 CORS，作弹窗补充池） ============
+  // image.so.com 不发 CORS 头，直接用 fetch 会被拦；故用 <script> JSONP 注入方式调用，
+  // 浏览器端天然可跨域。站点主图永远是本地精选库；这里只作「更多参考」补充，绝不覆盖主图。
+  function parseSoImages(data, n) {
+    const list = (data && data.list) || [];
+    const out = [];
+    for (const it of list) {
+      let u = it.qhimg_url || it.img || it.thumb || "";   // 优先大图，兜底缩略图
+      if (!u) continue;
+      if (u.indexOf("//") === 0) u = "https:" + u;          // 补协议头
+      out.push(u);
+      if (out.length >= n) break;
+    }
+    return out;
   }
-
-  // 外部源：Wikimedia Commons（国内通常可达、keyless、CORS 开放 origin=*）。
-  // 按「具体题材/人名」查询（如 Makoto Shinkai / Ghibli / Wes Anderson），不用泛词，相关性更好。
-  const COMMONS_API = "https://commons.wikimedia.org/w/api.php";
-  async function fetchCommons(qw, n) {
-    const url = COMMONS_API + "?action=query&generator=search&gsrsearch=" +
-      encodeURIComponent(qw) + "&gsrnamespace=6&gsrlimit=" + n +
-      "&prop=imageinfo&iiprop=url%7Cmime&iiurlwidth=420&format=json&origin=*";
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT);
-    try {
-      const res = await fetch(url, { signal: ctrl.signal });
-      if (!res.ok) return [];
-      const data = await res.json();
-      const pages = (data.query && data.query.pages) || {};
-      const out = [];
-      for (const pid in pages) {
-        const ii = (pages[pid].imageinfo || [])[0];
-        if (!ii) continue;
-        const mime = ii.mime || "";
-        if (mime.indexOf("image/") !== 0) continue;       // 只要图片，过滤 PDF/Office
-        const u = ii.thumburl || ii.url;
-        if (u) out.push(u);
-      }
-      return out;
-    } catch (e) { return []; }
-    finally { clearTimeout(t); }
+  function fetchSo(q, n) {
+    return new Promise((resolve) => {
+      if (!q) { resolve([]); return; }
+      const cbName = "__so_cb_" + Date.now().toString(36) + Math.random().toString(36).slice(2);
+      const script = document.createElement("script");
+      let done = false;
+      const finish = (val) => {
+        if (done) return; done = true; clearTimeout(timer);
+        try { delete window[cbName]; } catch (e) {}
+        if (script.parentNode) script.parentNode.removeChild(script);
+        resolve(val);
+      };
+      const timer = setTimeout(() => finish([]), FETCH_TIMEOUT);   // 超时快速放弃
+      window[cbName] = (data) => { finish(parseSoImages(data, n)); };
+      script.onerror = () => finish([]);
+      script.src = SO_API + "?src=tab_www&correct=1&pn=" + n + "&sn=0&q=" +
+        encodeURIComponent(q) + "&callback=" + cbName;
+      (document.body || document.documentElement).appendChild(script);
+    });
   }
 
   // 主视觉永远返回该风格的唯一本地精选图（相关 + 秒开）；外部图仅作弹窗补充
@@ -266,50 +249,29 @@
 
   // （本地实时图缓存已不再需要：主图恒为本地精选且唯一，外部图仅作弹窗补充）
 
-  // Civitai 可达性探测（国内常被墙）。可达才跑 Civitai，否则整段省下超时等待
-  async function probeCivitai() {
-    try {
-      const ctrl = new AbortController();
-      const t = setTimeout(() => ctrl.abort(), PROBE_TIMEOUT);
-      const r = await fetch(CIVITAI_API + "?limit=1&types=Checkpoint", { signal: ctrl.signal });
-      clearTimeout(t);
-      return r.ok;
-    } catch (e) { return false; }
-  }
-
+  // ============ 国内参考图拉取：360 图片 JSONP（仅弹窗补充，绝不覆盖主图） ============
   async function backgroundLive() {
     if (liveRunning) return;
     liveRunning = true;
-    setLive("正在准备外部参考图（Civitai / Wikimedia）…", false);
+    setLive("正在准备国内参考图（360 图片）…", false);
 
-    // 按查询去重分组
-    const cGroups = {}, wGroups = {};
+    // 按查询去重分组（优先用 match 标签作中文查询，相关性更好；退化为风格名）
+    const groups = {};
     state.all.forEach(s => {
-      if (s.q) (cGroups[s.q] = cGroups[s.q] || []).push(s);
-      if (s.qw) (wGroups[s.qw] = wGroups[s.qw] || []).push(s);
+      const q = s.match || s.name || "";
+      if (q) (groups[q] = groups[q] || []).push(s);
     });
-    const cEntries = Object.entries(cGroups).map(e => [e[0], e[1]]);
-    const wEntries = Object.entries(wGroups).map(e => [e[0], e[1]]);
-
-    const jobs = [];
-    // Wikimedia 按具体题材查（国内通常可达），先起飞
-    if (wEntries.length) jobs.push(runGroups(wEntries, fetchCommons, "live", 12));
-    // Civitai 可达才跑；被墙则跳过，避免整段超时挂起
-    let civReachable = false;
-    if (cEntries.length) {
-      try { civReachable = await probeCivitai(); } catch (e) { civReachable = false; }
-      if (civReachable) jobs.push(runGroups(cEntries, fetchCivitai, "live", 16));
-    }
-
-    if (!jobs.length) {
-      setLive("已显示本地精选参考图（无外部源）", true);
+    const entries = Object.entries(groups).map(e => [e[0], e[1]]);
+    if (!entries.length) {
+      setLive("已显示本地精选参考图", true);
       liveRunning = false;
       return;
     }
-    setLive("正在拉取外部参考图（Wikimedia" + (civReachable ? " + Civitai" : "，Civitai 不可达已跳过") + "）…", false);
-    await Promise.all(jobs);      // 双源并发（结果已按风格轮转分配，互不重复）
 
-    // 把外部图并入各风格 pool（仅作弹窗补充，绝不覆盖主图；主图永远是本地唯一精选图）
+    // 并发拉取各查询，结果按风格轮转分配（同组各风格拿不同图，互不重复）
+    await runGroups(entries, fetchSo, "live", 12);
+
+    // 外部图并入各风格 pool（主图仍保持唯一本地图；点开弹窗的「更多参考图」可见）
     state.all.forEach(s => {
       if (!s._live) s._live = [];
       s.pool = (s.pool && s.pool.length ? s.pool : [s.image]).concat(s._live);
@@ -318,7 +280,7 @@
     if (!$("#modal").hidden) renderLiveThumbs(state.filtered[state.current]);
 
     const ok = state.all.filter(s => s._live && s._live.length).length;
-    setLive(ok > 0 ? ("已加载外部参考图 · " + ok + "/" + state.all.length + " 种（点开风格看更多）") : "已显示本地精选参考图", true);
+    setLive(ok > 0 ? ("已加载国内参考图 · " + ok + "/" + state.all.length + " 种（点开风格看更多）") : "已显示本地精选参考图", true);
     liveRunning = false;
   }
 
